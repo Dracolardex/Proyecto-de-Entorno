@@ -6,6 +6,12 @@ h1 {
   font-style: italic;
   font-size: 900%;
   color: aliceblue;
+  position: relative;
+  left: 40%;
+}
+
+header > h2 {
   position: absolute;
   left: 40%;
+  top: 25%;
 }
