@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(95, 96, 97);
+}
+
+h1 {
+  font-style: italic;
+  font-size: 900%;
+  color: aliceblue;
+  position: absolute;
+  left: 40%;
+}
