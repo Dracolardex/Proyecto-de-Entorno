@@ -1,282 +1,533 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>PixelCode - El blog del proyecto</title>
-<link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-
-<div class="header">
-
-    <div class="logo">
-        <svg width="60" height="60" viewBox="0 0 60 60" style="vertical-align: middle;">
-            <rect x="0" y="0" width="60" height="60" rx="10" fill="#ffcc33"/>
-            <rect x="3" y="15" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="9" y="15" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="15" y="15" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="21" y="15" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="3" y="21" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="21" y="21" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="3" y="27" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="9" y="27" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="15" y="27" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="21" y="27" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="3" y="33" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="3" y="39" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="33" y="15" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="39" y="15" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="45" y="15" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="51" y="15" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="33" y="21" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="33" y="27" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="33" y="33" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="33" y="39" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="39" y="39" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="45" y="39" width="6" height="6" fill="#1a1a2e"/>
-            <rect x="51" y="39" width="6" height="6" fill="#1a1a2e"/>
+  <head>
+    <title>PixelCode - El blog del proyecto</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <svg
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          style="vertical-align: middle"
+        >
+          <rect x="0" y="0" width="60" height="60" rx="10" fill="#ffcc33" />
+          <rect x="3" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="9" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="15" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="21" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="21" width="6" height="6" fill="#1a1a2e" />
+          <rect x="21" y="21" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="9" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="15" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="21" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="33" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="39" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="45" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="51" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="21" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="33" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="39" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="45" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="51" y="39" width="6" height="6" fill="#1a1a2e" />
         </svg>
-        <span style="color: white; font-size: 32px; font-weight: bold; margin-left: 14px; vertical-align: middle; letter-spacing: 1px;">PixelCode</span>
-    </div>
+        <span
+          style="
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            margin-left: 14px;
+            vertical-align: middle;
+            letter-spacing: 1px;
+          "
+          >PixelCode</span
+        >
+      </div>
 
-    <div class="nav">
+      <div class="nav">
         <ul>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li class="dropdown">
-                <a href="#">Curiosidades ▾</a>
-                <ul class="submenu">
-                    <li>
-                        <a href="#">
-                            <svg width="16" height="16" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;">
-                                <circle cx="12" cy="12" r="10" fill="none" stroke="#ffcc33" stroke-width="1.8"/>
-                                <circle cx="12" cy="12" r="4" fill="none" stroke="#ffcc33" stroke-width="1.8"/>
-                                <line x1="12" y1="2" x2="12" y2="8" stroke="#ffcc33" stroke-width="1.8"/>
-                                <line x1="12" y1="16" x2="12" y2="22" stroke="#ffcc33" stroke-width="1.8"/>
-                                <line x1="2" y1="12" x2="8" y2="12" stroke="#ffcc33" stroke-width="1.8"/>
-                                <line x1="16" y1="12" x2="22" y2="12" stroke="#ffcc33" stroke-width="1.8"/>
-                            </svg>
-                            Portal
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg width="16" height="16" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;">
-                                <path d="M3 19 L3 9 L7 13 L12 5 L17 13 L21 9 L21 19 Z" fill="#ffcc33"/>
-                                <circle cx="3" cy="9" r="1.5" fill="#ffcc33"/>
-                                <circle cx="12" cy="5" r="1.5" fill="#ffcc33"/>
-                                <circle cx="21" cy="9" r="1.5" fill="#ffcc33"/>
-                            </svg>
-                            LoL
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg width="16" height="16" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;">
-                                <circle cx="12" cy="12" r="10" fill="#ffcc33"/>
-                                <path d="M2 12 A10 10 0 0 1 22 12 Z" fill="#ff6b6b"/>
-                                <rect x="2" y="11" width="20" height="2" fill="#1a1a2e"/>
-                                <circle cx="12" cy="12" r="3.2" fill="#1a1a2e"/>
-                                <circle cx="12" cy="12" r="1.6" fill="white"/>
-                            </svg>
-                            Pokémon
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg width="16" height="16" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;">
-                                <polygon points="12,2 14.6,9 22,9 16,13.5 18.3,21 12,16.5 5.7,21 8,13.5 2,9 9.4,9" fill="#ffcc33"/>
-                            </svg>
-                            JoJos
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#">Próximos lanzamientos</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li class="dropdown">
+            <a href="#">Curiosidades ▾</a>
+            <ul class="submenu">
+              <li>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    style="vertical-align: middle; margin-right: 8px"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      fill="none"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="4"
+                      fill="none"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="12"
+                      y1="2"
+                      x2="12"
+                      y2="8"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="12"
+                      y1="16"
+                      x2="12"
+                      y2="22"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="2"
+                      y1="12"
+                      x2="8"
+                      y2="12"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="16"
+                      y1="12"
+                      x2="22"
+                      y2="12"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  Portal
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    style="vertical-align: middle; margin-right: 8px"
+                  >
+                    <path
+                      d="M3 19 L3 9 L7 13 L12 5 L17 13 L21 9 L21 19 Z"
+                      fill="#ffcc33"
+                    />
+                    <circle cx="3" cy="9" r="1.5" fill="#ffcc33" />
+                    <circle cx="12" cy="5" r="1.5" fill="#ffcc33" />
+                    <circle cx="21" cy="9" r="1.5" fill="#ffcc33" />
+                  </svg>
+                  LoL
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    style="vertical-align: middle; margin-right: 8px"
+                  >
+                    <circle cx="12" cy="12" r="10" fill="#ffcc33" />
+                    <path d="M2 12 A10 10 0 0 1 22 12 Z" fill="#ff6b6b" />
+                    <rect x="2" y="11" width="20" height="2" fill="#1a1a2e" />
+                    <circle cx="12" cy="12" r="3.2" fill="#1a1a2e" />
+                    <circle cx="12" cy="12" r="1.6" fill="white" />
+                  </svg>
+                  Pokémon
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    style="vertical-align: middle; margin-right: 8px"
+                  >
+                    <polygon
+                      points="12,2 14.6,9 22,9 16,13.5 18.3,21 12,16.5 5.7,21 8,13.5 2,9 9.4,9"
+                      fill="#ffcc33"
+                    />
+                  </svg>
+                  JoJos
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Próximos lanzamientos</a></li>
         </ul>
+      </div>
+
+      <div style="clear: both"></div>
     </div>
 
-    <div style="clear: both;"></div>
+    <div class="contenido">
+      <div class="hero">
+        <h1 style="margin: 0; font-size: 36px; color: #1a1a2e">
+          Bienvenid@ a PixelCode 🎮
+        </h1>
+        <p style="font-size: 18px; color: #555; margin-top: 10px">
+          Un blog hecho por cuatro estudiantes con demasiada pasión por el mundo
+          friki
+        </p>
+      </div>
 
-</div>
+      <br />
 
-<div class="contenido">
-
-    <div class="hero">
-        <h1 style="margin: 0; font-size: 36px; color: #1a1a2e;">Bienvenid@ a PixelCode 🎮</h1>
-        <p style="font-size: 18px; color: #555; margin-top: 10px;">Un blog hecho por cuatro estudiantes con demasiada pasión por el mundo friki</p>
-    </div>
-
-    <br>
-
-    <div class="seccion-intro">
+      <div class="seccion-intro">
         <h2>¿Qué es PixelCode?</h2>
         <p>
-            <b>PixelCode</b> nace como proyecto de la asignatura de <i>Entornos de Desarrollo</i>, pero muy rápidamente se convirtió en algo más que una práctica. Somos cuatro compañeros de clase que compartimos la misma obsesión: los videojuegos, los cómics, el cine de ciencia ficción y, en general, toda la cultura que durante años fue llamada "friki" y que hoy forma parte del día a día de millones de personas.
+          <b>PixelCode</b> nace como proyecto de la asignatura de
+          <i>Entornos de Desarrollo</i>, pero muy rápidamente se convirtió en
+          algo más que una práctica. Somos cuatro compañeros de clase que
+          compartimos la misma obsesión: los videojuegos, los cómics, el cine de
+          ciencia ficción y, en general, toda la cultura que durante años fue
+          llamada "friki" y que hoy forma parte del día a día de millones de
+          personas.
         </p>
         <p>
-            Esta página es el punto de entrada al proyecto. Un sitio donde vamos a ir publicando noticias, reseñas, curiosidades, calendarios de eventos y reflexiones sobre todo lo que nos apasiona. No pretendemos ser una enciclopedia ni competir con los grandes medios: queremos tener <b>nuestro propio rincón</b>, con nuestra voz, nuestras recomendaciones y, sobre todo, nuestras opiniones (a veces impopulares).
+          Esta página es el punto de entrada al proyecto. Un sitio donde vamos a
+          ir publicando noticias, reseñas, curiosidades, calendarios de eventos
+          y reflexiones sobre todo lo que nos apasiona. No pretendemos ser una
+          enciclopedia ni competir con los grandes medios: queremos tener
+          <b>nuestro propio rincón</b>, con nuestra voz, nuestras
+          recomendaciones y, sobre todo, nuestras opiniones (a veces
+          impopulares).
         </p>
-    </div>
+      </div>
 
-    <br>
+      <br />
 
-    <div class="seccion-intro">
+      <div class="seccion-intro">
         <h2>De ser raro a ser mainstream</h2>
         <p>
-            Hace no tantos años, reconocer que te gustaba Star Wars, coleccionar cartas de Magic o jugar a rol con amigos un sábado por la tarde era motivo de bromas en el recreo. Hoy, esa misma cultura mueve cifras que ningún otro sector del entretenimiento puede igualar. El mundo friki ha pasado de ser una afición de <i>nicho</i> a convertirse en la mayor industria cultural del planeta.
+          Hace no tantos años, reconocer que te gustaba Star Wars, coleccionar
+          cartas de Magic o jugar a rol con amigos un sábado por la tarde era
+          motivo de bromas en el recreo. Hoy, esa misma cultura mueve cifras que
+          ningún otro sector del entretenimiento puede igualar. El mundo friki
+          ha pasado de ser una afición de <i>nicho</i> a convertirse en la mayor
+          industria cultural del planeta.
         </p>
         <p>
-            Las películas de superhéroes llenan los cines. Los estrenos de videojuegos se retransmiten como si fueran partidos de fútbol. Los cosplays se ven tanto en convenciones como en redes sociales. Lo que antes eran pasiones casi clandestinas ahora son fenómenos globales que definen modas, lenguaje y formas de socializar.
+          Las películas de superhéroes llenan los cines. Los estrenos de
+          videojuegos se retransmiten como si fueran partidos de fútbol. Los
+          cosplays se ven tanto en convenciones como en redes sociales. Lo que
+          antes eran pasiones casi clandestinas ahora son fenómenos globales que
+          definen modas, lenguaje y formas de socializar.
         </p>
         <p>
-            Para nosotros, este cambio es una buena noticia. Pero también nos gusta recordar que, detrás de todo ese éxito comercial, sigue habiendo comunidades pequeñas, gente apasionada y obras increíbles que merecen ser descubiertas. Y de eso también va a ir este blog.
+          Para nosotros, este cambio es una buena noticia. Pero también nos
+          gusta recordar que, detrás de todo ese éxito comercial, sigue habiendo
+          comunidades pequeñas, gente apasionada y obras increíbles que merecen
+          ser descubiertas. Y de eso también va a ir este blog.
         </p>
-    </div>
+      </div>
 
-    <br>
+      <br />
 
-    <div class="destacado">
-        <p style="margin: 0; font-size: 17px; line-height: 1.6;">
-            🎯 <b>Nuestra filosofía:</b> hablar de lo grande sin olvidarnos de lo pequeño. De <i>God of War</i> y también del juego indie que nadie conoce. De Marvel y también de ese cómic underground que te cambia la manera de ver las cosas.
+      <div class="destacado">
+        <p style="margin: 0; font-size: 17px; line-height: 1.6">
+          🎯 <b>Nuestra filosofía:</b> hablar de lo grande sin olvidarnos de lo
+          pequeño. De <i>God of War</i> y también del juego indie que nadie
+          conoce. De Marvel y también de ese cómic underground que te cambia la
+          manera de ver las cosas.
         </p>
-    </div>
+      </div>
 
-    <br>
+      <br />
 
-    <div class="seccion-intro">
+      <div class="seccion-intro">
         <h2>Los videojuegos como forma de arte</h2>
         <p>
-            Cuando empezamos a jugar, los videojuegos eran sobre todo un pasatiempo. Algo para desconectar después del colegio. Con los años, la industria ha evolucionado hasta un punto en el que ya no tiene sentido discutir si los videojuegos son arte: lo son, y además están contando historias que difícilmente podrían contarse en ningún otro medio.
+          Cuando empezamos a jugar, los videojuegos eran sobre todo un
+          pasatiempo. Algo para desconectar después del colegio. Con los años,
+          la industria ha evolucionado hasta un punto en el que ya no tiene
+          sentido discutir si los videojuegos son arte: lo son, y además están
+          contando historias que difícilmente podrían contarse en ningún otro
+          medio.
         </p>
         <p>
-            Títulos como <i>The Last of Us</i>, <i>Red Dead Redemption 2</i> o <i>Disco Elysium</i> ofrecen experiencias narrativas al mismo nivel que las mejores series o películas. Y al mismo tiempo, juegos pequeños hechos por estudios de dos o tres personas (hablamos de <i>Celeste</i>, <i>Hollow Knight</i>, <i>Undertale</i>) demuestran que no hace falta un presupuesto millonario para crear obras maestras.
+          Títulos como <i>The Last of Us</i>, <i>Red Dead Redemption 2</i> o
+          <i>Disco Elysium</i> ofrecen experiencias narrativas al mismo nivel
+          que las mejores series o películas. Y al mismo tiempo, juegos pequeños
+          hechos por estudios de dos o tres personas (hablamos de
+          <i>Celeste</i>, <i>Hollow Knight</i>, <i>Undertale</i>) demuestran que
+          no hace falta un presupuesto millonario para crear obras maestras.
         </p>
         <p>
-            Vivimos una época extraña: los grandes estudios AAA sufren para sacar proyectos a tiempo y los jugadores nos quejamos cada vez más de bugs, microtransacciones y cinismo. Mientras tanto, la escena indie no para de regalarnos joyas. En PixelCode queremos hablar de ambas cosas, porque las dos forman parte del mismo medio que tanto nos gusta.
+          Vivimos una época extraña: los grandes estudios AAA sufren para sacar
+          proyectos a tiempo y los jugadores nos quejamos cada vez más de bugs,
+          microtransacciones y cinismo. Mientras tanto, la escena indie no para
+          de regalarnos joyas. En PixelCode queremos hablar de ambas cosas,
+          porque las dos forman parte del mismo medio que tanto nos gusta.
         </p>
-    </div>
+      </div>
 
-    <br>
+      <br />
 
-    <div class="seccion-intro">
+      <div class="seccion-intro">
         <h2>Cómics, manga y el universo de las viñetas</h2>
         <p>
-            Los cómics llevan décadas demostrando que son mucho más que historias de gente con capa. Desde los clásicos de Alan Moore hasta lo que está saliendo hoy en las editoriales independientes, el formato de la viñeta sigue siendo uno de los vehículos narrativos más potentes que existen. Y si hablamos de manga, ya ni te contamos: Japón ha construido todo un lenguaje propio que ha cruzado fronteras y ha enganchado a varias generaciones seguidas.
+          Los cómics llevan décadas demostrando que son mucho más que historias
+          de gente con capa. Desde los clásicos de Alan Moore hasta lo que está
+          saliendo hoy en las editoriales independientes, el formato de la
+          viñeta sigue siendo uno de los vehículos narrativos más potentes que
+          existen. Y si hablamos de manga, ya ni te contamos: Japón ha
+          construido todo un lenguaje propio que ha cruzado fronteras y ha
+          enganchado a varias generaciones seguidas.
         </p>
         <p>
-            En el blog tendremos espacio para Marvel, para DC, para los independientes que nadie lee y para los mangas eternos que todos hemos intentado terminar alguna vez (sí, <i>One Piece</i>, te miramos a ti). Queremos escribir sobre por qué ciertas historias nos marcan, por qué algunas adaptaciones funcionan y otras no, y por qué sigue valiendo la pena entrar en una librería especializada a pasar la tarde hojeando.
+          En el blog tendremos espacio para Marvel, para DC, para los
+          independientes que nadie lee y para los mangas eternos que todos hemos
+          intentado terminar alguna vez (sí, <i>One Piece</i>, te miramos a ti).
+          Queremos escribir sobre por qué ciertas historias nos marcan, por qué
+          algunas adaptaciones funcionan y otras no, y por qué sigue valiendo la
+          pena entrar en una librería especializada a pasar la tarde hojeando.
         </p>
-    </div>
+      </div>
 
-    <br>
+      <br />
 
-    <div class="seccion-intro">
+      <div class="seccion-intro">
         <h2>La comunidad es lo que lo hace especial</h2>
         <p>
-            Si algo hemos aprendido con los años es que lo mejor de todo este mundo no son los productos: es la <b>gente</b>. Las convenciones, los torneos, los foros, las partidas de rol, los canales de Twitch pequeños donde te sientes parte de algo. La cultura friki ha creado comunidades en las que mucha gente ha encontrado amigos para toda la vida, parejas, vocaciones profesionales e incluso maneras de afrontar momentos difíciles.
+          Si algo hemos aprendido con los años es que lo mejor de todo este
+          mundo no son los productos: es la <b>gente</b>. Las convenciones, los
+          torneos, los foros, las partidas de rol, los canales de Twitch
+          pequeños donde te sientes parte de algo. La cultura friki ha creado
+          comunidades en las que mucha gente ha encontrado amigos para toda la
+          vida, parejas, vocaciones profesionales e incluso maneras de afrontar
+          momentos difíciles.
         </p>
         <p>
-            Por eso, aunque el blog vaya a hablar mucho de obras concretas, también queremos dedicar tiempo a las personas que las hacen posibles: desarrolladores independientes, dibujantes, traductores, organizadores de eventos, cosplayers, streamers… Todos forman parte del ecosistema y, sin ellos, no habría nada de lo que nos gusta.
+          Por eso, aunque el blog vaya a hablar mucho de obras concretas,
+          también queremos dedicar tiempo a las personas que las hacen posibles:
+          desarrolladores independientes, dibujantes, traductores, organizadores
+          de eventos, cosplayers, streamers… Todos forman parte del ecosistema
+          y, sin ellos, no habría nada de lo que nos gusta.
         </p>
-    </div>
+      </div>
 
-    <br>
+      <br />
 
-    <div class="seccion-equipo">
+      <div class="seccion-equipo">
         <h2>El equipo detrás del proyecto</h2>
-        <p style="color: #666; font-style: italic;">Estos son los cuatro estudiantes responsables de que esto exista:</p>
+        <p style="color: #666; font-style: italic">
+          Estos son los cuatro estudiantes responsables de que esto exista:
+        </p>
 
         <div class="miembro">
-            <div class="avatar">
-                <svg width="80" height="80" viewBox="0 0 80 80">
-                    <circle cx="40" cy="40" r="37" fill="#ff6b6b" stroke="#ffcc33" stroke-width="3"/>
-                    <text x="40" y="51" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="white">CG</text>
-                </svg>
-            </div>
-            <div class="info">
-                <h3>Cristian Guillén Niño</h3>
-                <p>El encargado de que las ideas no se queden en el aire. Organizador del grupo y apasionado de los RPG con historias largas. Siempre tiene una teoría sobre el final de cualquier saga.</p>
-            </div>
-            <div style="clear: both;"></div>
+          <div class="avatar">
+            <svg width="80" height="80" viewBox="0 0 80 80">
+              <circle
+                cx="40"
+                cy="40"
+                r="37"
+                fill="#ff6b6b"
+                stroke="#ffcc33"
+                stroke-width="3"
+              />
+              <text
+                x="40"
+                y="51"
+                text-anchor="middle"
+                font-family="Georgia, serif"
+                font-size="28"
+                font-weight="bold"
+                fill="white"
+              >
+                CG
+              </text>
+            </svg>
+          </div>
+          <div class="info">
+            <h3>Cristian Guillén Niño</h3>
+            <p>
+              El encargado de que las ideas no se queden en el aire. Organizador
+              del grupo y apasionado de los RPG con historias largas. Siempre
+              tiene una teoría sobre el final de cualquier saga.
+            </p>
+          </div>
+          <div style="clear: both"></div>
         </div>
 
         <div class="miembro">
-            <div class="avatar">
-                <svg width="80" height="80" viewBox="0 0 80 80">
-                    <circle cx="40" cy="40" r="37" fill="#4ecdc4" stroke="#ffcc33" stroke-width="3"/>
-                    <text x="40" y="51" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="white">RS</text>
-                </svg>
-            </div>
-            <div class="info">
-                <h3>Raúl Sánchez Andrade</h3>
-                <p>Defensor del videojuego retro y coleccionista de consolas antiguas. Cree que buena parte de lo que hoy se considera innovador ya estaba inventado en los 90, y a veces tiene razón.</p>
-            </div>
-            <div style="clear: both;"></div>
+          <div class="avatar">
+            <svg width="80" height="80" viewBox="0 0 80 80">
+              <circle
+                cx="40"
+                cy="40"
+                r="37"
+                fill="#4ecdc4"
+                stroke="#ffcc33"
+                stroke-width="3"
+              />
+              <text
+                x="40"
+                y="51"
+                text-anchor="middle"
+                font-family="Georgia, serif"
+                font-size="28"
+                font-weight="bold"
+                fill="white"
+              >
+                RS
+              </text>
+            </svg>
+          </div>
+          <div class="info">
+            <h3>Raúl Sánchez Andrade</h3>
+            <p>
+              Defensor del videojuego retro y coleccionista de consolas
+              antiguas. Cree que buena parte de lo que hoy se considera
+              innovador ya estaba inventado en los 90, y a veces tiene razón.
+            </p>
+          </div>
+          <div style="clear: both"></div>
         </div>
 
         <div class="miembro">
-            <div class="avatar">
-                <svg width="80" height="80" viewBox="0 0 80 80">
-                    <circle cx="40" cy="40" r="37" fill="#ffcc33" stroke="#1a1a2e" stroke-width="3"/>
-                    <text x="40" y="51" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#1a1a2e">SR</text>
-                </svg>
-            </div>
-            <div class="info">
-                <h3>Sergio Reyes Caravaca</h3>
-                <p>El cinéfilo del grupo. Si hay un estreno de ciencia ficción, lo ha visto el día uno. Le encanta analizar guiones, estructuras narrativas y cualquier cosa escrita por Tolkien.</p>
-            </div>
-            <div style="clear: both;"></div>
+          <div class="avatar">
+            <svg width="80" height="80" viewBox="0 0 80 80">
+              <circle
+                cx="40"
+                cy="40"
+                r="37"
+                fill="#ffcc33"
+                stroke="#1a1a2e"
+                stroke-width="3"
+              />
+              <text
+                x="40"
+                y="51"
+                text-anchor="middle"
+                font-family="Georgia, serif"
+                font-size="28"
+                font-weight="bold"
+                fill="#1a1a2e"
+              >
+                SR
+              </text>
+            </svg>
+          </div>
+          <div class="info">
+            <h3>Sergio Reyes Caravaca</h3>
+            <p>
+              El experto en el ambito competitivo del equipo. Siempre está al
+              tanto de las últimas novedades en equipos, torneos y campeonatos.
+            </p>
+          </div>
+          <div style="clear: both"></div>
         </div>
 
         <div class="miembro">
-            <div class="avatar">
-                <svg width="80" height="80" viewBox="0 0 80 80">
-                    <circle cx="40" cy="40" r="37" fill="#a06cd5" stroke="#ffcc33" stroke-width="3"/>
-                    <text x="40" y="51" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="white">TB</text>
-                </svg>
-            </div>
-            <div class="info">
-                <h3>Tomás Bernal Montalbán</h3>
-                <p>El experto en cómics y manga del equipo. Tiene una colección que le hace perder espacio en su habitación cada año. Tiene opiniones muy firmes sobre cada adaptación al cine y a la TV.</p>
-            </div>
-            <div style="clear: both;"></div>
+          <div class="avatar">
+            <svg width="80" height="80" viewBox="0 0 80 80">
+              <circle
+                cx="40"
+                cy="40"
+                r="37"
+                fill="#a06cd5"
+                stroke="#ffcc33"
+                stroke-width="3"
+              />
+              <text
+                x="40"
+                y="51"
+                text-anchor="middle"
+                font-family="Georgia, serif"
+                font-size="28"
+                font-weight="bold"
+                fill="white"
+              >
+                TB
+              </text>
+            </svg>
+          </div>
+          <div class="info">
+            <h3>Tomás Bernal Montalbán</h3>
+            <p>
+              El experto en cómics y manga del equipo. Tiene una colección que
+              le hace perder espacio en su habitación cada año. Tiene opiniones
+              muy firmes sobre cada adaptación al cine y a la TV.
+            </p>
+          </div>
+          <div style="clear: both"></div>
         </div>
+      </div>
 
-    </div>
+      <br />
 
-    <br>
-
-    <div class="seccion-intro">
+      <div class="seccion-intro">
         <h2>¿Qué vas a encontrar por aquí?</h2>
         <p>
-            La idea es publicar contenido de forma regular, organizándolo en las secciones que aparecen en el menú superior. Así te haces una idea de lo que viene:
+          La idea es publicar contenido de forma regular, organizándolo en las
+          secciones que aparecen en el menú superior. Así te haces una idea de
+          lo que viene:
         </p>
-        <ul style="line-height: 1.8; font-size: 16px;">
-            <li><b>Noticias:</b> lo último del mundo de los videojuegos, el cine, las series y los cómics, siempre con nuestra opinión y un poco de contexto.</li>
-            <li><b>Eventos:</b> convenciones, ferias, torneos y cualquier cita importante de la agenda friki nacional e internacional.</li>
-            <li><b>Curiosidades:</b> teorías, datos raros, secretos de desarrollo, referencias ocultas y todo ese tipo de cosas que hacen tan disfrutable este mundillo.</li>
-            <li><b>Próximos lanzamientos:</b> calendario con los juegos, películas y cómics que están por salir y que nos están haciendo contar los días.</li>
+        <ul style="line-height: 1.8; font-size: 16px">
+          <li>
+            <b>Noticias:</b> lo último del mundo de los videojuegos, el cine,
+            las series y los cómics, siempre con nuestra opinión y un poco de
+            contexto.
+          </li>
+          <li>
+            <b>Eventos:</b> convenciones, ferias, torneos y cualquier cita
+            importante de la agenda friki nacional e internacional.
+          </li>
+          <li>
+            <b>Curiosidades:</b> teorías, datos raros, secretos de desarrollo,
+            referencias ocultas y todo ese tipo de cosas que hacen tan
+            disfrutable este mundillo.
+          </li>
+          <li>
+            <b>Próximos lanzamientos:</b> calendario con los juegos, películas y
+            cómics que están por salir y que nos están haciendo contar los días.
+          </li>
         </ul>
+      </div>
+
+      <br />
+
+      <div class="cta">
+        <p>
+          <b>¿Te suena interesante?</b> Entonces vas a disfrutar lo que viene.
+          Echa un ojo a las categorías del menú y ponte cómod@. Este proyecto
+          empieza pequeño, pero con muchas ganas.
+        </p>
+      </div>
     </div>
 
-    <br>
-
-    <div class="cta">
-        <p><b>¿Te suena interesante?</b> Entonces vas a disfrutar lo que viene. Echa un ojo a las categorías del menú y ponte cómod@. Este proyecto empieza pequeño, pero con muchas ganas.</p>
-    </div>
-
-</div>
-
-<div class="footer">
-    <p style="margin: 0;">© 2026 PixelCode — Proyecto de la asignatura de Entornos de Desarrollo</p>
-    <p style="font-size: 13px; margin-top: 8px;">Cristian · Raúl · Sergio · Tomás</p>
-    <p style="font-size: 12px; margin-top: 12px;">
-        <a href="#">Contacto</a> |
-        <a href="#">Sobre el proyecto</a> |
+    <div class="footer">
+      <p style="margin: 0">
+        © 2026 PixelCode — Proyecto de la asignatura de Entornos de Desarrollo
+      </p>
+      <p style="font-size: 13px; margin-top: 8px">
+        Cristian · Raúl · Sergio · Tomás
+      </p>
+      <p style="font-size: 12px; margin-top: 12px">
+        <a href="#">Contacto</a> | <a href="#">Sobre el proyecto</a> |
         <a href="#">Política de privacidad</a> |
         <a href="#">RSS</a>
-    </p>
-</div>
-
-</body>
+      </p>
+    </div>
+  </body>
 </html>
