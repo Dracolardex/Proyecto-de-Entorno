@@ -223,7 +223,7 @@ body {
   border: 2px solid #1a1a2e;
   border-radius: 8px;
   padding: 20px;
-  width: 350px;
+  width: 450px;
 }
 
 .calendario h2 {
@@ -257,9 +257,10 @@ body {
   padding: 12px;
   text-align: center;
   border: 1px solid #e6dfd0;
-  height: 45px;
+  height: 80px;
   font-size: 16px;
   font-weight: 500;
+  vertical-align: top;
 }
 
 .calendario table tbody tr:nth-child(odd) {
@@ -282,6 +283,104 @@ body {
 
   .calendario {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
   }
+}
+
+/* Estilos para la leyenda de temas */
+.leyenda-temas {
+  margin-top: 50px;
+  text-align: center;
+  padding: 30px;
+  background-color: #faf7ed;
+  border-radius: 8px;
+  border: 2px solid #1a1a2e;
+}
+
+.leyenda-temas h2 {
+  color: #1a1a2e;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.items-leyenda {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.item-leyenda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.color-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #1a1a2e;
+}
+
+.color-box.portal {
+  background-color: #ffcc33;
+}
+
+.color-box.lol {
+  background-color: #ff6b6b;
+}
+
+.color-box.pokemon {
+  background-color: #4ecdc4;
+}
+
+.color-box.jojos {
+  background-color: #a06cd5;
+}
+
+.item-leyenda p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+/* Estilos para eventos dentro de los calendarios */
+.evento-portal {
+  display: block;
+  color: #1a1a2e;
+  border-bottom: 3px solid #ffcc33;
+  font-size: 12px;
+  margin-top: 8px;
+  padding-bottom: 4px;
+}
+
+.evento-lol {
+  display: block;
+  color: #1a1a2e;
+  border-bottom: 3px solid #ff6b6b;
+  font-size: 12px;
+  margin-top: 8px;
+  padding-bottom: 4px;
+}
+
+.evento-pokemon {
+  display: block;
+  color: #1a1a2e;
+  border-bottom: 3px solid #4ecdc4;
+  font-size: 12px;
+  margin-top: 8px;
+  padding-bottom: 4px;
+}
+
+.evento-jojos {
+  display: block;
+  color: #1a1a2e;
+  border-bottom: 3px solid #a06cd5;
+  font-size: 12px;
+  margin-top: 8px;
+  padding-bottom: 4px;
 }
