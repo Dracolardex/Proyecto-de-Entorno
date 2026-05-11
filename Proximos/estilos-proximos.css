@@ -1,0 +1,260 @@
+body {
+    background-color: #f4f1ea;
+    font-family: Georgia, serif;
+    margin: 0px;
+    padding: 0px;
+    color: #3a3a3a;
+}
+
+
+.header {
+    background-color: #1a1a2e;
+    padding: 22px 40px;
+    border-bottom: 4px solid #ffcc33;
+    height: 60px;
+}
+
+.logo {
+    float: left;
+    margin-top: 0px;
+}
+
+.nav {
+    float: right;
+    margin-top: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: 25px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Georgia, serif;
+    padding: 8px 4px;
+}
+
+.nav ul li a:hover {
+    color: #ffcc33;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #1a1a2e;
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    min-width: 180px;
+    border: 1px solid #ffcc33;
+    z-index: 10;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block;
+    margin: 0;
+    position: relative;
+}
+
+.submenu li a {
+    display: block;
+    padding: 8px 15px;
+    color: white;
+}
+
+.submenu li a:hover {
+    background-color: #2d2d4a;
+    color: #ffcc33;
+}
+
+
+
+.contenido {
+    width: 780px;
+    margin: 35px auto;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #e6dfd0;
+    box-shadow: 4px 4px 0px #e6dfd0;
+}
+
+.hero {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #ffcc33;
+}
+
+.seccion-intro {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+.mes-grupo {
+    margin-top: 25px;
+}
+
+.mes-titulo {
+    color: #1a1a2e;
+    border-left: 5px solid #ffcc33;
+    padding-left: 12px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.lanzamiento {
+    background-color: #faf7ed;
+    border: 1px solid #e6dfd0;
+    padding: 18px;
+    margin-top: 15px;
+}
+
+.lanzamiento.destacado-lanzamiento {
+    border: 2px solid #ffcc33;
+    box-shadow: 4px 4px 0px #ffcc33;
+    background-color: white;
+}
+
+.lanzamiento.sin-fecha {
+    background-color: #f4f1ea;
+    opacity: 0.92;
+}
+
+.lanzamiento-fecha {
+    float: left;
+    width: 70px;
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-right: 18px;
+    border: 2px solid #1a1a2e;
+}
+
+.lanzamiento-fecha-destacada {
+    background-color: #ffcc33;
+    color: #1a1a2e;
+    border-color: #ffcc33;
+}
+
+.lanzamiento-fecha .dia {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.lanzamiento-fecha .mes-abrev {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+.lanzamiento-info {
+    overflow: hidden;
+}
+
+.lanzamiento-info h3 {
+    margin: 8px 0 4px 0;
+    color: #1a1a2e;
+    font-size: 20px;
+}
+
+.lanzamiento-info p {
+    margin: 8px 0 0 0;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #444;
+}
+
+.lanzamiento-info .plataforma {
+    color: #888;
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.tipo {
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 8px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.tipo-videojuego {
+    background-color: #1a1a2e;
+    color: #ffcc33;
+}
+
+.tipo-cine {
+    background-color: #c0392b;
+    color: white;
+}
+
+.tipo-serie {
+    background-color: #1e4d5c;
+    color: white;
+}
+
+.tipo-comic {
+    background-color: #4a3a6e;
+    color: white;
+}
+
+.badge-destacado {
+    display: inline-block;
+    background-color: #ffcc33;
+    color: #1a1a2e;
+    font-size: 11px;
+    padding: 3px 8px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+
+.cta {
+    margin-top: 30px;
+    background-color: #fff3cd;
+    padding: 18px;
+    border: 1px dashed #1a1a2e;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.footer {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #ffcc33;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
