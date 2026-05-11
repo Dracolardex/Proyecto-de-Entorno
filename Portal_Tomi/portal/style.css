@@ -17,8 +17,13 @@ h2 {
   color: orange;
 }
 
+h3 {
+  font-size: 26px;
+  color: rgb(219, 143, 255);
+}
+
 #color {
-  background-color: white;
+  background-color: rgb(240, 240, 240);
   position: absolute;
   margin-left: 0;
   margin-right: 0;
@@ -32,4 +37,8 @@ h2 {
 footer {
   position: relative;
   bottom: 0;
+}
+
+b {
+  font-size: 20px;
 }
