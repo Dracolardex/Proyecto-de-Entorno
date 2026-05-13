@@ -1,0 +1,362 @@
+<!-- Eventos con calendario -->
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos - PixelCode</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <svg
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          style="vertical-align: middle"
+        >
+          <rect x="0" y="0" width="60" height="60" rx="10" fill="#ffcc33" />
+          <rect x="3" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="9" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="15" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="21" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="21" width="6" height="6" fill="#1a1a2e" />
+          <rect x="21" y="21" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="9" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="15" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="21" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="33" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="39" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="45" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="51" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="21" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="33" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="39" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="45" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="51" y="39" width="6" height="6" fill="#1a1a2e" />
+        </svg>
+        <span
+          style="
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            margin-left: 14px;
+            vertical-align: middle;
+            letter-spacing: 1px;
+          "
+          >PixelCode</span
+        >
+      </div>
+
+      <div class="nav">
+        <ul>
+          <li><a href="blog.html">Noticias</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li class="dropdown">
+            <a href="#">Curiosidades ▾</a>
+            <ul class="submenu">
+              <li>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    style="vertical-align: middle; margin-right: 8px"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      fill="none"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="4"
+                      fill="none"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="12"
+                      y1="2"
+                      x2="12"
+                      y2="8"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="12"
+                      y1="16"
+                      x2="12"
+                      y2="22"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="2"
+                      y1="12"
+                      x2="8"
+                      y2="12"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="16"
+                      y1="12"
+                      x2="22"
+                      y2="12"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  Portal
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    style="vertical-align: middle; margin-right: 8px"
+                  >
+                    <path
+                      d="M3 19 L3 9 L7 13 L12 5 L17 13 L21 9 L21 19 Z"
+                      fill="#ffcc33"
+                    />
+                    <circle cx="3" cy="9" r="1.5" fill="#ffcc33" />
+                    <circle cx="12" cy="5" r="1.5" fill="#ffcc33" />
+                    <circle cx="21" cy="9" r="1.5" fill="#ffcc33" />
+                  </svg>
+                  LoL
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    style="vertical-align: middle; margin-right: 8px"
+                  >
+                    <circle cx="12" cy="12" r="10" fill="#ffcc33" />
+                    <path d="M2 12 A10 10 0 0 1 22 12 Z" fill="#ff6b6b" />
+                    <rect x="2" y="11" width="20" height="2" fill="#1a1a2e" />
+                    <circle cx="12" cy="12" r="3.2" fill="#1a1a2e" />
+                    <circle cx="12" cy="12" r="1.6" fill="white" />
+                  </svg>
+                  Pokémon
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    style="vertical-align: middle; margin-right: 8px"
+                  >
+                    <polygon
+                      points="12,2 14.6,9 22,9 16,13.5 18.3,21 12,16.5 5.7,21 8,13.5 2,9 9.4,9"
+                      fill="#ffcc33"
+                    />
+                  </svg>
+                  JoJos
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Próximos lanzamientos</a></li>
+        </ul>
+      </div>
+
+      <div style="clear: both"></div>
+    </div>
+
+    <main>
+      <div class="contenido">
+        <h1 style="margin: 0; font-size: 36px; color: #1a1a2e">
+          Eventos 
+        </h1>
+        
+      <section class="calendarios">
+        <!-- Calendario de Abril -->
+        <div class="calendario">
+          <h2>Abril 2026</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Lun</th>
+                <th>Mar</th>
+                <th>Mié</th>
+                <th>Jue</th>
+                <th>Vie</th>
+                <th>Sab</th>
+                <th>Dom</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>1<span class="evento-lol">Actualización Aprils fools LOL</span></td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29<span class="evento-lol">Inicio season 2 League of Legends</span></td>
+                <td>30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Calendario de Mayo -->
+        <div class="calendario">
+          <h2>Mayo 2026</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Lun</th>
+                <th>Mar</th>
+                <th>Mié</th>
+                <th>Jue</th>
+                <th>Vie</th>
+                <th>Sab</th>
+                <th>Dom</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </section>
+
+      <div class="leyenda-temas">
+        <h2>Temas principales</h2>
+        <div class="items-leyenda">
+          <div class="item-leyenda">
+            <div class="color-box portal"></div>
+            <p>Portal</p>
+          </div>
+          <div class="item-leyenda">
+            <div class="color-box lol"></div>
+            <p>LoL</p>
+          </div>
+          <div class="item-leyenda">
+            <div class="color-box pokemon"></div>
+            <p>Pokémon</p>
+          </div>
+          <div class="item-leyenda">
+            <div class="color-box jojos"></div>
+            <p>JoJos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p style="margin: 0">
+        © 2026 PixelCode — Proyecto de la asignatura de Entornos de Desarrollo
+      </p>
+      <p style="font-size: 13px; margin-top: 8px">
+        Cristian · Raúl · Sergio · Tomás
+      </p>
+      <p style="font-size: 12px; margin-top: 12px">
+        <a href="#">Contacto</a> | <a href="#">Sobre el proyecto</a> |
+        <a href="#">Política de privacidad</a> |
+        <a href="#">RSS</a>
+      </p>
+    </div>
+  </body>
+</html>
