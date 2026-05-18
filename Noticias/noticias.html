@@ -1,17 +1,24 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Noticias del mundo friki en PixelCode: videojuegos, cine, series, cómics e industria."
+    />
     <title>Noticias - PixelCode</title>
     <link rel="stylesheet" href="estilos-noticias.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="logo">
+    <header class="header">
+      <a href="../blog.html" class="logo" aria-label="PixelCode - Inicio">
         <svg
           width="60"
           height="60"
           viewBox="0 0 60 60"
-          style="vertical-align: middle"
+          aria-hidden="true"
+          focusable="false"
         >
           <rect x="0" y="0" width="60" height="60" rx="10" fill="#ffcc33" />
           <rect x="3" y="15" width="6" height="6" fill="#1a1a2e" />
@@ -38,26 +45,18 @@
           <rect x="45" y="39" width="6" height="6" fill="#1a1a2e" />
           <rect x="51" y="39" width="6" height="6" fill="#1a1a2e" />
         </svg>
-        <span
-          style="
-            color: white;
-            font-size: 32px;
-            font-weight: bold;
-            margin-left: 14px;
-            vertical-align: middle;
-            letter-spacing: 1px;
-          "
-          >PixelCode</span
-        >
-      </div>
+        <span class="logo-text">PixelCode</span>
+      </a>
 
-      <div class="nav">
+      <nav class="nav" aria-label="Navegación principal">
         <ul>
           <li><a href="../blog.html">Inicio</a></li>
           <li><a href="noticias.html">Noticias</a></li>
           <li><a href="#">Eventos</a></li>
           <li class="dropdown">
-            <a href="#">Curiosidades ▾</a>
+            <a href="#" aria-haspopup="true" aria-expanded="false"
+              >Curiosidades ▾</a
+            >
             <ul class="submenu">
               <li>
                 <a href="#">
@@ -65,7 +64,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <circle
                       cx="12"
@@ -125,7 +126,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <path
                       d="M3 19 L3 9 L7 13 L12 5 L17 13 L21 9 L21 19 Z"
@@ -144,7 +147,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <circle cx="12" cy="12" r="10" fill="#ffcc33" />
                     <path d="M2 12 A10 10 0 0 1 22 12 Z" fill="#ff6b6b" />
@@ -161,7 +166,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <polygon
                       points="12,2 14.6,9 22,9 16,13.5 18.3,21 12,16.5 5.7,21 8,13.5 2,9 9.4,9"
@@ -175,35 +182,35 @@
           </li>
           <li><a href="../Proximos/proximos.html">Próximos lanzamientos</a></li>
         </ul>
-      </div>
+      </nav>
+    </header>
 
-      <div style="clear: both"></div>
-    </div>
-
-    <div class="contenido">
-      <div class="hero">
-        <h1 style="margin: 0; font-size: 36px; color: #1a1a2e">📰 Noticias</h1>
-        <p style="font-size: 18px; color: #555; margin-top: 10px">
+    <main class="contenido">
+      <section class="hero">
+        <h1>📰 Noticias</h1>
+        <p class="hero-subtitle">
           Lo último del mundo friki, con nuestra opinión y sin postureo
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="seccion-intro">
-        <p style="font-size: 16px; line-height: 1.7">
+      <section class="seccion-intro">
+        <p>
           Aquí vamos a ir publicando lo que más nos llame la atención cada
           semana. No pretendemos ser el primer medio en dar la noticia, pero sí
           queremos contártela bien y con contexto. Si te falta alguna,
           escríbenos: el blog está vivo y nos encanta recibir sugerencias.
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="noticia destacada">
-        <div class="noticia-imagen" style="background-color: #1a1a2e">
-          <svg width="100%" height="180" viewBox="0 0 400 180">
+      <article class="noticia destacada">
+        <figure class="noticia-imagen" style="background-color: #1a1a2e">
+          <svg
+            width="100%"
+            height="180"
+            viewBox="0 0 400 180"
+            aria-hidden="true"
+            focusable="false"
+          >
             <rect width="400" height="180" fill="#1a1a2e" />
             <circle cx="200" cy="90" r="45" fill="#ffcc33" />
             <path d="M155 90 A45 45 0 0 1 245 90 Z" fill="#ff6b6b" />
@@ -222,10 +229,12 @@
               imagen ilustrativa
             </text>
           </svg>
-        </div>
+        </figure>
         <div class="noticia-contenido">
-          <span class="categoria">VIDEOJUEGOS</span>
-          <span class="fecha">5 de mayo, 2026</span>
+          <header class="noticia-meta">
+            <span class="categoria">VIDEOJUEGOS</span>
+            <time class="fecha" datetime="2026-05-05">5 de mayo, 2026</time>
+          </header>
           <h2>
             Nintendo confirma la nueva entrega principal de Pokémon para finales
             de año
@@ -233,10 +242,11 @@
           <p>
             Después de meses de filtraciones, rumores y teorías de YouTubers que
             han hecho horas y horas de contenido sobre tres capturas de pantalla
-            borrosas, <b>The Pokémon Company</b> ha confirmado oficialmente la
-            próxima generación de la saga. La presentación, emitida en un
-            Pokémon Direct sorpresa, ha mostrado los tres iniciales y un mapa
-            que apunta a una región inspirada en el sudeste asiático.
+            borrosas, <strong>The Pokémon Company</strong> ha confirmado
+            oficialmente la próxima generación de la saga. La presentación,
+            emitida en un Pokémon Direct sorpresa, ha mostrado los tres
+            iniciales y un mapa que apunta a una región inspirada en el sudeste
+            asiático.
           </p>
           <p>
             Lo más interesante, sin embargo, no son los nuevos diseños (que
@@ -247,13 +257,17 @@
             cosa se sostiene, pero la primera impresión es buena.
           </p>
         </div>
-      </div>
+      </article>
 
-      <br />
-
-      <div class="noticia">
-        <div class="noticia-imagen" style="background-color: #c0392b">
-          <svg width="100%" height="180" viewBox="0 0 400 180">
+      <article class="noticia">
+        <figure class="noticia-imagen" style="background-color: #c0392b">
+          <svg
+            width="100%"
+            height="180"
+            viewBox="0 0 400 180"
+            aria-hidden="true"
+            focusable="false"
+          >
             <rect width="400" height="180" fill="#c0392b" />
             <polygon
               points="200,40 215,80 260,80 225,108 240,150 200,125 160,150 175,108 140,80 185,80"
@@ -271,10 +285,12 @@
               imagen ilustrativa
             </text>
           </svg>
-        </div>
+        </figure>
         <div class="noticia-contenido">
-          <span class="categoria">CINE</span>
-          <span class="fecha">2 de mayo, 2026</span>
+          <header class="noticia-meta">
+            <span class="categoria">CINE</span>
+            <time class="fecha" datetime="2026-05-02">2 de mayo, 2026</time>
+          </header>
           <h2>
             El reboot de una saga clásica de los 90 enciende la guerra de fans
           </h2>
@@ -294,13 +310,17 @@
             aunque la nostalgia ya está haciendo de las suyas.
           </p>
         </div>
-      </div>
+      </article>
 
-      <br />
-
-      <div class="noticia">
-        <div class="noticia-imagen" style="background-color: #2d4a3e">
-          <svg width="100%" height="180" viewBox="0 0 400 180">
+      <article class="noticia">
+        <figure class="noticia-imagen" style="background-color: #2d4a3e">
+          <svg
+            width="100%"
+            height="180"
+            viewBox="0 0 400 180"
+            aria-hidden="true"
+            focusable="false"
+          >
             <rect width="400" height="180" fill="#2d4a3e" />
             <rect
               x="120"
@@ -326,10 +346,12 @@
               imagen ilustrativa
             </text>
           </svg>
-        </div>
+        </figure>
         <div class="noticia-contenido">
-          <span class="categoria">INDUSTRIA</span>
-          <span class="fecha">28 de abril, 2026</span>
+          <header class="noticia-meta">
+            <span class="categoria">INDUSTRIA</span>
+            <time class="fecha" datetime="2026-04-28">28 de abril, 2026</time>
+          </header>
           <h2>
             Otro estudio indie cierra: ¿qué está pasando con los desarrolladores
             pequeños?
@@ -352,13 +374,17 @@
             los últimos años han salido precisamente de equipos así.
           </p>
         </div>
-      </div>
+      </article>
 
-      <br />
-
-      <div class="noticia">
-        <div class="noticia-imagen" style="background-color: #4a3a6e">
-          <svg width="100%" height="180" viewBox="0 0 400 180">
+      <article class="noticia">
+        <figure class="noticia-imagen" style="background-color: #4a3a6e">
+          <svg
+            width="100%"
+            height="180"
+            viewBox="0 0 400 180"
+            aria-hidden="true"
+            focusable="false"
+          >
             <rect width="400" height="180" fill="#4a3a6e" />
             <rect x="160" y="50" width="80" height="90" fill="#ffcc33" />
             <rect x="170" y="60" width="60" height="12" fill="#1a1a2e" />
@@ -377,10 +403,12 @@
               imagen ilustrativa
             </text>
           </svg>
-        </div>
+        </figure>
         <div class="noticia-contenido">
-          <span class="categoria">CÓMICS</span>
-          <span class="fecha">25 de abril, 2026</span>
+          <header class="noticia-meta">
+            <span class="categoria">CÓMICS</span>
+            <time class="fecha" datetime="2026-04-25">25 de abril, 2026</time>
+          </header>
           <h2>
             Vuelve un autor mítico con una serie limitada que promete dar mucho
             de qué hablar
@@ -401,13 +429,17 @@
             en julio.
           </p>
         </div>
-      </div>
+      </article>
 
-      <br />
-
-      <div class="noticia">
-        <div class="noticia-imagen" style="background-color: #1e4d5c">
-          <svg width="100%" height="180" viewBox="0 0 400 180">
+      <article class="noticia">
+        <figure class="noticia-imagen" style="background-color: #1e4d5c">
+          <svg
+            width="100%"
+            height="180"
+            viewBox="0 0 400 180"
+            aria-hidden="true"
+            focusable="false"
+          >
             <rect width="400" height="180" fill="#1e4d5c" />
             <rect
               x="100"
@@ -435,10 +467,12 @@
               imagen ilustrativa
             </text>
           </svg>
-        </div>
+        </figure>
         <div class="noticia-contenido">
-          <span class="categoria">SERIES</span>
-          <span class="fecha">20 de abril, 2026</span>
+          <header class="noticia-meta">
+            <span class="categoria">SERIES</span>
+            <time class="fecha" datetime="2026-04-20">20 de abril, 2026</time>
+          </header>
           <h2>
             La adaptación que nadie pedía está siendo, sorprendentemente, una de
             las mejores series del año
@@ -458,31 +492,27 @@
             contrario, y este es uno de esos casos. Avisados estáis.
           </p>
         </div>
-      </div>
+      </article>
 
-      <br />
-
-      <div class="cta">
+      <aside class="cta">
         <p>
-          <b>¿Quieres que cubramos algo en concreto?</b> Escríbenos y lo
-          añadimos a la lista. Las mejores noticias suelen venir de personas que
-          ya estaban siguiendo el tema antes que nosotros.
+          <strong>¿Quieres que cubramos algo en concreto?</strong> Escríbenos y
+          lo añadimos a la lista. Las mejores noticias suelen venir de personas
+          que ya estaban siguiendo el tema antes que nosotros.
         </p>
-      </div>
-    </div>
+      </aside>
+    </main>
 
-    <div class="footer">
-      <p style="margin: 0">
+    <footer class="footer">
+      <p>
         © 2026 PixelCode — Proyecto de la asignatura de Entornos de Desarrollo
       </p>
-      <p style="font-size: 13px; margin-top: 8px">
-        Cristian · Raúl · Sergio · Tomás
-      </p>
-      <p style="font-size: 12px; margin-top: 12px">
+      <p class="footer-autores">Cristian · Raúl · Sergio · Tomás</p>
+      <nav class="footer-nav" aria-label="Enlaces de pie de página">
         <a href="#">Contacto</a> | <a href="#">Sobre el proyecto</a> |
         <a href="#">Política de privacidad</a> |
         <a href="#">RSS</a>
-      </p>
-    </div>
+      </nav>
+    </footer>
   </body>
 </html>
