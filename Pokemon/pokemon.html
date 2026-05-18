@@ -1,17 +1,24 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Curiosidades verificables de Pokémon: origen, anécdotas de desarrollo, glitches famosos y datos de la franquicia."
+    />
     <title>Curiosidades de Pokémon - PixelCode</title>
     <link rel="stylesheet" href="estilos-pokemon.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="logo">
+    <header class="header">
+      <a href="../blog.html" class="logo" aria-label="PixelCode - Inicio">
         <svg
           width="60"
           height="60"
           viewBox="0 0 60 60"
-          style="vertical-align: middle"
+          aria-hidden="true"
+          focusable="false"
         >
           <rect x="0" y="0" width="60" height="60" rx="10" fill="#ffcc33" />
           <rect x="3" y="15" width="6" height="6" fill="#1a1a2e" />
@@ -38,26 +45,18 @@
           <rect x="45" y="39" width="6" height="6" fill="#1a1a2e" />
           <rect x="51" y="39" width="6" height="6" fill="#1a1a2e" />
         </svg>
-        <span
-          style="
-            color: white;
-            font-size: 32px;
-            font-weight: bold;
-            margin-left: 14px;
-            vertical-align: middle;
-            letter-spacing: 1px;
-          "
-          >PixelCode</span
-        >
-      </div>
+        <span class="logo-text">PixelCode</span>
+      </a>
 
-      <div class="nav">
+      <nav class="nav" aria-label="Navegación principal">
         <ul>
           <li><a href="../blog.html">Inicio</a></li>
           <li><a href="../Noticias/noticias.html">Noticias</a></li>
           <li><a href="#">Eventos</a></li>
           <li class="dropdown">
-            <a href="#">Curiosidades ▾</a>
+            <a href="#" aria-haspopup="true" aria-expanded="false"
+              >Curiosidades ▾</a
+            >
             <ul class="submenu">
               <li>
                 <a href="#">
@@ -65,7 +64,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <circle
                       cx="12"
@@ -125,7 +126,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <path
                       d="M3 19 L3 9 L7 13 L12 5 L17 13 L21 9 L21 19 Z"
@@ -144,7 +147,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <circle cx="12" cy="12" r="10" fill="#ffcc33" />
                     <path d="M2 12 A10 10 0 0 1 22 12 Z" fill="#ff6b6b" />
@@ -161,7 +166,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <polygon
                       points="12,2 14.6,9 22,9 16,13.5 18.3,21 12,16.5 5.7,21 8,13.5 2,9 9.4,9"
@@ -175,26 +182,26 @@
           </li>
           <li><a href="../Proximos/proximos.html">Próximos lanzamientos</a></li>
         </ul>
-      </div>
+      </nav>
+    </header>
 
-      <div style="clear: both"></div>
-    </div>
-
-    <div class="contenido">
-      <div class="hero">
-        <h1 style="margin: 0; font-size: 36px; color: #1a1a2e">
-          ⚡ Curiosidades de Pokémon
-        </h1>
-        <p style="font-size: 18px; color: #555; margin-top: 10px">
+    <main class="contenido">
+      <section class="hero">
+        <h1>⚡ Curiosidades de Pokémon</h1>
+        <p class="hero-subtitle">
           Datos, secretos y guiños de la franquicia más grande del
           entretenimiento
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="poke-portada">
-        <svg width="100%" height="200" viewBox="0 0 400 200">
+      <figure class="poke-portada">
+        <svg
+          width="100%"
+          height="200"
+          viewBox="0 0 400 200"
+          aria-hidden="true"
+          focusable="false"
+        >
           <rect width="400" height="200" fill="#1a1a2e" />
           <circle cx="200" cy="100" r="65" fill="#ffcc33" />
           <path d="M135 100 A65 65 0 0 1 265 100 Z" fill="#ff6b6b" />
@@ -209,20 +216,19 @@
           <circle cx="40" cy="100" r="3" fill="#ffcc33" opacity="0.6" />
           <circle cx="360" cy="110" r="3" fill="#ffcc33" opacity="0.6" />
         </svg>
-      </div>
+      </figure>
 
-      <br />
-
-      <div class="seccion-intro">
+      <section class="seccion-intro">
         <h2>¿Qué es Pokémon?</h2>
         <p>
-          <b>Pokémon</b> (abreviatura de <i>Pocket Monsters</i>, "monstruos de
-          bolsillo" en japonés) es una franquicia japonesa creada por
-          <b>Satoshi Tajiri</b>, desarrollada por Game Freak y distribuida por
-          Nintendo. Los dos primeros juegos, <i>Pokémon Rojo</i> y
-          <i>Pokémon Verde</i>, salieron en Japón el 27 de febrero de 1996 para
-          Game Boy. Casi tres décadas después, Pokémon es considerada la
-          franquicia mediática más lucrativa de la historia.
+          <strong>Pokémon</strong> (abreviatura de <em>Pocket Monsters</em>,
+          "monstruos de bolsillo" en japonés) es una franquicia japonesa creada
+          por <strong>Satoshi Tajiri</strong>, desarrollada por Game Freak y
+          distribuida por Nintendo. Los dos primeros juegos,
+          <em>Pokémon Rojo</em> y <em>Pokémon Verde</em>, salieron en Japón el
+          <time datetime="1996-02-27">27 de febrero de 1996</time> para Game
+          Boy. Casi tres décadas después, Pokémon es considerada la franquicia
+          mediática más lucrativa de la historia.
         </p>
         <p>
           La premisa de los juegos es engañosamente simple: el jugador encarna a
@@ -232,81 +238,68 @@
           profundas, un universo enorme y una propuesta emocional que ha
           conectado con varias generaciones consecutivas.
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="seccion-intro">
+      <section class="seccion-intro">
         <h2>El origen: la infancia de Satoshi Tajiri</h2>
         <p>
-          <b>Satoshi Tajiri</b> nació en 1965 en Machida, una zona suburbana al
-          oeste de Tokio que en aquel entonces conservaba aún un ambiente rural,
-          con bosques, estanques y arrozales. De niño, Tajiri era un apasionado
-          del coleccionismo de insectos: pasaba horas explorando la naturaleza,
-          atrapando bichos y clasificándolos. Sus compañeros de colegio lo
-          apodaron "Dr. Bug" (Doctor Insecto) y él mismo quería ser entomólogo
-          de mayor.
+          <strong>Satoshi Tajiri</strong> nació en 1965 en Machida, una zona
+          suburbana al oeste de Tokio que en aquel entonces conservaba aún un
+          ambiente rural, con bosques, estanques y arrozales. De niño, Tajiri
+          era un apasionado del coleccionismo de insectos: pasaba horas
+          explorando la naturaleza, atrapando bichos y clasificándolos. Sus
+          compañeros de colegio lo apodaron "Dr. Bug" (Doctor Insecto) y él
+          mismo quería ser entomólogo de mayor.
         </p>
         <p>
           Con los años, Machida se urbanizó, los bosques desaparecieron y los
           insectos se hicieron escasos. Cuando ya trabajaba como desarrollador
           de videojuegos, Tajiri vio a dos niños jugando con dos Game Boy
-          conectadas mediante el <b>Game Link Cable</b> e imaginó pequeñas
-          criaturas viajando por ese cable. Esa imagen, mezclada con sus
-          recuerdos de infancia, fue la semilla de Pokémon:
-          <b
+          conectadas mediante el <strong>Game Link Cable</strong> e imaginó
+          pequeñas criaturas viajando por ese cable. Esa imagen, mezclada con
+          sus recuerdos de infancia, fue la semilla de Pokémon:
+          <strong
             >un videojuego que recreara la sensación de explorar, capturar
-            criaturas e intercambiarlas con otras personas</b
+            criaturas e intercambiarlas con otras personas</strong
           >. El desarrollo, en su estudio Game Freak, duró seis años y estuvo a
           punto de quebrar a la compañía.
         </p>
-        <p
-          style="
-            font-size: 13px;
-            color: #777;
-            font-style: italic;
-            margin-top: 10px;
-          "
-        >
+        <p class="fuente">
           Fuente: entrevistas con Satoshi Tajiri recogidas por Bulbapedia, Time
           Asia (1999) y el artículo "Pokémon – from bugs to blockbuster" de
           Simon Parkin en The Guardian.
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="destacado">
-        <p style="margin: 0; font-size: 17px; line-height: 1.6">
-          💡 <b>Dato verificable:</b> Pokémon es considerada la
-          <b
+      <aside class="destacado">
+        <p>
+          💡 <strong>Dato verificable:</strong> Pokémon es considerada la
+          <strong
             >franquicia mediática con mayores ingresos brutos acumulados de toda
-            la historia</b
+            la historia</strong
           >, por delante de Hello Kitty, Mickey Mouse y Star Wars. Las
           estimaciones varían según la fuente y el año del estudio, pero sitúan
           los ingresos totales acumulados muy por encima de los 100.000 millones
           de dólares.
         </p>
-      </div>
+      </aside>
 
-      <br />
-
-      <div class="seccion-intro">
+      <section class="seccion-intro">
         <h2>Cifras que dan vértigo</h2>
         <p>
           Algunos datos documentados para entender la dimensión real de la
           franquicia:
         </p>
-        <ul style="line-height: 1.9; font-size: 16px">
+        <ul class="lista-cifras">
           <li>
             La saga de videojuegos ha vendido
-            <b>más de 480 millones de copias</b> en todo el mundo, lo que la
-            convierte en la segunda franquicia de videojuegos más vendida tras
-            Mario.
+            <strong>más de 480 millones de copias</strong> en todo el mundo, lo
+            que la convierte en la segunda franquicia de videojuegos más vendida
+            tras Mario.
           </li>
           <li>
-            <i>Pokémon GO</i> es el juego para móviles más descargado de la
-            historia, con <b>más de 1.000 millones de descargas</b>.
+            <em>Pokémon GO</em> es el juego para móviles más descargado de la
+            historia, con <strong>más de 1.000 millones de descargas</strong>.
           </li>
           <li>
             El anime de Pokémon emitió ininterrumpidamente desde 1997 hasta 2023
@@ -314,17 +307,15 @@
             antes de su retirada.
           </li>
           <li>
-            Los personajes de <b>Ash Ketchum y Gary Oak</b> reciben en la
-            versión japonesa los nombres "Satoshi" y "Shigeru", en homenaje al
-            propio Tajiri y a su mentor Shigeru Miyamoto, creador de Mario y
+            Los personajes de <strong>Ash Ketchum y Gary Oak</strong> reciben en
+            la versión japonesa los nombres "Satoshi" y "Shigeru", en homenaje
+            al propio Tajiri y a su mentor Shigeru Miyamoto, creador de Mario y
             Zelda.
           </li>
         </ul>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="seccion-intro">
+      <section class="seccion-intro">
         <h2>Curiosidades del desarrollo y la franquicia</h2>
 
         <h3 class="curiosidad-titulo">
@@ -332,21 +323,23 @@
         </h3>
         <p>
           Aunque Bulbasaur ocupa el puesto #001 de la Pokédex, no fue el primero
-          en diseñarse. Según entrevistas con <b>Ken Sugimori</b>, el director
-          artístico de la franquicia, el primer Pokémon diseñado fue
-          <b>Rhydon</b> (#112). Esto se puede verificar por su
-          <i>index number</i> interno en Generación I, que es 001, y porque sus
-          bocetos aparecen en los primeros conceptos del proyecto cuando todavía
-          se llamaba <i>Capsule Monsters</i>. De hecho, en los juegos originales
-          se pueden ver estatuas de Rhydon decorando los gimnasios.
+          en diseñarse. Según entrevistas con
+          <strong>Ken Sugimori</strong>, el director artístico de la franquicia,
+          el primer Pokémon diseñado fue <strong>Rhydon</strong> (#112). Esto se
+          puede verificar por su <em>index number</em> interno en Generación I,
+          que es 001, y porque sus bocetos aparecen en los primeros conceptos
+          del proyecto cuando todavía se llamaba <em>Capsule Monsters</em>. De
+          hecho, en los juegos originales se pueden ver estatuas de Rhydon
+          decorando los gimnasios.
         </p>
 
         <h3 class="curiosidad-titulo">🌍 El nombre original era otro</h3>
         <p>
           El juego no se llamó Pokémon desde el principio. Su nombre de
-          desarrollo fue <b>Capsule Monsters</b> (Capumon), pero tuvo que
-          cambiarse por problemas de marca registrada. Acabó convirtiéndose en
-          <i>Pocket Monsters</i>, y de ahí en su abreviatura <b>Pokémon</b>.
+          desarrollo fue <strong>Capsule Monsters</strong> (Capumon), pero tuvo
+          que cambiarse por problemas de marca registrada. Acabó convirtiéndose
+          en <em>Pocket Monsters</em>, y de ahí en su abreviatura
+          <strong>Pokémon</strong>.
         </p>
 
         <h3 class="curiosidad-titulo">
@@ -356,30 +349,29 @@
           Pokémon Rojo y Verde (y todas las generaciones posteriores) se
           publicaron en parejas con diferencias entre versiones para forzar a
           los jugadores a
-          <b>intercambiar Pokémon mediante el cable de enlace</b>. Esa mecánica
-          social, novedosa en su momento, fue una idea directa de Tajiri
-          inspirada en cómo él intercambiaba insectos con otros niños.
+          <strong>intercambiar Pokémon mediante el cable de enlace</strong>. Esa
+          mecánica social, novedosa en su momento, fue una idea directa de
+          Tajiri inspirada en cómo él intercambiaba insectos con otros niños.
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="seccion-intro">
+      <section class="seccion-intro">
         <h2>🥚 Easter eggs y datos famosos de la franquicia</h2>
         <p>
           Algunos de los secretos, glitches y curiosidades más recordadas por la
           comunidad de Pokémon, todos verificables:
         </p>
-      </div>
+      </section>
 
-      <div class="easter-egg">
-        <div class="easter-numero">01</div>
+      <article class="easter-egg">
+        <div class="easter-numero" aria-hidden="true">01</div>
         <div class="easter-contenido">
           <h3>MissingNo., el glitch más famoso de la historia</h3>
           <p>
             Probablemente
-            <b>el glitch más conocido en la historia de los videojuegos</b>.
-            Hablando con un anciano de Pueblo Viridian que enseña a capturar
+            <strong
+              >el glitch más conocido en la historia de los videojuegos</strong
+            >. Hablando con un anciano de Pueblo Viridian que enseña a capturar
             Pokémon y volando inmediatamente a Cinnabar Island para nadar por la
             costa este, en Pokémon Rojo/Azul aparecía un Pokémon corrupto
             llamado MissingNo. Su captura duplicaba el sexto objeto del
@@ -390,121 +382,110 @@
             pero fueron eliminados antes del lanzamiento final.
           </p>
         </div>
-        <div style="clear: both"></div>
-      </div>
+      </article>
 
-      <div class="easter-egg">
-        <div class="easter-numero">02</div>
+      <article class="easter-egg">
+        <div class="easter-numero" aria-hidden="true">02</div>
         <div class="easter-contenido">
           <h3>El camión bajo el SS Anne</h3>
           <p>
             Uno de los rumores más virales de la era pre-internet masivo: si
             conseguías rodear el barco SS Anne y llegar al camión decorativo del
-            muelle de Carmín, debajo aparecía <b>Mew</b>. El camión solo era
-            accesible con el movimiento <i>Surf</i>, que normalmente se obtenía
-            mucho más tarde, cuando ya no podías volver a esa zona. El rumor era
-            falso: bajo el camión no había nada. Pero alimentó durante años la
-            búsqueda de Mew, hasta el punto de que Game Freak ha hecho varios
-            guiños al camión en juegos posteriores.
+            muelle de Carmín, debajo aparecía <strong>Mew</strong>. El camión
+            solo era accesible con el movimiento <em>Surf</em>, que normalmente
+            se obtenía mucho más tarde, cuando ya no podías volver a esa zona.
+            El rumor era falso: bajo el camión no había nada. Pero alimentó
+            durante años la búsqueda de Mew, hasta el punto de que Game Freak ha
+            hecho varios guiños al camión en juegos posteriores.
           </p>
         </div>
-        <div style="clear: both"></div>
-      </div>
+      </article>
 
-      <div class="easter-egg">
-        <div class="easter-numero">03</div>
+      <article class="easter-egg">
+        <div class="easter-numero" aria-hidden="true">03</div>
         <div class="easter-contenido">
           <h3>Mew se añadió aprovechando 300 bytes libres</h3>
           <p>
             Quizá la mejor historia de desarrollo de toda la franquicia.
-            <b>Shigeki Morimoto</b>, programador principal de Pokémon
-            Rojo/Verde, contó en una entrevista <i>Iwata Asks</i> que, tras
-            eliminar las herramientas de depuración del cartucho, quedaron
-            <b>exactamente 300 bytes libres</b> (aproximadamente cuatro líneas
-            de texto). Morimoto aprovechó ese hueco para colar a Mew en el
-            último momento, casi como una broma interna,
-            <b>sin avisar a Nintendo</b>. La intención era que Mew nunca pudiera
-            obtenerse normalmente, pero un bug permitió que algunos jugadores lo
-            encontraran, y el revuelo que se generó fue tan grande que se acabó
-            organizando el primer evento oficial de la historia de Pokémon en la
-            revista CoroCoro: 78.000 personas se apuntaron y 20 ganaron un Mew
-            enviado directamente por Morimoto desde su PC. La leyenda nació por
-            casualidad.
+            <strong>Shigeki Morimoto</strong>, programador principal de Pokémon
+            Rojo/Verde, contó en una entrevista <em>Iwata Asks</em>
+            que, tras eliminar las herramientas de depuración del cartucho,
+            quedaron
+            <strong>exactamente 300 bytes libres</strong> (aproximadamente
+            cuatro líneas de texto). Morimoto aprovechó ese hueco para colar a
+            Mew en el último momento, casi como una broma interna,
+            <strong>sin avisar a Nintendo</strong>. La intención era que Mew
+            nunca pudiera obtenerse normalmente, pero un bug permitió que
+            algunos jugadores lo encontraran, y el revuelo que se generó fue tan
+            grande que se acabó organizando el primer evento oficial de la
+            historia de Pokémon en la revista CoroCoro: 78.000 personas se
+            apuntaron y 20 ganaron un Mew enviado directamente por Morimoto
+            desde su PC. La leyenda nació por casualidad.
           </p>
-          <p
-            style="
-              font-size: 12px;
-              color: #777;
-              font-style: italic;
-              margin-top: 8px;
-            "
-          >
+          <p class="fuente">
             Fuente: entrevista oficial Iwata Asks publicada por Nintendo.
           </p>
         </div>
-        <div style="clear: both"></div>
-      </div>
+      </article>
 
-      <div class="easter-egg">
-        <div class="easter-numero">04</div>
+      <article class="easter-egg">
+        <div class="easter-numero" aria-hidden="true">04</div>
         <div class="easter-contenido">
           <h3>La Torre Pokémon de Pueblo Lavanda</h3>
           <p>
             Pueblo Lavanda es famoso por su música inquietante y por su
-            <b>Torre Pokémon</b>, un cementerio para Pokémon fallecidos. En una
-            de las escenas más memorables del juego original, el Team Rocket ha
-            matado a una madre <b>Marowak</b> que estaba protegiendo a su cría,
-            y su espíritu se manifiesta como fantasma en la torre. Hasta que el
-            jugador no consigue el Silph Scope (una lente que permite
-            identificar fantasmas), la madre Marowak ataca como un fantasma sin
-            nombre. Es uno de los pasajes más oscuros del juego.
+            <strong>Torre Pokémon</strong>, un cementerio para Pokémon
+            fallecidos. En una de las escenas más memorables del juego original,
+            el Team Rocket ha matado a una madre <strong>Marowak</strong> que
+            estaba protegiendo a su cría, y su espíritu se manifiesta como
+            fantasma en la torre. Hasta que el jugador no consigue el Silph
+            Scope (una lente que permite identificar fantasmas), la madre
+            Marowak ataca como un fantasma sin nombre. Es uno de los pasajes más
+            oscuros del juego.
           </p>
         </div>
-        <div style="clear: both"></div>
-      </div>
+      </article>
 
-      <div class="easter-egg">
-        <div class="easter-numero">05</div>
+      <article class="easter-egg">
+        <div class="easter-numero" aria-hidden="true">05</div>
         <div class="easter-contenido">
           <h3>El "Síndrome de Pueblo Lavanda": un mito urbano</h3>
           <p>
             Asociado a la torre anterior está uno de los
-            <b>mitos urbanos más famosos del mundo del videojuego</b>: que la
-            música de Pueblo Lavanda en la versión japonesa de Rojo/Verde
+            <strong>mitos urbanos más famosos del mundo del videojuego</strong>:
+            que la música de Pueblo Lavanda en la versión japonesa de Rojo/Verde
             provocó dolores de cabeza, sangrados de nariz e incluso suicidios
             entre niños japoneses, supuestamente por incluir tonos de alta
-            frecuencia. <b>No existe ninguna evidencia oficial</b> de que esto
-            ocurriera, y la mayoría de investigaciones serias lo consideran un
-            creepypasta inventado en foros. Aun así, sigue siendo la pieza
-            musical más debatida de la franquicia, y la propia melodía original
-            (con sus ocho bits agudos y disonantes) es ya inquietante por sí
-            sola.
+            frecuencia. <strong>No existe ninguna evidencia oficial</strong> de
+            que esto ocurriera, y la mayoría de investigaciones serias lo
+            consideran un creepypasta inventado en foros. Aun así, sigue siendo
+            la pieza musical más debatida de la franquicia, y la propia melodía
+            original (con sus ocho bits agudos y disonantes) es ya inquietante
+            por sí sola.
           </p>
         </div>
-        <div style="clear: both"></div>
-      </div>
+      </article>
 
-      <div class="easter-egg">
-        <div class="easter-numero">06</div>
+      <article class="easter-egg">
+        <div class="easter-numero" aria-hidden="true">06</div>
         <div class="easter-contenido">
           <h3>El padre desaparecido del protagonista</h3>
           <p>
             Una rareza recurrente y comentadísima entre los fans: en casi todos
             los juegos principales,
-            <b>el padre del protagonista nunca aparece</b>. Solo se ve a la
-            madre, que típicamente cura a tus Pokémon y te da dinero al volver a
-            casa. La única excepción notable de los juegos principales es
-            Pokémon Rubí/Zafiro, donde el padre, <b>Norman</b>, es el líder de
-            gimnasio de Petalia. Game Freak nunca ha dado una explicación
-            oficial sobre los padres ausentes y la comunidad lleva décadas
-            elaborando teorías al respecto.
+            <strong>el padre del protagonista nunca aparece</strong>. Solo se ve
+            a la madre, que típicamente cura a tus Pokémon y te da dinero al
+            volver a casa. La única excepción notable de los juegos principales
+            es Pokémon Rubí/Zafiro, donde el padre, <strong>Norman</strong>, es
+            el líder de gimnasio de Petalia. Game Freak nunca ha dado una
+            explicación oficial sobre los padres ausentes y la comunidad lleva
+            décadas elaborando teorías al respecto.
           </p>
         </div>
-        <div style="clear: both"></div>
-      </div>
+      </article>
 
-      <div class="easter-egg">
-        <div class="easter-numero">07</div>
+      <article class="easter-egg">
+        <div class="easter-numero" aria-hidden="true">07</div>
         <div class="easter-contenido">
           <h3>Ho-Oh en el primer episodio del anime</h3>
           <p>
@@ -514,39 +495,37 @@
             existía, y muchos espectadores asumieron que era simplemente un
             Pokémon legendario inventado para la escena. Cuando salió Pokémon
             Oro/Plata en 1999, los fans reconocieron que aquel pájaro era
-            <b>Ho-Oh</b>, el Pokémon legendario de la nueva generación. Game
-            Freak había planificado su existencia desde antes del estreno del
-            anime, lo que convierte la escena en uno de los easter eggs más
-            largos y satisfactorios de la franquicia.
+            <strong>Ho-Oh</strong>, el Pokémon legendario de la nueva
+            generación. Game Freak había planificado su existencia desde antes
+            del estreno del anime, lo que convierte la escena en uno de los
+            easter eggs más largos y satisfactorios de la franquicia.
           </p>
         </div>
-        <div style="clear: both"></div>
-      </div>
+      </article>
 
-      <br />
-
-      <div class="cta">
+      <aside class="cta">
         <p>
-          <b>¿Conoces alguna otra curiosidad bien documentada de Pokémon?</b>
+          <strong
+            >¿Conoces alguna otra curiosidad bien documentada de
+            Pokémon?</strong
+          >
           Escríbenos. La franquicia tiene casi tres décadas de historia y
           todavía hay muchas anécdotas reales por contar. Esto es solo el
           principio.
         </p>
-      </div>
-    </div>
+      </aside>
+    </main>
 
-    <div class="footer">
-      <p style="margin: 0">
+    <footer class="footer">
+      <p>
         © 2026 PixelCode — Proyecto de la asignatura de Entornos de Desarrollo
       </p>
-      <p style="font-size: 13px; margin-top: 8px">
-        Cristian · Raúl · Sergio · Tomás
-      </p>
-      <p style="font-size: 12px; margin-top: 12px">
+      <p class="footer-autores">Cristian · Raúl · Sergio · Tomás</p>
+      <nav class="footer-nav" aria-label="Enlaces de pie de página">
         <a href="#">Contacto</a> | <a href="#">Sobre el proyecto</a> |
         <a href="#">Política de privacidad</a> |
         <a href="#">RSS</a>
-      </p>
-    </div>
+      </nav>
+    </footer>
   </body>
 </html>

@@ -1,17 +1,24 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Calendario de próximos lanzamientos friki: videojuegos, películas, series y cómics con fechas confirmadas."
+    />
     <title>Próximos lanzamientos - PixelCode</title>
     <link rel="stylesheet" href="estilos-proximos.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="logo">
+    <header class="header">
+      <a href="../blog.html" class="logo" aria-label="PixelCode - Inicio">
         <svg
           width="60"
           height="60"
           viewBox="0 0 60 60"
-          style="vertical-align: middle"
+          aria-hidden="true"
+          focusable="false"
         >
           <rect x="0" y="0" width="60" height="60" rx="10" fill="#ffcc33" />
           <rect x="3" y="15" width="6" height="6" fill="#1a1a2e" />
@@ -38,26 +45,18 @@
           <rect x="45" y="39" width="6" height="6" fill="#1a1a2e" />
           <rect x="51" y="39" width="6" height="6" fill="#1a1a2e" />
         </svg>
-        <span
-          style="
-            color: white;
-            font-size: 32px;
-            font-weight: bold;
-            margin-left: 14px;
-            vertical-align: middle;
-            letter-spacing: 1px;
-          "
-          >PixelCode</span
-        >
-      </div>
+        <span class="logo-text">PixelCode</span>
+      </a>
 
-      <div class="nav">
+      <nav class="nav" aria-label="Navegación principal">
         <ul>
           <li><a href="../blog.html">Inicio</a></li>
           <li><a href="../Noticias/noticias.html">Noticias</a></li>
           <li><a href="#">Eventos</a></li>
           <li class="dropdown">
-            <a href="#">Curiosidades ▾</a>
+            <a href="#" aria-haspopup="true" aria-expanded="false"
+              >Curiosidades ▾</a
+            >
             <ul class="submenu">
               <li>
                 <a href="#">
@@ -65,7 +64,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <circle
                       cx="12"
@@ -125,7 +126,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <path
                       d="M3 19 L3 9 L7 13 L12 5 L17 13 L21 9 L21 19 Z"
@@ -144,7 +147,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <circle cx="12" cy="12" r="10" fill="#ffcc33" />
                     <path d="M2 12 A10 10 0 0 1 22 12 Z" fill="#ff6b6b" />
@@ -161,7 +166,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <polygon
                       points="12,2 14.6,9 22,9 16,13.5 18.3,21 12,16.5 5.7,21 8,13.5 2,9 9.4,9"
@@ -175,44 +182,36 @@
           </li>
           <li><a href="proximos.html">Próximos lanzamientos</a></li>
         </ul>
-      </div>
+      </nav>
+    </header>
 
-      <div style="clear: both"></div>
-    </div>
-
-    <div class="contenido">
-      <div class="hero">
-        <h1 style="margin: 0; font-size: 36px; color: #1a1a2e">
-          🚀 Próximos lanzamientos
-        </h1>
-        <p style="font-size: 18px; color: #555; margin-top: 10px">
+    <main class="contenido">
+      <section class="hero">
+        <h1>🚀 Próximos lanzamientos</h1>
+        <p class="hero-subtitle">
           El calendario friki de los próximos meses, sin spoilers y con muchas
           ganas
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="seccion-intro">
-        <p style="font-size: 16px; line-height: 1.7">
+      <section class="seccion-intro">
+        <p>
           Aquí encontrarás los lanzamientos que más nos están haciendo contar
           los días. Videojuegos, películas, series y cómics que tienen fecha
           confirmada (o que al menos pretenden tenerla, porque ya sabemos cómo
           va este sector). Si echas en falta alguno o quieres recomendarnos
           algo, escríbenos y lo añadimos al calendario.
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="mes-grupo">
+      <section class="mes-grupo">
         <h2 class="mes-titulo">📅 Mayo 2026</h2>
 
-        <div class="lanzamiento">
-          <div class="lanzamiento-fecha">
-            <div class="dia">22</div>
-            <div class="mes-abrev">MAY</div>
-          </div>
+        <article class="lanzamiento">
+          <time class="lanzamiento-fecha" datetime="2026-05-22">
+            <span class="dia">22</span>
+            <span class="mes-abrev">MAY</span>
+          </time>
           <div class="lanzamiento-info">
             <span class="tipo tipo-videojuego">VIDEOJUEGO</span>
             <h3>Crimson Sky: Ascendant</h3>
@@ -225,14 +224,13 @@
               tocará esperar tres parches.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
+        </article>
 
-        <div class="lanzamiento">
-          <div class="lanzamiento-fecha">
-            <div class="dia">29</div>
-            <div class="mes-abrev">MAY</div>
-          </div>
+        <article class="lanzamiento">
+          <time class="lanzamiento-fecha" datetime="2026-05-29">
+            <span class="dia">29</span>
+            <span class="mes-abrev">MAY</span>
+          </time>
           <div class="lanzamiento-info">
             <span class="tipo tipo-cine">CINE</span>
             <h3>El Último Eco</h3>
@@ -245,20 +243,17 @@
               buen marketing boca a boca desde los festivales.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
-      </div>
+        </article>
+      </section>
 
-      <br />
-
-      <div class="mes-grupo">
+      <section class="mes-grupo">
         <h2 class="mes-titulo">📅 Junio 2026</h2>
 
-        <div class="lanzamiento">
-          <div class="lanzamiento-fecha">
-            <div class="dia">07</div>
-            <div class="mes-abrev">JUN</div>
-          </div>
+        <article class="lanzamiento">
+          <time class="lanzamiento-fecha" datetime="2026-06-07">
+            <span class="dia">07</span>
+            <span class="mes-abrev">JUN</span>
+          </time>
           <div class="lanzamiento-info">
             <span class="tipo tipo-comic">CÓMIC</span>
             <h3>Vértigo: Edición Integral</h3>
@@ -271,14 +266,13 @@
               salieron.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
+        </article>
 
-        <div class="lanzamiento">
-          <div class="lanzamiento-fecha">
-            <div class="dia">14</div>
-            <div class="mes-abrev">JUN</div>
-          </div>
+        <article class="lanzamiento">
+          <time class="lanzamiento-fecha" datetime="2026-06-14">
+            <span class="dia">14</span>
+            <span class="mes-abrev">JUN</span>
+          </time>
           <div class="lanzamiento-info">
             <span class="tipo tipo-serie">SERIE</span>
             <h3>Nodos — Segunda temporada</h3>
@@ -291,14 +285,13 @@
               series con potencial que se quedan a medias ya son una constante.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
+        </article>
 
-        <div class="lanzamiento">
-          <div class="lanzamiento-fecha">
-            <div class="dia">25</div>
-            <div class="mes-abrev">JUN</div>
-          </div>
+        <article class="lanzamiento">
+          <time class="lanzamiento-fecha" datetime="2026-06-25">
+            <span class="dia">25</span>
+            <span class="mes-abrev">JUN</span>
+          </time>
           <div class="lanzamiento-info">
             <span class="tipo tipo-videojuego">VIDEOJUEGO</span>
             <h3>Lumen Sanctum</h3>
@@ -311,20 +304,20 @@
               Blasphemous, este lo tienes que probar.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
-      </div>
+        </article>
+      </section>
 
-      <br />
-
-      <div class="mes-grupo">
+      <section class="mes-grupo">
         <h2 class="mes-titulo">📅 Julio 2026</h2>
 
-        <div class="lanzamiento destacado-lanzamiento">
-          <div class="lanzamiento-fecha lanzamiento-fecha-destacada">
-            <div class="dia">11</div>
-            <div class="mes-abrev">JUL</div>
-          </div>
+        <article class="lanzamiento destacado-lanzamiento">
+          <time
+            class="lanzamiento-fecha lanzamiento-fecha-destacada"
+            datetime="2026-07-11"
+          >
+            <span class="dia">11</span>
+            <span class="mes-abrev">JUL</span>
+          </time>
           <div class="lanzamiento-info">
             <span class="tipo tipo-videojuego">VIDEOJUEGO</span>
             <span class="badge-destacado">⭐ El más esperado del verano</span>
@@ -338,14 +331,13 @@
               las cumpla todas, pero las ganas son enormes.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
+        </article>
 
-        <div class="lanzamiento">
-          <div class="lanzamiento-fecha">
-            <div class="dia">18</div>
-            <div class="mes-abrev">JUL</div>
-          </div>
+        <article class="lanzamiento">
+          <time class="lanzamiento-fecha" datetime="2026-07-18">
+            <span class="dia">18</span>
+            <span class="mes-abrev">JUL</span>
+          </time>
           <div class="lanzamiento-info">
             <span class="tipo tipo-cine">CINE</span>
             <h3>Velocity Protocol</h3>
@@ -358,20 +350,17 @@
               pero sí pasar un buen rato sin pensar demasiado.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
-      </div>
+        </article>
+      </section>
 
-      <br />
-
-      <div class="mes-grupo">
+      <section class="mes-grupo">
         <h2 class="mes-titulo">📅 Más adelante</h2>
 
-        <div class="lanzamiento sin-fecha">
-          <div class="lanzamiento-fecha">
-            <div class="dia">?</div>
-            <div class="mes-abrev">2026</div>
-          </div>
+        <article class="lanzamiento sin-fecha">
+          <time class="lanzamiento-fecha" datetime="2026">
+            <span class="dia">?</span>
+            <span class="mes-abrev">2026</span>
+          </time>
           <div class="lanzamiento-info">
             <span class="tipo tipo-videojuego">VIDEOJUEGO</span>
             <h3>Untitled Pokémon Project</h3>
@@ -384,14 +373,13 @@
               correspondiente.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
+        </article>
 
-        <div class="lanzamiento sin-fecha">
-          <div class="lanzamiento-fecha">
-            <div class="dia">?</div>
-            <div class="mes-abrev">2026</div>
-          </div>
+        <article class="lanzamiento sin-fecha">
+          <time class="lanzamiento-fecha" datetime="2026">
+            <span class="dia">?</span>
+            <span class="mes-abrev">2026</span>
+          </time>
           <div class="lanzamiento-info">
             <span class="tipo tipo-comic">CÓMIC</span>
             <h3>El regreso de un autor mítico</h3>
@@ -403,33 +391,29 @@
               para este año. La iremos siguiendo de cerca.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
-      </div>
+        </article>
+      </section>
 
-      <br />
-
-      <div class="cta">
+      <aside class="cta">
         <p>
-          <b>¿Se nos escapa algún lanzamiento importante?</b> Mantener un
-          calendario así actualizado no es fácil, así que cualquier aviso,
-          corrección o recomendación es bienvenida. Escríbenos y lo añadimos.
+          <strong>¿Se nos escapa algún lanzamiento importante?</strong>
+          Mantener un calendario así actualizado no es fácil, así que cualquier
+          aviso, corrección o recomendación es bienvenida. Escríbenos y lo
+          añadimos.
         </p>
-      </div>
-    </div>
+      </aside>
+    </main>
 
-    <div class="footer">
-      <p style="margin: 0">
+    <footer class="footer">
+      <p>
         © 2026 PixelCode — Proyecto de la asignatura de Entornos de Desarrollo
       </p>
-      <p style="font-size: 13px; margin-top: 8px">
-        Cristian · Raúl · Sergio · Tomás
-      </p>
-      <p style="font-size: 12px; margin-top: 12px">
+      <p class="footer-autores">Cristian · Raúl · Sergio · Tomás</p>
+      <nav class="footer-nav" aria-label="Enlaces de pie de página">
         <a href="#">Contacto</a> | <a href="#">Sobre el proyecto</a> |
         <a href="#">Política de privacidad</a> |
         <a href="#">RSS</a>
-      </p>
-    </div>
+      </nav>
+    </footer>
   </body>
 </html>

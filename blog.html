@@ -1,17 +1,24 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PixelCode, blog hecho por cuatro estudiantes apasionados por videojuegos, cómics, cine y cultura friki."
+    />
     <title>PixelCode - El blog del proyecto</title>
     <link rel="stylesheet" href="estilos-blog.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="logo">
+    <header class="header">
+      <a href="blog.html" class="logo" aria-label="PixelCode - Inicio">
         <svg
           width="60"
           height="60"
           viewBox="0 0 60 60"
-          style="vertical-align: middle"
+          aria-hidden="true"
+          focusable="false"
         >
           <rect x="0" y="0" width="60" height="60" rx="10" fill="#ffcc33" />
           <rect x="3" y="15" width="6" height="6" fill="#1a1a2e" />
@@ -38,26 +45,18 @@
           <rect x="45" y="39" width="6" height="6" fill="#1a1a2e" />
           <rect x="51" y="39" width="6" height="6" fill="#1a1a2e" />
         </svg>
-        <span
-          style="
-            color: white;
-            font-size: 32px;
-            font-weight: bold;
-            margin-left: 14px;
-            vertical-align: middle;
-            letter-spacing: 1px;
-          "
-          >PixelCode</span
-        >
-      </div>
+        <span class="logo-text">PixelCode</span>
+      </a>
 
-      <div class="nav">
+      <nav class="nav" aria-label="Navegación principal">
         <ul>
           <li><a href="blog.html">Inicio</a></li>
           <li><a href="Noticias/noticias.html">Noticias</a></li>
           <li><a href="#">Eventos</a></li>
           <li class="dropdown">
-            <a href="#">Curiosidades ▾</a>
+            <a href="#" aria-haspopup="true" aria-expanded="false"
+              >Curiosidades ▾</a
+            >
             <ul class="submenu">
               <li>
                 <a href="#">
@@ -65,7 +64,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <circle
                       cx="12"
@@ -125,7 +126,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <path
                       d="M3 19 L3 9 L7 13 L12 5 L17 13 L21 9 L21 19 Z"
@@ -144,7 +147,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <circle cx="12" cy="12" r="10" fill="#ffcc33" />
                     <path d="M2 12 A10 10 0 0 1 22 12 Z" fill="#ff6b6b" />
@@ -161,7 +166,9 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    style="vertical-align: middle; margin-right: 8px"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
                   >
                     <polygon
                       points="12,2 14.6,9 22,9 16,13.5 18.3,21 12,16.5 5.7,21 8,13.5 2,9 9.4,9"
@@ -175,29 +182,23 @@
           </li>
           <li><a href="Proximos/proximos.html">Próximos lanzamientos</a></li>
         </ul>
-      </div>
+      </nav>
+    </header>
 
-      <div style="clear: both"></div>
-    </div>
-
-    <div class="contenido">
-      <div class="hero">
-        <h1 style="margin: 0; font-size: 36px; color: #1a1a2e">
-          Bienvenid@ a PixelCode 🎮
-        </h1>
-        <p style="font-size: 18px; color: #555; margin-top: 10px">
+    <main class="contenido">
+      <section class="hero">
+        <h1>Bienvenid@ a PixelCode 🎮</h1>
+        <p class="hero-subtitle">
           Un blog hecho por cuatro estudiantes con demasiada pasión por el mundo
           friki
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="seccion-intro">
+      <section class="seccion-intro">
         <h2>¿Qué es PixelCode?</h2>
         <p>
-          <b>PixelCode</b> nace como proyecto de la asignatura de
-          <i>Entornos de Desarrollo</i>, pero muy rápidamente se convirtió en
+          <strong>PixelCode</strong> nace como proyecto de la asignatura de
+          <em>Entornos de Desarrollo</em>, pero muy rápidamente se convirtió en
           algo más que una práctica. Somos cuatro compañeros de clase que
           compartimos la misma obsesión: los videojuegos, los cómics, el cine de
           ciencia ficción y, en general, toda la cultura que durante años fue
@@ -209,23 +210,21 @@
           ir publicando noticias, reseñas, curiosidades, calendarios de eventos
           y reflexiones sobre todo lo que nos apasiona. No pretendemos ser una
           enciclopedia ni competir con los grandes medios: queremos tener
-          <b>nuestro propio rincón</b>, con nuestra voz, nuestras
+          <strong>nuestro propio rincón</strong>, con nuestra voz, nuestras
           recomendaciones y, sobre todo, nuestras opiniones (a veces
           impopulares).
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="seccion-intro">
+      <section class="seccion-intro">
         <h2>De ser raro a ser mainstream</h2>
         <p>
           Hace no tantos años, reconocer que te gustaba Star Wars, coleccionar
           cartas de Magic o jugar a rol con amigos un sábado por la tarde era
           motivo de bromas en el recreo. Hoy, esa misma cultura mueve cifras que
           ningún otro sector del entretenimiento puede igualar. El mundo friki
-          ha pasado de ser una afición de <i>nicho</i> a convertirse en la mayor
-          industria cultural del planeta.
+          ha pasado de ser una afición de <em>nicho</em> a convertirse en la
+          mayor industria cultural del planeta.
         </p>
         <p>
           Las películas de superhéroes llenan los cines. Los estrenos de
@@ -240,22 +239,18 @@
           comunidades pequeñas, gente apasionada y obras increíbles que merecen
           ser descubiertas. Y de eso también va a ir este blog.
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="destacado">
-        <p style="margin: 0; font-size: 17px; line-height: 1.6">
-          🎯 <b>Nuestra filosofía:</b> hablar de lo grande sin olvidarnos de lo
-          pequeño. De <i>God of War</i> y también del juego indie que nadie
-          conoce. De Marvel y también de ese cómic underground que te cambia la
-          manera de ver las cosas.
+      <aside class="destacado">
+        <p>
+          🎯 <strong>Nuestra filosofía:</strong> hablar de lo grande sin
+          olvidarnos de lo pequeño. De <em>God of War</em> y también del juego
+          indie que nadie conoce. De Marvel y también de ese cómic underground
+          que te cambia la manera de ver las cosas.
         </p>
-      </div>
+      </aside>
 
-      <br />
-
-      <div class="seccion-intro">
+      <section class="seccion-intro">
         <h2>Los videojuegos como forma de arte</h2>
         <p>
           Cuando empezamos a jugar, los videojuegos eran sobre todo un
@@ -266,12 +261,13 @@
           medio.
         </p>
         <p>
-          Títulos como <i>The Last of Us</i>, <i>Red Dead Redemption 2</i> o
-          <i>Disco Elysium</i> ofrecen experiencias narrativas al mismo nivel
+          Títulos como <em>The Last of Us</em>, <em>Red Dead Redemption 2</em> o
+          <em>Disco Elysium</em> ofrecen experiencias narrativas al mismo nivel
           que las mejores series o películas. Y al mismo tiempo, juegos pequeños
           hechos por estudios de dos o tres personas (hablamos de
-          <i>Celeste</i>, <i>Hollow Knight</i>, <i>Undertale</i>) demuestran que
-          no hace falta un presupuesto millonario para crear obras maestras.
+          <em>Celeste</em>, <em>Hollow Knight</em>, <em>Undertale</em>)
+          demuestran que no hace falta un presupuesto millonario para crear
+          obras maestras.
         </p>
         <p>
           Vivimos una época extraña: los grandes estudios AAA sufren para sacar
@@ -280,11 +276,9 @@
           de regalarnos joyas. En PixelCode queremos hablar de ambas cosas,
           porque las dos forman parte del mismo medio que tanto nos gusta.
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="seccion-intro">
+      <section class="seccion-intro">
         <h2>Cómics, manga y el universo de las viñetas</h2>
         <p>
           Los cómics llevan décadas demostrando que son mucho más que historias
@@ -298,25 +292,24 @@
         <p>
           En el blog tendremos espacio para Marvel, para DC, para los
           independientes que nadie lee y para los mangas eternos que todos hemos
-          intentado terminar alguna vez (sí, <i>One Piece</i>, te miramos a ti).
-          Queremos escribir sobre por qué ciertas historias nos marcan, por qué
-          algunas adaptaciones funcionan y otras no, y por qué sigue valiendo la
-          pena entrar en una librería especializada a pasar la tarde hojeando.
+          intentado terminar alguna vez (sí, <em>One Piece</em>, te miramos a
+          ti). Queremos escribir sobre por qué ciertas historias nos marcan, por
+          qué algunas adaptaciones funcionan y otras no, y por qué sigue
+          valiendo la pena entrar en una librería especializada a pasar la tarde
+          hojeando.
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="seccion-intro">
+      <section class="seccion-intro">
         <h2>La comunidad es lo que lo hace especial</h2>
         <p>
           Si algo hemos aprendido con los años es que lo mejor de todo este
-          mundo no son los productos: es la <b>gente</b>. Las convenciones, los
-          torneos, los foros, las partidas de rol, los canales de Twitch
-          pequeños donde te sientes parte de algo. La cultura friki ha creado
-          comunidades en las que mucha gente ha encontrado amigos para toda la
-          vida, parejas, vocaciones profesionales e incluso maneras de afrontar
-          momentos difíciles.
+          mundo no son los productos: es la <strong>gente</strong>. Las
+          convenciones, los torneos, los foros, las partidas de rol, los canales
+          de Twitch pequeños donde te sientes parte de algo. La cultura friki ha
+          creado comunidades en las que mucha gente ha encontrado amigos para
+          toda la vida, parejas, vocaciones profesionales e incluso maneras de
+          afrontar momentos difíciles.
         </p>
         <p>
           Por eso, aunque el blog vaya a hablar mucho de obras concretas,
@@ -325,19 +318,23 @@
           de eventos, cosplayers, streamers… Todos forman parte del ecosistema
           y, sin ellos, no habría nada de lo que nos gusta.
         </p>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="seccion-equipo">
+      <section class="seccion-equipo">
         <h2>El equipo detrás del proyecto</h2>
-        <p style="color: #666; font-style: italic">
+        <p class="seccion-equipo-intro">
           Estos son los cuatro estudiantes responsables de que esto exista:
         </p>
 
-        <div class="miembro">
-          <div class="avatar">
-            <svg width="80" height="80" viewBox="0 0 80 80">
+        <article class="miembro">
+          <figure class="avatar">
+            <svg
+              width="80"
+              height="80"
+              viewBox="0 0 80 80"
+              aria-hidden="true"
+              focusable="false"
+            >
               <circle
                 cx="40"
                 cy="40"
@@ -358,7 +355,7 @@
                 CG
               </text>
             </svg>
-          </div>
+          </figure>
           <div class="info">
             <h3>Cristian Guillén Niño</h3>
             <p>
@@ -367,12 +364,17 @@
               tiene una teoría sobre el final de cualquier saga.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
+        </article>
 
-        <div class="miembro">
-          <div class="avatar">
-            <svg width="80" height="80" viewBox="0 0 80 80">
+        <article class="miembro">
+          <figure class="avatar">
+            <svg
+              width="80"
+              height="80"
+              viewBox="0 0 80 80"
+              aria-hidden="true"
+              focusable="false"
+            >
               <circle
                 cx="40"
                 cy="40"
@@ -393,7 +395,7 @@
                 RS
               </text>
             </svg>
-          </div>
+          </figure>
           <div class="info">
             <h3>Raúl Sánchez Andrade</h3>
             <p>
@@ -402,12 +404,17 @@
               innovador ya estaba inventado en los 90, y a veces tiene razón.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
+        </article>
 
-        <div class="miembro">
-          <div class="avatar">
-            <svg width="80" height="80" viewBox="0 0 80 80">
+        <article class="miembro">
+          <figure class="avatar">
+            <svg
+              width="80"
+              height="80"
+              viewBox="0 0 80 80"
+              aria-hidden="true"
+              focusable="false"
+            >
               <circle
                 cx="40"
                 cy="40"
@@ -428,7 +435,7 @@
                 SR
               </text>
             </svg>
-          </div>
+          </figure>
           <div class="info">
             <h3>Sergio Reyes Caravaca</h3>
             <p>
@@ -437,12 +444,17 @@
               narrativas y cualquier cosa escrita por Tolkien.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
+        </article>
 
-        <div class="miembro">
-          <div class="avatar">
-            <svg width="80" height="80" viewBox="0 0 80 80">
+        <article class="miembro">
+          <figure class="avatar">
+            <svg
+              width="80"
+              height="80"
+              viewBox="0 0 80 80"
+              aria-hidden="true"
+              focusable="false"
+            >
               <circle
                 cx="40"
                 cy="40"
@@ -463,7 +475,7 @@
                 TB
               </text>
             </svg>
-          </div>
+          </figure>
           <div class="info">
             <h3>Tomás Bernal Montalbán</h3>
             <p>
@@ -472,64 +484,58 @@
               muy firmes sobre cada adaptación al cine y a la TV.
             </p>
           </div>
-          <div style="clear: both"></div>
-        </div>
-      </div>
+        </article>
+      </section>
 
-      <br />
-
-      <div class="seccion-intro">
+      <section class="seccion-intro">
         <h2>¿Qué vas a encontrar por aquí?</h2>
         <p>
           La idea es publicar contenido de forma regular, organizándolo en las
           secciones que aparecen en el menú superior. Así te haces una idea de
           lo que viene:
         </p>
-        <ul style="line-height: 1.8; font-size: 16px">
+        <ul class="lista-secciones">
           <li>
-            <b>Noticias:</b> lo último del mundo de los videojuegos, el cine,
-            las series y los cómics, siempre con nuestra opinión y un poco de
-            contexto.
+            <strong>Noticias:</strong> lo último del mundo de los videojuegos,
+            el cine, las series y los cómics, siempre con nuestra opinión y un
+            poco de contexto.
           </li>
           <li>
-            <b>Eventos:</b> convenciones, ferias, torneos y cualquier cita
-            importante de la agenda friki nacional e internacional.
+            <strong>Eventos:</strong> convenciones, ferias, torneos y cualquier
+            cita importante de la agenda friki nacional e internacional.
           </li>
           <li>
-            <b>Curiosidades:</b> teorías, datos raros, secretos de desarrollo,
-            referencias ocultas y todo ese tipo de cosas que hacen tan
-            disfrutable este mundillo.
+            <strong>Curiosidades:</strong> teorías, datos raros, secretos de
+            desarrollo, referencias ocultas y todo ese tipo de cosas que hacen
+            tan disfrutable este mundillo.
           </li>
           <li>
-            <b>Próximos lanzamientos:</b> calendario con los juegos, películas y
-            cómics que están por salir y que nos están haciendo contar los días.
+            <strong>Próximos lanzamientos:</strong> calendario con los juegos,
+            películas y cómics que están por salir y que nos están haciendo
+            contar los días.
           </li>
         </ul>
-      </div>
+      </section>
 
-      <br />
-
-      <div class="cta">
+      <aside class="cta">
         <p>
-          <b>¿Te suena interesante?</b> Entonces vas a disfrutar lo que viene.
-          Echa un ojo a las categorías del menú y ponte cómod@. Este proyecto
-          empieza pequeño, pero con muchas ganas.
+          <strong>¿Te suena interesante?</strong> Entonces vas a disfrutar lo
+          que viene. Echa un ojo a las categorías del menú y ponte cómod@. Este
+          proyecto empieza pequeño, pero con muchas ganas.
         </p>
-      </div>
-    </div>
+      </aside>
+    </main>
 
-    <div class="footer">
-      <p style="margin: 0">
+    <footer class="footer">
+      <p>
         © 2026 PixelCode — Proyecto de la asignatura de Entornos de Desarrollo
       </p>
-      <p style="font-size: 13px; margin-top: 8px">
-        Cristian · Raúl · Sergio · Tomás
-      </p>
-      <p style="font-size: 12px; margin-top: 12px">
+      <p class="footer-autores">Cristian · Raúl · Sergio · Tomás</p>
+      <nav class="footer-nav" aria-label="Enlaces de pie de página">
         <a href="#">Contacto</a> | <a href="#">Sobre el proyecto</a> |
         <a href="#">Política de privacidad</a> |
         <a href="#">RSS</a>
-      </p>
-    </div>
+      </nav>
+    </footer>
   </body>
 </html>
