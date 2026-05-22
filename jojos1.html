@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JoJo's Bizarre Adventure</title>
+
+    <style>
+      /* Variables mejoradas con una paleta de color más profunda y profesional */
+      :root {
+        --bg: #0b0b0e;
+        --surface: #141419;
+        --surface-light: #1f1f27;
+        --primary: #ff006e;
+        --primary-glow: rgba(255, 0, 110, 0.15);
+        --secondary: #4cc9f0;
+        --danger: #ff595e;
+        --text: #f4f4f6;
+        --muted: #a5a5b4;
+        --radius: 16px;
+        --transition: cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+        --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 12px 30px rgba(255, 0, 110, 0.2);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth; /* Hace que el salto del índice sea fluido */
+      }
+
+      body {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      header {
+        background: rgba(20, 20, 25, 0.85);
+        backdrop-filter: blur(12px); /* Efecto cristal translúcido moderno */
+        -webkit-backdrop-filter: blur(12px);
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid rgba(255, 0, 110, 0.2);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      header h1 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        color: var(--text);
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, var(--primary), var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .container {
+        width: min(1100px, 92%);
+        margin: 40px auto;
+      }
+
+      /* Estilos para el nuevo Índice de Contenidos */
+      .nav-menu {
+        background: var(--surface);
+        padding: 25px;
+        border-radius: var(--radius);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        margin-bottom: 35px;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .nav-menu-title {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--secondary);
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .nav-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        display: block;
+        color: var(--muted);
+        text-decoration: none;
+        padding: 10px 14px;
+        background: var(--surface-light);
+        border-radius: 8px;
+        font-size: 0.95rem;
+        transition: var(--transition);
+        border-left: 3px solid transparent;
+      }
+
+      .nav-links a:hover {
+        color: var(--text);
+        border-left-color: var(--primary);
+        background: rgba(255, 0, 110, 0.08);
+        transform: translateX(4px);
+      }
+
+      /* Secciones de contenido */
+      .section {
+        background: var(--surface);
+        margin-bottom: 40px;
+        padding: 35px;
+        border-radius: var(--radius);
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        box-shadow: var(--shadow-sm);
+        scroll-margin-top: 110px; /* Evita que el header pegajoso tape el título al saltar */
+      }
+
+      .section-title {
+        font-size: clamp(1.4rem, 3vw, 1.8rem);
+        color: var(--text);
+        padding-bottom: 12px;
+        margin-bottom: 25px;
+        position: relative;
+      }
+
+      /* Línea decorativa elegante debajo de los títulos */
+      .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background: var(--primary);
+        border-radius: 2px;
+      }
+
+      .section-subtitle {
+        color: var(--secondary);
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin: 30px 0 15px;
+      }
+
+      p {
+        margin-bottom: 18px;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      /* Listas de personajes optimizadas */
+      .character-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .character-list li {
+        background: var(--surface-light);
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.02);
+      }
+
+      .character-list li::before {
+        content: "◈";
+        color: var(--primary);
+        margin-right: 10px;
+        font-size: 0.8rem;
+      }
+
+      .character-list .villain {
+        color: var(--danger);
+        background: rgba(255, 89, 94, 0.05);
+        border: 1px solid rgba(255, 89, 94, 0.1);
+      }
+
+      .character-list .villain::before {
+        color: var(--danger);
+        content: "✦";
+      }
+
+      /* Galerías con diseño Grid profesional */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 35px;
+      }
+
+      /* Tarjetas con efectos fluidos y sombras dinámicas */
+      .card {
+        background: var(--surface-light);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: var(--transition);
+        border: 1px solid rgba(255, 255, 255, 0.03);
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-lg);
+        border-color: rgba(255, 0, 110, 0.3);
+      }
+
+      .card img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        transition: var(--transition);
+        filter: grayscale(15%);
+      }
+
+      .card:hover img {
+        transform: scale(1.04);
+        filter: grayscale(0%);
+      }
+
+      .card-content {
+        padding: 16px;
+        background: linear-gradient(to top, #181820, var(--surface-light));
+      }
+
+      .card-content h4 {
+        margin-bottom: 4px;
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      .card-content span {
+        color: var(--muted);
+        font-size: 0.85rem;
+        display: block;
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px;
+        margin-top: 60px;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      /* Ajustes Responsivos */
+      @media (max-width: 768px) {
+        .container {
+          margin: 20px auto;
+        }
+
+        .section {
+          padding: 22px;
+          margin-bottom: 25px;
+        }
+
+        .nav-links {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+
+        .card img {
+          height: 220px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>JoJo's Bizarre Adventure</h1>
+    </header>
+
+    <main class="container">
+      <!-- NUEVO: Índice de contenidos dinámico -->
+      <nav class="nav-menu">
+        <div class="nav-menu-title">➔ Índice de Navegación</div>
+        <ul class="nav-links">
+          <li><a href="#parte1">Parte 1: Phantom Blood</a></li>
+          <li><a href="#parte2">Parte 2: Battle Tendency</a></li>
+          <li><a href="#parte3">Parte 3: Stardust Crusaders</a></li>
+          <li><a href="#parte4">Parte 4: Diamond is Unbreakable</a></li>
+          <li><a href="#parte5">Parte 5: Golden Wind</a></li>
+          <li><a href="#parte6">Parte 6: Stone Ocean</a></li>
+          <li><a href="#pucci">Especial: Enrico Pucci</a></li>
+          <li><a href="#galeria">Galería Multimedia</a></li>
+        </ul>
+      </nav>
+
+      <!-- SECCIÓN PARTE 1 -->
+      <section id="parte1" class="section">
+        <h2 class="section-title">Parte 1: Phantom Blood (1880s - Inglaterra)</h2>
+        <p>Esta historia ocurre principalmente en Inglaterra a finales del siglo XIX. Todo comienza cuando la familia Joestar adopta a Dio Brando.</p>
+        <p>Dio no solo quiere una vida mejor: busca dominar completamente la familia Joestar y destruir la vida de Jonathan.</p>
+        <p>Cuando obtiene la máscara de piedra se convierte en vampiro, cambiando completamente la escala de la historia.</p>
+        <p>Aquí aparece el Hamon, una energía basada en la respiración que imita el poder del sol.</p>
+
+        <h3 class="section-subtitle">Personajes principales</h3>
+        <ul class="character-list">
+          <li>Jonathan Joestar (Hamon)</li>
+          <li class="villain">Dio Brando (Vampiro)</li>
+          <li>Speedwagon</li>
+          <li>Will A. Zeppeli (Hamon)</li>
+        </ul>
+      </section>
+
+      <!-- SECCIÓN PARTE 2 -->
+      <section id="parte2" class="section">
+        <h2 class="section-title">Parte 2: Battle Tendency (1938–1939)</h2>
+        <p>Esta parte ocurre a finales de los años 30. Joseph Joestar toma el protagonismo y cambia completamente el tono de la saga.</p>
+        <p>A diferencia de Jonathan, Joseph pelea usando inteligencia, engaños y estrategia.</p>
+        <p>La amenaza principal son los Hombres del Pilar, seres antiguos que buscan alcanzar la perfección biológica.</p>
+        <p>La relación entre Joseph y Caesar es uno de los pilares emocionales de la historia.</p>
+
+        <h3 class="section-subtitle">Personajes principales</h3>
+        <ul class="character-list">
+          <li>Joseph Joestar (Hamon)</li>
+          <li>Caesar Zeppeli (Hamon)</li>
+          <li>Lisa Lisa (Hamon)</li>
+          <li class="villain">Kars</li>
+          <li class="villain">Wamuu</li>
+        </ul>
+      </section>
+
+      <!-- SECCIÓN PARTE 3 -->
+      <section id="parte3" class="section">
+        <h2 class="section-title">Parte 3: Stardust Crusaders (1987–1989)</h2>
+        <p>Aquí aparecen los Stands, manifestaciones del alma que cambian por completo la franquicia.</p>
+        <p>La historia inicia en Japón y se convierte en un viaje mundial para salvar a la madre de Jotaro y derrotar a Dio.</p>
+        <p>Cada combate presenta enemigos con habilidades únicas, haciendo cada pelea diferente.</p>
+
+        <h3 class="section-subtitle">Personajes principales</h3>
+        <ul class="character-list">
+          <li>Jotaro Kujo (Star Platinum)</li>
+          <li>Joseph Joestar (Hermit Purple)</li>
+          <li>Avdol (Magician's Red)</li>
+          <li>Kakyoin (Hierophant Green)</li>
+          <li>Polnareff (Silver Chariot)</li>
+          <li class="villain">Dio (The World)</li>
+        </ul>
+      </section>
+
+      <!-- SECCIÓN PARTE 4 -->
+      <section id="parte4" class="section">
+        <h2 class="section-title">Parte 4: Diamond is Unbreakable (1999 - Morioh, Japón)</h2>
+        <p>Esta parte ocurre en el pueblo ficticio de Morioh. A diferencia de Stardust Crusaders, toda la historia ocurre en un mismo lugar.</p>
+        <p>La trama comienza tranquila mostrando la vida cotidiana de los personajes, pero poco a poco se vuelve más oscura.</p>
+        <p>Cuando aparece Kira, todo cambia. Un asesino serial obsesionado con llevar una vida normal.</p>
+        <p>La historia se transforma en una investigación para descubrir su identidad antes de que vuelva a matar.</p>
+
+        <h3 class="section-subtitle">Personajes principales</h3>
+        <ul class="character-list">
+          <li>Josuke (Crazy Diamond)</li>
+          <li>Okuyasu (The Hand)</li>
+          <li>Koichi (Echoes)</li>
+          <li>Jotaro (Star Platinum)</li>
+          <li class="villain">Kira (Killer Queen)</li>
+        </ul>
+      </section>
+
+      <!-- SECCIÓN PARTE 5 -->
+      <section id="parte5" class="section">
+        <h2 class="section-title">Parte 5: Golden Wind (2001 - Italia)</h2>
+        <p>Golden Wind se desarrolla en Italia y gira alrededor del crimen organizado.</p>
+        <p>Giorno Giovanna quiere reformar la mafia desde dentro y convertirla en algo mejor.</p>
+        <p>Las batallas aumentan mucho en complejidad, introduciendo poderes relacionados con el tiempo y la percepción.</p>
+        <p>El villano principal, Diavolo, representa el miedo absoluto a ser descubierto.</p>
+
+        <h3 class="section-subtitle">Personajes principales</h3>
+        <ul class="character-list">
+          <li>Giorno (Gold Experience)</li>
+          <li>Bucciarati (Sticky Fingers)</li>
+          <li>Mista (Sex Pistols)</li>
+          <li>Narancia (Aerosmith)</li>
+          <li>Abbacchio (Moody Blues)</li>
+          <li class="villain">Diavolo (King Crimson)</li>
+        </ul>
+      </section>
+
+      <!-- SECCIÓN PARTE 6 -->
+      <section id="parte6" class="section">
+        <h2 class="section-title">Parte 6: Stone Ocean (2011 - Florida)</h2>
+        <p>Stone Ocean ocurre dentro de una prisión en Florida y presenta una historia mucho más tensa y cerrada.</p>
+        <p>Jolyne evoluciona enormemente como personaje, pasando de ser impulsiva a convertirse en una auténtica líder.</p>
+        <p>Todo gira alrededor del plan de Pucci, el cual conecta directamente con Dio y toda la historia anterior.</p>
+        <p>El final alcanza una escala universal donde el tiempo acelera y el universo cambia completamente.</p>
+
+        <h3 class="section-subtitle">Personajes principales</h3>
+        <ul class="character-list">
+          <li>Jolyne (Stone Free)</li>
+          <li>Ermes (Kiss)</li>
+          <li>Weather Report</li>
+          <li>Foo Fighters</li>
+          <li class="villain">Enrico Pucci</li>
+        </ul>
+      </section>
+
+      <!-- SECCIÓN ENRICO PUCCI -->
+      <section id="pucci" class="section">
+        <h2 class="section-title">Enrico Pucci</h2>
+        <p>Enrico Pucci es uno de los antagonistas más complejos de toda la franquicia. No comienza como un villano clásico, sino como un sacerdote profundamente marcado por la fe y la tragedia.</p>
+        <p>Su relación con Dio Brando cambia completamente su visión del mundo. Dio le introduce la idea de un destino inevitable que debe ser comprendido.</p>
+        <p>Pucci busca alcanzar el “Cielo”: un estado donde toda la humanidad conozca su destino antes de vivirlo.</p>
+
+        <h3 class="section-subtitle">Evolución de sus Stands</h3>
+        <ul class="character-list">
+          <li><strong>Whitesnake:</strong> Extrae discos de memoria y poderes.</li>
+          <li><strong>C-Moon:</strong> Manipula la gravedad local.</li>
+          <li><strong>Made in Heaven:</strong> Acelera el tiempo hasta reiniciar el universo.</li>
+        </ul>
+      </section>
+
+      <!-- SECCIÓN GALERÍA MULTIMEDIA -->
+      <section id="galeria" class="section">
+        <h2 class="section-title">Galería Profesional</h2>
+
+        <!-- PARTE 1 -->
+        <h3 class="section-subtitle">Parte 1: Phantom Blood</h3>
+        <div class="gallery">
+          <article class="card">
+            <img src="imagenes/jonathan.jpg" alt="Jonathan Joestar">
+            <div class="card-content">
+              <h4>Jonathan</h4>
+              <span>Phantom Blood</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/dio.jpg" alt="Dio Brando">
+            <div class="card-content">
+              <h4>Dio</h4>
+              <span>Villano</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/zeppeli.jpg" alt="Will A. Zeppeli">
+            <div class="card-content">
+              <h4>Zeppeli</h4>
+              <span>Hamon</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/speedwagon.jpg" alt="Speedwagon">
+            <div class="card-content">
+              <h4>Speedwagon</h4>
+              <span>Aliado</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- PARTE 2 -->
+        <h3 class="section-subtitle">Parte 2: Battle Tendency</h3>
+        <div class="gallery">
+          <article class="card">
+            <img src="imagenes/joseph.jpg" alt="Joseph Joestar">
+            <div class="card-content">
+              <h4>Joseph</h4>
+              <span>Protagonista</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/caesar.jpg" alt="Caesar Zeppeli">
+            <div class="card-content">
+              <h4>Caesar</h4>
+              <span>Hamon</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/lisalisa.jpg" alt="Lisa Lisa">
+            <div class="card-content">
+              <h4>Lisa Lisa</h4>
+              <span>Maestra</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/kars.jpg" alt="Kars">
+            <div class="card-content">
+              <h4>Kars</h4>
+              <span>Villano</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/wamuu.jpg" alt="Wamuu">
+            <div class="card-content">
+              <h4>Wamuu</h4>
+              <span>Hombre del Pilar</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/stroheim.jpg" alt="Stroheim">
+            <div class="card-content">
+              <h4>Stroheim</h4>
+              <span>Aliado</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- PARTE 3 -->
+        <h3 class="section-subtitle">Parte 3: Stardust Crusaders</h3>
+        <div class="gallery">
+          <article class="card">
+            <img src="imagenes/jotaro.jpg" alt="Jotaro Kujo">
+            <div class="card-content">
+              <h4>Jotaro</h4>
+              <span>Star Platinum</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/kakyoin.jpg" alt="Kakyoin">
+            <div class="card-content">
+              <h4>Kakyoin</h4>
+              <span>Hierophant Green</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/polnareff.jpg" alt="Polnareff">
+            <div class="card-content">
+              <h4>Polnareff</h4>
+              <span>Silver Chariot</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/avdol.jpg" alt="Avdol">
+            <div class="card-content">
+              <h4>Avdol</h4>
+              <span>Magician's Red</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/iggy.jpg" alt="Iggy">
+            <div class="card-content">
+              <h4>Iggy</h4>
+              <span>The Fool</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/dio.jpg" alt="DIO">
+            <div class="card-content">
+              <h4>DIO</h4>
+              <span>The World</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- PARTE 4 -->
+        <h3 class="section-subtitle">Parte 4: Diamond is Unbreakable</h3>
+        <div class="gallery">
+          <article class="card">
+            <img src="imagenes/josuke.jpg" alt="Josuke">
+            <div class="card-content">
+              <h4>Josuke</h4>
+              <span>Crazy Diamond</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/koichi.jpg" alt="Koichi">
+            <div class="card-content">
+              <h4>Koichi</h4>
+              <span>Echoes</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/okuyasu.jpg" alt="Okuyasu">
+            <div class="card-content">
+              <h4>Okuyasu</h4>
+              <span>The Hand</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/rohan.jpg" alt="Rohan">
+            <div class="card-content">
+              <h4>Rohan</h4>
+              <span>Heaven's Door</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/kira.jpg" alt="Kira">
+            <div class="card-content">
+              <h4>Kira</h4>
+              <span>Killer Queen</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- PARTE 5 -->
+        <h3 class="section-subtitle">Parte 5: Golden Wind</h3>
+        <div class="gallery">
+          <article class="card">
+            <img src="imagenes/giorno.jpg" alt="Giorno">
+            <div class="card-content">
+              <h4>Giorno</h4>
+              <span>Gold Experience</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/bucciarati.jpg" alt="Bucciarati">
+            <div class="card-content">
+              <h4>Bucciarati</h4>
+              <span>Sticky Fingers</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/mista.jpg" alt="Mista">
+            <div class="card-content">
+              <h4>Mista</h4>
+              <span>Sex Pistols</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/narancia.jpg" alt="Narancia">
+            <div class="card-content">
+              <h4>Narancia</h4>
+              <span>Aerosmith</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/abbacchio.jpg" alt="Abbacchio">
+            <div class="card-content">
+              <h4>Abbacchio</h4>
+              <span>Moody Blues</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/fugo.jpg" alt="Fugo">
+            <div class="card-content">
+              <h4>Fugo</h4>
+              <span>Purple Haze</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/diavolo.jpg" alt="Diavolo">
+            <div class="card-content">
+              <h4>Diavolo</h4>
+              <span>King Crimson</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- PARTE 6 -->
+        <h3 class="section-subtitle">Parte 6: Stone Ocean</h3>
+        <div class="gallery">
+          <article class="card">
+            <img src="imagenes/jolyne.jpg" alt="Jolyne">
+            <div class="card-content">
+              <h4>Jolyne</h4>
+              <span>Stone Free</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/ermes.jpg" alt="Ermes">
+            <div class="card-content">
+              <h4>Ermes</h4>
+              <span>Kiss</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/weather.jpg" alt="Weather Report">
+            <div class="card-content">
+              <h4>Weather</h4>
+              <span>Weather Report</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/ff.jpg" alt="Foo Fighters">
+            <div class="card-content">
+              <h4>F.F.</h4>
+              <span>Foo Fighters</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/anasui.jpg" alt="Anasui">
+            <div class="card-content">
+              <h4>Anasui</h4>
+              <span>Diver Down</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="imagenes/pucci.jpg" alt="Pucci">
+            <div class="card-content">
+              <h4>Pucci</h4>
+              <span>Made in Heaven</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>JoJo's Bizarre Adventure Fan Page © 2026</p>
+    </footer>
+  </body>
+</html>

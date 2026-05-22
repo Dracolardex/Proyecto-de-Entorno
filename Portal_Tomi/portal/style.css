@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(59, 62, 70);
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+main {
+  position: relative;
+  left: 20%;
+  width: 60%;
+}
+
+h1 {
+  font-family: Bitcount Prop Double;
+  font-style: italic;
+  font-size: 152px;
+  color: rgb(102, 187, 243);
+  margin: 0;
+  text-align: center;
+}
+h2 {
+  font-family: Bitcount Prop Double;
+  margin-top: 0;
+  font-style: italic;
+  color: orange;
+  text-align: center;
+}
+
+h3 {
+  font-family: Bitcount Prop Double;
+  font-size: 42px;
+  color: rgb(219, 143, 255);
+}
+
+#color {
+  background-color: rgb(240, 240, 240);
+  position: absolute;
+  margin-left: 0;
+  margin-right: 0;
+  top: 0;
+  left: -5%;
+  height: 100%;
+  width: 110%;
+  z-index: -1;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+b {
+  font-size: 26px;
+}
+
+img {
+  width: 20%;
+  height: auto;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
