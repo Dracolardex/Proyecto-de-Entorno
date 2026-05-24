@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Noticias del mundo friki en PixelCode: videojuegos, cine, series, cómics e industria."
+    />
+    <title>Noticias - PixelCode</title>
+    <link rel="stylesheet" href="estilos-noticias.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="../blog.html" class="logo" aria-label="PixelCode - Inicio">
+        <svg
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <rect x="0" y="0" width="60" height="60" rx="10" fill="#ffcc33" />
+          <rect x="3" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="9" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="15" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="21" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="21" width="6" height="6" fill="#1a1a2e" />
+          <rect x="21" y="21" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="9" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="15" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="21" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="33" width="6" height="6" fill="#1a1a2e" />
+          <rect x="3" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="39" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="45" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="51" y="15" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="21" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="27" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="33" width="6" height="6" fill="#1a1a2e" />
+          <rect x="33" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="39" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="45" y="39" width="6" height="6" fill="#1a1a2e" />
+          <rect x="51" y="39" width="6" height="6" fill="#1a1a2e" />
+        </svg>
+        <span class="logo-text">PixelCode</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../blog.html">Inicio</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="../eventos.html">Eventos</a></li>
+          <li class="dropdown">
+            <a href="#" aria-haspopup="true" aria-expanded="false"
+              >Curiosidades ▾</a
+            >
+            <ul class="submenu">
+              <li>
+                <a href="../Portal_Tomi/portal/portal.html">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      fill="none"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="4"
+                      fill="none"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="12"
+                      y1="2"
+                      x2="12"
+                      y2="8"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="12"
+                      y1="16"
+                      x2="12"
+                      y2="22"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="2"
+                      y1="12"
+                      x2="8"
+                      y2="12"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                    <line
+                      x1="16"
+                      y1="12"
+                      x2="22"
+                      y2="12"
+                      stroke="#ffcc33"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  Portal
+                </a>
+              </li>
+              <li>
+                <a href="../LOL.html">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M3 19 L3 9 L7 13 L12 5 L17 13 L21 9 L21 19 Z"
+                      fill="#ffcc33"
+                    />
+                    <circle cx="3" cy="9" r="1.5" fill="#ffcc33" />
+                    <circle cx="12" cy="5" r="1.5" fill="#ffcc33" />
+                    <circle cx="21" cy="9" r="1.5" fill="#ffcc33" />
+                  </svg>
+                  LoL
+                </a>
+              </li>
+              <li>
+                <a href="../Pokemon/pokemon.html">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <circle cx="12" cy="12" r="10" fill="#ffcc33" />
+                    <path d="M2 12 A10 10 0 0 1 22 12 Z" fill="#ff6b6b" />
+                    <rect x="2" y="11" width="20" height="2" fill="#1a1a2e" />
+                    <circle cx="12" cy="12" r="3.2" fill="#1a1a2e" />
+                    <circle cx="12" cy="12" r="1.6" fill="white" />
+                  </svg>
+                  Pokémon
+                </a>
+              </li>
+              <li>
+                <a href="../jojos1.html">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    class="submenu-icon"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <polygon
+                      points="12,2 14.6,9 22,9 16,13.5 18.3,21 12,16.5 5.7,21 8,13.5 2,9 9.4,9"
+                      fill="#ffcc33"
+                    />
+                  </svg>
+                  JoJos
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../Proximos/proximos.html">Próximos lanzamientos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contenido">
+      <section class="hero">
+        <h1>📰 Noticias</h1>
+        <p class="hero-subtitle">
+          Lo último del mundo friki, con nuestra opinión y sin postureo
+        </p>
+      </section>
+
+      <section class="seccion-intro">
+        <p>
+          Aquí vamos a ir publicando lo que más nos llame la atención cada
+          semana. No pretendemos ser el primer medio en dar la noticia, pero sí
+          queremos contártela bien y con contexto. Si te falta alguna,
+          escríbenos: el blog está vivo y nos encanta recibir sugerencias.
+        </p>
+      </section>
+
+      <article class="noticia destacada">
+        <figure class="noticia-imagen" style="background-color: #1a1a2e">
+          <svg
+            width="100%"
+            height="180"
+            viewBox="0 0 400 180"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <rect width="400" height="180" fill="#1a1a2e" />
+            <circle cx="200" cy="90" r="45" fill="#ffcc33" />
+            <path d="M155 90 A45 45 0 0 1 245 90 Z" fill="#ff6b6b" />
+            <rect x="155" y="88" width="90" height="4" fill="#1a1a2e" />
+            <circle cx="200" cy="90" r="14" fill="#1a1a2e" />
+            <circle cx="200" cy="90" r="7" fill="white" />
+            <text
+              x="200"
+              y="160"
+              text-anchor="middle"
+              font-family="Georgia, serif"
+              font-size="14"
+              fill="white"
+              font-style="italic"
+            >
+              imagen ilustrativa
+            </text>
+          </svg>
+        </figure>
+        <div class="noticia-contenido">
+          <header class="noticia-meta">
+            <span class="categoria">VIDEOJUEGOS</span>
+            <time class="fecha" datetime="2026-05-05">5 de mayo, 2026</time>
+          </header>
+          <h2>
+            Nintendo confirma la nueva entrega principal de Pokémon para finales
+            de año
+          </h2>
+          <p>
+            Después de meses de filtraciones, rumores y teorías de YouTubers que
+            han hecho horas y horas de contenido sobre tres capturas de pantalla
+            borrosas, <strong>The Pokémon Company</strong> ha confirmado
+            oficialmente la próxima generación de la saga. La presentación,
+            emitida en un Pokémon Direct sorpresa, ha mostrado los tres
+            iniciales y un mapa que apunta a una región inspirada en el sudeste
+            asiático.
+          </p>
+          <p>
+            Lo más interesante, sin embargo, no son los nuevos diseños (que
+            están bien, pero no rompen nada), sino el cambio de motor gráfico.
+            Game Freak parece haber escuchado por fin las críticas técnicas que
+            arrastraba desde Espada y Escudo, y las primeras imágenes muestran
+            un nivel de detalle muy superior. Habrá que ver si en movimiento la
+            cosa se sostiene, pero la primera impresión es buena.
+          </p>
+        </div>
+      </article>
+
+      <article class="noticia">
+        <figure class="noticia-imagen" style="background-color: #c0392b">
+          <svg
+            width="100%"
+            height="180"
+            viewBox="0 0 400 180"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <rect width="400" height="180" fill="#c0392b" />
+            <polygon
+              points="200,40 215,80 260,80 225,108 240,150 200,125 160,150 175,108 140,80 185,80"
+              fill="#ffcc33"
+            />
+            <text
+              x="200"
+              y="170"
+              text-anchor="middle"
+              font-family="Georgia, serif"
+              font-size="13"
+              fill="white"
+              font-style="italic"
+            >
+              imagen ilustrativa
+            </text>
+          </svg>
+        </figure>
+        <div class="noticia-contenido">
+          <header class="noticia-meta">
+            <span class="categoria">CINE</span>
+            <time class="fecha" datetime="2026-05-02">2 de mayo, 2026</time>
+          </header>
+          <h2>
+            El reboot de una saga clásica de los 90 enciende la guerra de fans
+          </h2>
+          <p>
+            Como cada vez que un estudio anuncia un reboot, las redes han
+            ardido. Esta vez le ha tocado a una de las sagas más queridas de la
+            ciencia ficción de los 90, cuyo nuevo equipo creativo promete "una
+            visión moderna y accesible para una nueva generación". Traducción:
+            rezad lo que sepáis.
+          </p>
+          <p>
+            Aún es pronto para saber si saldrá bien o si se convertirá en otro
+            caso de estudio sobre cómo no tratar una franquicia con legado. Lo
+            que sí sabemos es que el tráiler oficial llegará en otoño, y que
+            media internet ya tiene preparada una opinión muy fuerte sin haberlo
+            visto. Nosotros vamos a esperar a verlo antes de decidir nada,
+            aunque la nostalgia ya está haciendo de las suyas.
+          </p>
+        </div>
+      </article>
+
+      <article class="noticia">
+        <figure class="noticia-imagen" style="background-color: #2d4a3e">
+          <svg
+            width="100%"
+            height="180"
+            viewBox="0 0 400 180"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <rect width="400" height="180" fill="#2d4a3e" />
+            <rect
+              x="120"
+              y="50"
+              width="160"
+              height="90"
+              rx="10"
+              fill="#1a1a2e"
+              stroke="#ffcc33"
+              stroke-width="3"
+            />
+            <rect x="135" y="65" width="130" height="50" fill="#4ecdc4" />
+            <circle cx="200" cy="90" r="8" fill="#ffcc33" />
+            <text
+              x="200"
+              y="170"
+              text-anchor="middle"
+              font-family="Georgia, serif"
+              font-size="13"
+              fill="white"
+              font-style="italic"
+            >
+              imagen ilustrativa
+            </text>
+          </svg>
+        </figure>
+        <div class="noticia-contenido">
+          <header class="noticia-meta">
+            <span class="categoria">INDUSTRIA</span>
+            <time class="fecha" datetime="2026-04-28">28 de abril, 2026</time>
+          </header>
+          <h2>
+            Otro estudio indie cierra: ¿qué está pasando con los desarrolladores
+            pequeños?
+          </h2>
+          <p>
+            La noticia se ha repetido demasiadas veces durante los últimos
+            meses. Otro estudio independiente, responsable de un par de títulos
+            muy queridos, ha anunciado su cierre por motivos económicos. La
+            industria del videojuego está atravesando una crisis silenciosa que
+            afecta especialmente a los equipos pequeños, mientras los grandes
+            publishers siguen reportando beneficios récord.
+          </p>
+          <p>
+            Hay debate sobre las causas: la inflación de costes de desarrollo,
+            la saturación del mercado, las plataformas que se llevan un
+            porcentaje enorme de las ventas o, simplemente, que hacer
+            videojuegos hoy sale carísimo. Lo que está claro es que algo no
+            funciona, y los que más sufren son los estudios sin músculo
+            financiero. Una pena, porque muchas de las mejores experiencias de
+            los últimos años han salido precisamente de equipos así.
+          </p>
+        </div>
+      </article>
+
+      <article class="noticia">
+        <figure class="noticia-imagen" style="background-color: #4a3a6e">
+          <svg
+            width="100%"
+            height="180"
+            viewBox="0 0 400 180"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <rect width="400" height="180" fill="#4a3a6e" />
+            <rect x="160" y="50" width="80" height="90" fill="#ffcc33" />
+            <rect x="170" y="60" width="60" height="12" fill="#1a1a2e" />
+            <rect x="170" y="80" width="60" height="4" fill="#1a1a2e" />
+            <rect x="170" y="90" width="60" height="4" fill="#1a1a2e" />
+            <rect x="170" y="100" width="40" height="4" fill="#1a1a2e" />
+            <text
+              x="200"
+              y="170"
+              text-anchor="middle"
+              font-family="Georgia, serif"
+              font-size="13"
+              fill="white"
+              font-style="italic"
+            >
+              imagen ilustrativa
+            </text>
+          </svg>
+        </figure>
+        <div class="noticia-contenido">
+          <header class="noticia-meta">
+            <span class="categoria">CÓMICS</span>
+            <time class="fecha" datetime="2026-04-25">25 de abril, 2026</time>
+          </header>
+          <h2>
+            Vuelve un autor mítico con una serie limitada que promete dar mucho
+            de qué hablar
+          </h2>
+          <p>
+            Tras casi una década sin publicar, uno de los guionistas más
+            respetados de la industria del cómic regresa con una serie limitada
+            de seis números que ya ha vendido sus derechos para una posible
+            adaptación televisiva incluso antes de que salga el primer ejemplar.
+            La sinopsis, deliberadamente vaga, habla de "una historia sobre la
+            memoria, la culpa y los superhéroes que envejecen mal".
+          </p>
+          <p>
+            Los fans están entusiasmados, los nostálgicos están preparando ya
+            las comparaciones con sus obras anteriores, y nosotros,
+            sinceramente, también estamos ansiosos. Cuando un autor como este
+            vuelve, no es algo que pase todos los meses. El primer número llega
+            en julio.
+          </p>
+        </div>
+      </article>
+
+      <article class="noticia">
+        <figure class="noticia-imagen" style="background-color: #1e4d5c">
+          <svg
+            width="100%"
+            height="180"
+            viewBox="0 0 400 180"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <rect width="400" height="180" fill="#1e4d5c" />
+            <rect
+              x="100"
+              y="60"
+              width="200"
+              height="70"
+              rx="6"
+              fill="#1a1a2e"
+              stroke="#ffcc33"
+              stroke-width="3"
+            />
+            <circle cx="140" cy="95" r="14" fill="#ff6b6b" />
+            <rect x="170" y="80" width="90" height="6" fill="white" />
+            <rect x="170" y="92" width="120" height="6" fill="#888" />
+            <rect x="170" y="104" width="70" height="6" fill="#888" />
+            <text
+              x="200"
+              y="160"
+              text-anchor="middle"
+              font-family="Georgia, serif"
+              font-size="13"
+              fill="white"
+              font-style="italic"
+            >
+              imagen ilustrativa
+            </text>
+          </svg>
+        </figure>
+        <div class="noticia-contenido">
+          <header class="noticia-meta">
+            <span class="categoria">SERIES</span>
+            <time class="fecha" datetime="2026-04-20">20 de abril, 2026</time>
+          </header>
+          <h2>
+            La adaptación que nadie pedía está siendo, sorprendentemente, una de
+            las mejores series del año
+          </h2>
+          <p>
+            Cuando se anunció la serie, hubo escepticismo generalizado. La obra
+            original era considerada inadaptable, los responsables del proyecto
+            no tenían un currículum especialmente brillante y el tráiler no
+            convenció a casi nadie. Y sin embargo, aquí estamos, dos episodios
+            después, con buena parte de la crítica especializada hablando del
+            estreno como una de las sorpresas del año.
+          </p>
+          <p>
+            Hablaremos en profundidad cuando termine la temporada, pero mientras
+            tanto te recomendamos que le des una oportunidad sin prejuicios. A
+            veces las cosas salen bien incluso cuando todo apuntaba a lo
+            contrario, y este es uno de esos casos. Avisados estáis.
+          </p>
+        </div>
+      </article>
+
+      <aside class="cta">
+        <p>
+          <strong>¿Quieres que cubramos algo en concreto?</strong> Escríbenos y
+          lo añadimos a la lista. Las mejores noticias suelen venir de personas
+          que ya estaban siguiendo el tema antes que nosotros.
+        </p>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © 2026 PixelCode — Proyecto de la asignatura de Entornos de Desarrollo
+      </p>
+      <p class="footer-autores">Cristian · Raúl · Sergio · Tomás</p>
+      <nav class="footer-nav" aria-label="Enlaces de pie de página">
+        <a href="#">Contacto</a> | <a href="#">Sobre el proyecto</a> |
+        <a href="#">Política de privacidad</a> |
+        <a href="#">RSS</a>
+      </nav>
+    </footer>
+  </body>
+</html>
