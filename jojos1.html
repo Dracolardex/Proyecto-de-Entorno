@@ -1,1380 +1,709 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JoJo's Bizarre Adventure</title>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoJo's Bizarre Adventure - Enciclopedia Completa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <style>
-<<<<<<< HEAD
-      /* Variables mejoradas con una paleta de color más profunda y profesional */
-      :root {
-        --bg: #0b0b0e;
-        --surface: #141419;
-        --surface-light: #1f1f27;
-        --primary: #ff006e;
-        --primary-glow: rgba(255, 0, 110, 0.15);
-        --secondary: #4cc9f0;
-        --danger: #ff595e;
-        --text: #f4f4f6;
-        --muted: #a5a5b4;
-        --radius: 16px;
-        --transition: cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
-        --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
-        --shadow-lg: 0 12px 30px rgba(255, 0, 110, 0.2);
-=======
-      :root {
-        --bg: #111;
-        --surface: #1e1e1e;
-        --surface-light: #2a2a2a;
-        --primary: #ff006e;
-        --secondary: #4cc9f0;
-        --danger: #ff595e;
-        --text: #ffffff;
-        --muted: #c9c9c9;
-        --radius: 16px;
-        --shadow: 0 0 15px rgba(255, 0, 110, 0.25);
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-<<<<<<< HEAD
-      html {
-        scroll-behavior: smooth; /* Hace que el salto del índice sea fluido */
-      }
-
-      body {
-        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.6;
-      }
-
-      header {
-        background: rgba(20, 20, 25, 0.85);
-        backdrop-filter: blur(12px); /* Efecto cristal translúcido moderno */
-        -webkit-backdrop-filter: blur(12px);
-        text-align: center;
-        padding: 20px;
-        border-bottom: 1px solid rgba(255, 0, 110, 0.2);
-=======
-      body {
-        font-family: Arial, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.8;
-      }
-
-      header {
-        background: #1a1a1a;
-        text-align: center;
-        padding: 30px 20px;
-        border-bottom: 3px solid var(--primary);
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-        position: sticky;
-        top: 0;
-        z-index: 100;
-      }
-
-      header h1 {
-<<<<<<< HEAD
-        font-size: clamp(1.8rem, 4vw, 2.5rem);
-        color: var(--text);
-        font-weight: 800;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        background: linear-gradient(45deg, var(--primary), var(--secondary));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      .container {
-        width: min(1100px, 92%);
-        margin: 40px auto;
-      }
-
-      /* Estilos para el nuevo Índice de Contenidos */
-      .nav-menu {
-        background: var(--surface);
-        padding: 25px;
-        border-radius: var(--radius);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        margin-bottom: 35px;
-        box-shadow: var(--shadow-sm);
-      }
-
-      .nav-menu-title {
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: var(--secondary);
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .nav-links {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 12px;
-        list-style: none;
-      }
-
-      .nav-links a {
-        display: block;
-        color: var(--muted);
-        text-decoration: none;
-        padding: 10px 14px;
-        background: var(--surface-light);
-        border-radius: 8px;
-        font-size: 0.95rem;
-        transition: var(--transition);
-        border-left: 3px solid transparent;
-      }
-
-      .nav-links a:hover {
-        color: var(--text);
-        border-left-color: var(--primary);
-        background: rgba(255, 0, 110, 0.08);
-        transform: translateX(4px);
-      }
-
-      /* Secciones de contenido */
-      .section {
-        background: var(--surface);
-        margin-bottom: 40px;
-        padding: 35px;
-        border-radius: var(--radius);
-        border: 1px solid rgba(255, 255, 255, 0.03);
-        box-shadow: var(--shadow-sm);
-        scroll-margin-top: 110px; /* Evita que el header pegajoso tape el título al saltar */
-      }
-
-      .section-title {
-        font-size: clamp(1.4rem, 3vw, 1.8rem);
-        color: var(--text);
-        padding-bottom: 12px;
-        margin-bottom: 25px;
-        position: relative;
-      }
-
-      /* Línea decorativa elegante debajo de los títulos */
-      .section-title::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 60px;
-        height: 3px;
-        background: var(--primary);
-        border-radius: 2px;
-=======
-        font-size: clamp(2rem, 5vw, 3rem);
-        color: var(--primary);
-      }
-
-      .container {
-        width: min(1200px, 90%);
-        margin: auto;
-      }
-
-      .section {
-        background: var(--surface);
-        margin: 25px 0;
-        padding: 25px;
-        border-radius: var(--radius);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      }
-
-      .section-title {
-        color: var(--primary);
-        border-bottom: 2px solid var(--primary);
-        padding-bottom: 10px;
-        margin-bottom: 20px;
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-      }
-
-      .section-subtitle {
-        color: var(--secondary);
-<<<<<<< HEAD
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        margin: 30px 0 15px;
-      }
-
-      p {
-        margin-bottom: 18px;
-        color: var(--muted);
-        font-size: 1.05rem;
-      }
-
-      /* Listas de personajes optimizadas */
-      .character-list {
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 10px;
-        margin-top: 15px;
-      }
-
-      .character-list li {
-        background: var(--surface-light);
-        padding: 10px 16px;
-        border-radius: 8px;
-        font-size: 0.95rem;
-        color: var(--text);
-        display: flex;
-        align-items: center;
-        border: 1px solid rgba(255, 255, 255, 0.02);
-      }
-
-      .character-list li::before {
-        content: "◈";
-        color: var(--primary);
-        margin-right: 10px;
-        font-size: 0.8rem;
-      }
-
-      .character-list .villain {
-        color: var(--danger);
-        background: rgba(255, 89, 94, 0.05);
-        border: 1px solid rgba(255, 89, 94, 0.1);
-      }
-
-      .character-list .villain::before {
-        color: var(--danger);
-        content: "✦";
-      }
-
-      /* Galerías con diseño Grid profesional */
-      .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
-        margin-top: 20px;
-        margin-bottom: 35px;
-      }
-
-      /* Tarjetas con efectos fluidos y sombras dinámicas */
-      .card {
-        background: var(--surface-light);
-        border-radius: 12px;
-        overflow: hidden;
-        transition: var(--transition);
-        border: 1px solid rgba(255, 255, 255, 0.03);
-=======
-        margin: 20px 0 10px;
-      }
-
-      p {
-        margin-bottom: 15px;
-        color: var(--muted);
-      }
-
-      .character-list {
-        padding-left: 20px;
-      }
-
-      .character-list li {
-        margin-bottom: 8px;
-      }
-
-      .villain {
-        color: var(--danger);
-        font-weight: bold;
-      }
-
-      .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 20px;
-        margin-top: 20px;
-      }
-
-      .card {
-        background: var(--surface-light);
-        border-radius: 14px;
-        overflow: hidden;
-        transition: 0.3s ease;
-        cursor: pointer;
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-      }
-
-      .card:hover {
-        transform: translateY(-6px);
-<<<<<<< HEAD
-        box-shadow: var(--shadow-lg);
-        border-color: rgba(255, 0, 110, 0.3);
-=======
-        box-shadow: var(--shadow);
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-      }
-
-      .card img {
-        width: 100%;
-<<<<<<< HEAD
-        height: 260px;
-        object-fit: cover;
-        transition: var(--transition);
-        filter: grayscale(15%);
-      }
-
-      .card:hover img {
-        transform: scale(1.04);
-        filter: grayscale(0%);
-      }
-
-      .card-content {
-        padding: 16px;
-        background: linear-gradient(to top, #181820, var(--surface-light));
-      }
-
-      .card-content h4 {
-        margin-bottom: 4px;
-        font-size: 1.05rem;
-        font-weight: 600;
-        color: var(--text);
-      }
-
-      .card-content span {
-        color: var(--muted);
-        font-size: 0.85rem;
-        display: block;
-=======
-        height: 240px;
-        object-fit: cover;
-      }
-
-      .card-content {
-        padding: 15px;
-      }
-
-      .card-content h4 {
-        margin-bottom: 5px;
-        font-size: 1rem;
-      }
-
-      .card-content span {
-        color: #aaa;
-        font-size: 0.9rem;
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-      }
-
-      footer {
-        text-align: center;
-<<<<<<< HEAD
-        padding: 40px;
-        margin-top: 60px;
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
-        color: var(--muted);
-        font-size: 0.9rem;
-      }
-
-      /* Ajustes Responsivos */
-      @media (max-width: 768px) {
-        .container {
-          margin: 20px auto;
+        /* ==========================================================================
+           1. VARIABLES GLOBALES (Personalización rápida)
+           ========================================================================== */
+        :root {
+            --color-principal: #3a1c5d;      /* Morado bizarro */
+            --color-secundario: #ffd700;     /* Dorado Joestar */
+            --color-oscuro: #0f0b14;         /* Fondo de la web */
+            --color-tarjeta: #1c1526;        /* Contenedores de lectura */
+            --color-texto: #f5f5f5;          /* Texto principal */
+            --color-mutado: #a89cb8;         /* Subtítulos */
+            --fuente-titulos: 'Cinzel', Georgia, serif;
+            --fuente-cuerpo: 'Roboto', Arial, sans-serif;
+            --borde-radio: 10px;
+            --transicion: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
-        .section {
-          padding: 22px;
-          margin-bottom: 25px;
+        /* ==========================================================================
+           2. RESET Y COMPORTAMIENTO BASE
+           ========================================================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .nav-links {
-          grid-template-columns: 1fr;
-          gap: 8px;
+        html {
+            scroll-behavior: smooth;
         }
 
-        .card img {
-          height: 220px;
-=======
-        padding: 30px;
-        color: #999;
-      }
-
-      @media (max-width: 768px) {
-        .section {
-          padding: 20px;
+        body {
+            background-color: var(--color-oscuro);
+            color: var(--color-texto);
+            font-family: var(--fuente-cuerpo);
+            line-height: 1.7;
+            overflow-x: hidden;
         }
 
-        .card img {
-          height: 200px;
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
+        /* ==========================================================================
+           3. CABECERA
+           ========================================================================== */
+        .main-header {
+            background: linear-gradient(135deg, var(--color-principal), #0a0412);
+            border-bottom: 4px solid var(--color-secundario);
+            padding: 70px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
         }
-      }
+
+        .header-container .logo {
+            font-family: var(--fuente-titulos);
+            font-size: 3.5rem;
+            color: var(--color-texto);
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .header-container .logo span {
+            color: var(--color-secundario);
+            display: inline-block;
+        }
+
+        .header-container .subtitle {
+            font-size: 1.2rem;
+            color: var(--color-mutado);
+            margin-top: 12px;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
+        /* ==========================================================================
+           4. ÍNDICE DE NAVEGACIÓN
+           ========================================================================== */
+        .index-nav {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: var(--color-tarjeta);
+            border: 1px solid rgba(255, 215, 0, 0.15);
+            border-radius: var(--borde-radio);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .index-nav h2 {
+            font-family: var(--fuente-titulos);
+            color: var(--color-secundario);
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        .index-nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .index-nav a {
+            color: var(--color-texto);
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.03);
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transicion);
+            font-size: 0.95rem;
+            font-weight: bold;
+        }
+
+        .index-nav a:hover {
+            background-color: var(--color-principal);
+            border-color: var(--color-secundario);
+            color: var(--color-secundario);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(58, 28, 93, 0.4);
+        }
+
+        /* ==========================================================================
+           5. CONTENEDOR DE HISTORIAS
+           ========================================================================== */
+        .content-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .anime-part {
+            background-color: var(--color-tarjeta);
+            border-radius: var(--borde-radio);
+            padding: 50px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-left: 6px solid var(--color-principal);
+            scroll-margin-top: 40px;
+            transition: var(--transicion);
+        }
+
+        .anime-part:hover {
+            border-left-color: var(--color-secundario);
+            transform: translateX(5px);
+        }
+
+        .part-header {
+            margin-bottom: 25px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 15px;
+        }
+
+        .part-number {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: var(--color-secundario);
+            letter-spacing: 3px;
+            display: block;
+            font-weight: bold;
+        }
+
+        .part-header h2 {
+            font-family: var(--fuente-titulos);
+            font-size: 2.3rem;
+            margin-top: 5px;
+        }
+
+        .part-story h3 {
+            font-size: 1.25rem;
+            color: var(--color-secundario);
+            margin-bottom: 20px;
+            font-family: var(--fuente-titulos);
+        }
+
+        .part-story p {
+            color: var(--color-texto);
+            margin-bottom: 22px;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        .part-story strong {
+            color: #fff;
+            border-bottom: 1px dashed var(--color-secundario);
+        }
+
+        /* ==========================================================================
+           6. SECCIÓN DE GLOSARIO CON IMÁGENES
+           ========================================================================== */
+        .glossary-section {
+            background-color: #140e1c;
+            border-radius: var(--borde-radio);
+            padding: 50px 40px;
+            margin: 80px 0;
+            border: 2px solid var(--color-principal);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+        }
+
+        .glossary-section h2 {
+            font-family: var(--fuente-titulos);
+            color: var(--color-secundario);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .glossary-intro {
+            text-align: center;
+            color: var(--color-mutado);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .part-block-title {
+            font-family: var(--fuente-titulos);
+            color: var(--color-secundario);
+            font-size: 1.8rem;
+            margin: 40px 0 20px 0;
+            border-bottom: 2px solid var(--color-principal);
+            padding-bottom: 10px;
+            width: 100%;
+        }
+
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+
+        .character-card {
+            background-color: var(--color-tarjeta);
+            border-radius: var(--borde-radio);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: var(--transicion);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 215, 0, 0.3);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+        }
+
+        .char-img-container {
+            width: 100%;
+            height: 250px;
+            background-color: #2c223a;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .character-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transicion);
+        }
+
+        .character-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .char-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .char-info h4 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            font-family: var(--fuente-titulos);
+        }
+
+        .char-info .stand-name {
+            color: #ff9ff3;
+            font-size: 0.95rem;
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .char-info p {
+            font-size: 0.88rem;
+            color: var(--color-mutado);
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        /* ==========================================================================
+           7. FOOTER
+           ========================================================================== */
+        .main-footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #07040a;
+            color: var(--color-mutado);
+            font-size: 0.95rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            .header-container .logo { font-size: 2.4rem; }
+            .anime-part { padding: 30px 20px; }
+            .index-nav ul { flex-direction: column; width: 100%; }
+            .index-nav a { display: block; text-align: center; }
+            .glossary-section { padding: 30px 15px; }
+        }
     </style>
-  </head>
+</head>
+<body>
 
-  <body>
-    <header>
-      <h1>JoJo's Bizarre Adventure</h1>
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="logo">JoJo's <span>Bizarre Adventure</span></h1>
+            <p class="subtitle">La Línea Temporal Definitiva y el Legado de la Sangre Joestar</p>
+        </div>
     </header>
 
-    <main class="container">
-<<<<<<< HEAD
-      <!-- NUEVO: Índice de contenidos dinámico -->
-      <nav class="nav-menu">
-        <div class="nav-menu-title">➔ Índice de Navegación</div>
-        <ul class="nav-links">
-          <li><a href="#parte1">Parte 1: Phantom Blood</a></li>
-          <li><a href="#parte2">Parte 2: Battle Tendency</a></li>
-          <li><a href="#parte3">Parte 3: Stardust Crusaders</a></li>
-          <li><a href="#parte4">Parte 4: Diamond is Unbreakable</a></li>
-          <li><a href="#parte5">Parte 5: Golden Wind</a></li>
-          <li><a href="#parte6">Parte 6: Stone Ocean</a></li>
-          <li><a href="#pucci">Especial: Enrico Pucci</a></li>
-          <li><a href="#galeria">Galería Multimedia</a></li>
+    <nav class="index-nav">
+        <h2>Índice de Temporadas</h2>
+        <ul>
+            <li><a href="#parte1">Parte 1: Phantom Blood</a></li>
+            <li><a href="#parte2">Parte 2: Battle Tendency</a></li>
+            <li><a href="#parte3">Parte 3: Stardust Crusaders</a></li>
+            <li><a href="#parte4">Parte 4: Diamond is Unbreakable</a></li>
+            <li><a href="#parte5">Parte 5: Golden Wind</a></li>
+            <li><a href="#parte6">Parte 6: Stone Ocean</a></li>
+            <li><a href="#glosario">Glosario General</a></li>
         </ul>
-      </nav>
+    </nav>
 
-      <!-- SECCIÓN PARTE 1 -->
-      <section id="parte1" class="section">
-        <h2 class="section-title">Parte 1: Phantom Blood (1880s - Inglaterra)</h2>
-        <p>Esta historia ocurre principalmente en Inglaterra a finales del siglo XIX. Todo comienza cuando la familia Joestar adopta a Dio Brando.</p>
-        <p>Dio no solo quiere una vida mejor: busca dominar completamente la familia Joestar y destruir la vida de Jonathan.</p>
-        <p>Cuando obtiene la máscara de piedra se convierte en vampiro, cambiando completamente la escala de la historia.</p>
-        <p>Aquí aparece el Hamon, una energía basada en la respiración que imita el poder del sol.</p>
+    <main class="content-container">
 
-        <h3 class="section-subtitle">Personajes principales</h3>
-        <ul class="character-list">
-          <li>Jonathan Joestar (Hamon)</li>
-          <li class="villain">Dio Brando (Vampiro)</li>
-=======
-      <section class="section">
-        <h2 class="section-title">
-          Parte 1: Phantom Blood (1880s - Inglaterra)
-        </h2>
-
-        <p>
-          Esta historia ocurre principalmente en Inglaterra a finales del siglo
-          XIX. Todo comienza cuando la familia Joestar adopta a Dio Brando.
-        </p>
-
-        <p>
-          Dio no solo quiere una vida mejor: busca dominar completamente la
-          familia Joestar y destruir la vida de Jonathan.
-        </p>
-
-        <p>
-          Cuando obtiene la máscara de piedra se convierte en vampiro, cambiando
-          completamente la escala de la historia.
-        </p>
-
-        <p>
-          Aquí aparece el Hamon, una energía basada en la respiración que imita
-          el poder del sol.
-        </p>
-
-        <h3 class="section-subtitle">Personajes principales</h3>
-
-        <ul class="character-list">
-          <li>Jonathan Joestar (Hamon)</li>
-          <li>Dio Brando (Vampiro)</li>
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-          <li>Speedwagon</li>
-          <li>Will A. Zeppeli (Hamon)</li>
-        </ul>
-      </section>
-
-<<<<<<< HEAD
-      <!-- SECCIÓN PARTE 2 -->
-      <section id="parte2" class="section">
-        <h2 class="section-title">Parte 2: Battle Tendency (1938–1939)</h2>
-        <p>Esta parte ocurre a finales de los años 30. Joseph Joestar toma el protagonismo y cambia completamente el tono de la saga.</p>
-        <p>A diferencia de Jonathan, Joseph pelea usando inteligencia, engaños y estrategia.</p>
-        <p>La amenaza principal son los Hombres del Pilar, seres antiguos que buscan alcanzar la perfección biológica.</p>
-        <p>La relación entre Joseph y Caesar es uno de los pilares emocionales de la historia.</p>
-
-        <h3 class="section-subtitle">Personajes principales</h3>
-=======
-      <section class="section">
-        <h2 class="section-title">Parte 2: Battle Tendency (1938–1939)</h2>
-
-        <p>
-          Esta parte ocurre a finales de los años 30. Joseph Joestar toma el
-          protagonismo y cambia completamente el tono de la saga.
-        </p>
-
-        <p>
-          A diferencia de Jonathan, Joseph pelea usando inteligencia, engaños y
-          estrategia.
-        </p>
-
-        <p>
-          La amenaza principal son los Hombres del Pilar, seres antiguos que
-          buscan alcanzar la perfección biológica.
-        </p>
-
-        <p>
-          La relación entre Joseph y Caesar es uno de los pilares emocionales de
-          la historia.
-        </p>
-
-        <h3 class="section-subtitle">Personajes principales</h3>
-
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-        <ul class="character-list">
-          <li>Joseph Joestar (Hamon)</li>
-          <li>Caesar Zeppeli (Hamon)</li>
-          <li>Lisa Lisa (Hamon)</li>
-          <li class="villain">Kars</li>
-          <li class="villain">Wamuu</li>
-        </ul>
-      </section>
-
-<<<<<<< HEAD
-      <!-- SECCIÓN PARTE 3 -->
-      <section id="parte3" class="section">
-        <h2 class="section-title">Parte 3: Stardust Crusaders (1987–1989)</h2>
-        <p>Aquí aparecen los Stands, manifestaciones del alma que cambian por completo la franquicia.</p>
-        <p>La historia inicia en Japón y se convierte en un viaje mundial para salvar a la madre de Jotaro y derrotar a Dio.</p>
-        <p>Cada combate presenta enemigos con habilidades únicas, haciendo cada pelea diferente.</p>
-
-        <h3 class="section-subtitle">Personajes principales</h3>
-=======
-      <section class="section">
-        <h2 class="section-title">Parte 3: Stardust Crusaders (1987–1989)</h2>
-
-        <p>
-          Aquí aparecen los Stands, manifestaciones del alma que cambian por
-          completo la franquicia.
-        </p>
-
-        <p>
-          La historia inicia en Japón y se convierte en un viaje mundial para
-          salvar a la madre de Jotaro y derrotar a Dio.
-        </p>
-
-        <p>
-          Cada combate presenta enemigos con habilidades únicas, haciendo cada
-          pelea diferente.
-        </p>
-
-        <h3 class="section-subtitle">Personajes principales</h3>
-
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-        <ul class="character-list">
-          <li>Jotaro Kujo (Star Platinum)</li>
-          <li>Joseph Joestar (Hermit Purple)</li>
-          <li>Avdol (Magician's Red)</li>
-          <li>Kakyoin (Hierophant Green)</li>
-          <li>Polnareff (Silver Chariot)</li>
-          <li class="villain">Dio (The World)</li>
-        </ul>
-      </section>
-<<<<<<< HEAD
-
-      <!-- SECCIÓN PARTE 4 -->
-      <section id="parte4" class="section">
-        <h2 class="section-title">Parte 4: Diamond is Unbreakable (1999 - Morioh, Japón)</h2>
-        <p>Esta parte ocurre en el pueblo ficticio de Morioh. A diferencia de Stardust Crusaders, toda la historia ocurre en un mismo lugar.</p>
-        <p>La trama comienza tranquila mostrando la vida cotidiana de los personajes, pero poco a poco se vuelve más oscura.</p>
-        <p>Cuando aparece Kira, todo cambia. Un asesino serial obsesionado con llevar una vida normal.</p>
-        <p>La historia se transforma en una investigación para descubrir su identidad antes de que vuelva a matar.</p>
-
-        <h3 class="section-subtitle">Personajes principales</h3>
-=======
-      <section class="section">
-        <h2 class="section-title">
-          Parte 4: Diamond is Unbreakable (1999 - Morioh, Japón)
-        </h2>
-
-        <p>
-          Esta parte ocurre en el pueblo ficticio de Morioh. A diferencia de
-          Stardust Crusaders, toda la historia ocurre en un mismo lugar.
-        </p>
-
-        <p>
-          La trama comienza tranquila mostrando la vida cotidiana de los
-          personajes, pero poco a poco se vuelve más oscura.
-        </p>
-
-        <p>
-          Cuando aparece Kira, todo cambia. Un asesino serial obsesionado con
-          llevar una vida normal.
-        </p>
-
-        <p>
-          La historia se transforma en una investigación para descubrir su
-          identidad antes de que vuelva a matar.
-        </p>
-
-        <h3 class="section-subtitle">Personajes principales</h3>
-
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-        <ul class="character-list">
-          <li>Josuke (Crazy Diamond)</li>
-          <li>Okuyasu (The Hand)</li>
-          <li>Koichi (Echoes)</li>
-          <li>Jotaro (Star Platinum)</li>
-          <li class="villain">Kira (Killer Queen)</li>
-        </ul>
-      </section>
-
-<<<<<<< HEAD
-      <!-- SECCIÓN PARTE 5 -->
-      <section id="parte5" class="section">
-        <h2 class="section-title">Parte 5: Golden Wind (2001 - Italia)</h2>
-        <p>Golden Wind se desarrolla en Italia y gira alrededor del crimen organizado.</p>
-        <p>Giorno Giovanna quiere reformar la mafia desde dentro y convertirla en algo mejor.</p>
-        <p>Las batallas aumentan mucho en complejidad, introduciendo poderes relacionados con el tiempo y la percepción.</p>
-        <p>El villano principal, Diavolo, representa el miedo absoluto a ser descubierto.</p>
-
-        <h3 class="section-subtitle">Personajes principales</h3>
-=======
-      <section class="section">
-        <h2 class="section-title">Parte 5: Golden Wind (2001 - Italia)</h2>
-
-        <p>
-          Golden Wind se desarrolla en Italia y gira alrededor del crimen
-          organizado.
-        </p>
-
-        <p>
-          Giorno Giovanna quiere reformar la mafia desde dentro y convertirla en
-          algo mejor.
-        </p>
-
-        <p>
-          Las batallas aumentan mucho en complejidad, introduciendo poderes
-          relacionados con el tiempo y la percepción.
-        </p>
-
-        <p>
-          El villano principal, Diavolo, representa el miedo absoluto a ser
-          descubierto.
-        </p>
-
-        <h3 class="section-subtitle">Personajes principales</h3>
-
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-        <ul class="character-list">
-          <li>Giorno (Gold Experience)</li>
-          <li>Bucciarati (Sticky Fingers)</li>
-          <li>Mista (Sex Pistols)</li>
-          <li>Narancia (Aerosmith)</li>
-          <li>Abbacchio (Moody Blues)</li>
-          <li class="villain">Diavolo (King Crimson)</li>
-        </ul>
-      </section>
-
-<<<<<<< HEAD
-      <!-- SECCIÓN PARTE 6 -->
-      <section id="parte6" class="section">
-        <h2 class="section-title">Parte 6: Stone Ocean (2011 - Florida)</h2>
-        <p>Stone Ocean ocurre dentro de una prisión en Florida y presenta una historia mucho más tensa y cerrada.</p>
-        <p>Jolyne evoluciona enormemente como personaje, pasando de ser impulsiva a convertirse en una auténtica líder.</p>
-        <p>Todo gira alrededor del plan de Pucci, el cual conecta directamente con Dio y toda la historia anterior.</p>
-        <p>El final alcanza una escala universal donde el tiempo acelera y el universo cambia completamente.</p>
-
-        <h3 class="section-subtitle">Personajes principales</h3>
-=======
-      <section class="section">
-        <h2 class="section-title">Parte 6: Stone Ocean (2011 - Florida)</h2>
-
-        <p>
-          Stone Ocean ocurre dentro de una prisión en Florida y presenta una
-          historia mucho más tensa y cerrada.
-        </p>
-
-        <p>
-          Jolyne evoluciona enormemente como personaje, pasando de ser impulsiva
-          a convertirse en una auténtica líder.
-        </p>
-
-        <p>
-          Todo gira alrededor del plan de Pucci, el cual conecta directamente
-          con Dio y toda la historia anterior.
-        </p>
-
-        <p>
-          El final alcanza una escala universal donde el tiempo acelera y el
-          universo cambia completamente.
-        </p>
-
-        <h3 class="section-subtitle">Personajes principales</h3>
-
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-        <ul class="character-list">
-          <li>Jolyne (Stone Free)</li>
-          <li>Ermes (Kiss)</li>
-          <li>Weather Report</li>
-          <li>Foo Fighters</li>
-          <li class="villain">Enrico Pucci</li>
-        </ul>
-      </section>
-
-<<<<<<< HEAD
-      <!-- SECCIÓN ENRICO PUCCI -->
-      <section id="pucci" class="section">
-        <h2 class="section-title">Enrico Pucci</h2>
-        <p>Enrico Pucci es uno de los antagonistas más complejos de toda la franquicia. No comienza como un villano clásico, sino como un sacerdote profundamente marcado por la fe y la tragedia.</p>
-        <p>Su relación con Dio Brando cambia completamente su visión del mundo. Dio le introduce la idea de un destino inevitable que debe ser comprendido.</p>
-        <p>Pucci busca alcanzar el “Cielo”: un estado donde toda la humanidad conozca su destino antes de vivirlo.</p>
-
-        <h3 class="section-subtitle">Evolución de sus Stands</h3>
-        <ul class="character-list">
-          <li><strong>Whitesnake:</strong> Extrae discos de memoria y poderes.</li>
-          <li><strong>C-Moon:</strong> Manipula la gravedad local.</li>
-          <li><strong>Made in Heaven:</strong> Acelera el tiempo hasta reiniciar el universo.</li>
-        </ul>
-      </section>
-
-      <!-- SECCIÓN GALERÍA MULTIMEDIA -->
-      <section id="galeria" class="section">
-        <h2 class="section-title">Galería Profesional</h2>
-
-        <!-- PARTE 1 -->
-        <h3 class="section-subtitle">Parte 1: Phantom Blood</h3>
-        <div class="gallery">
-          <article class="card">
-            <img src="imagenes/jonathan.jpg" alt="Jonathan Joestar">
-            <div class="card-content">
-              <h4>Jonathan</h4>
-              <span>Phantom Blood</span>
+        <section id="parte1" class="anime-part">
+            <div class="part-header">
+                <span class="part-number">Parte 1</span>
+                <h2>Phantom Blood</h2>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/dio.jpg" alt="Dio Brando">
-            <div class="card-content">
-              <h4>Dio</h4>
-              <span>Villano</span>
+            <div class="part-story">
+                <h3>La Génesis del Odio y el Arte del Hamon</h3>
+                <p>La saga comienza en la Inglaterra victoriana de 1880. <strong>Jonathan Joestar</strong>, un joven aristócrata puro de corazón que aspira a ser un verdadero caballero, ve su vida invadida por <strong>Dio Brando</strong>, un huérfano de los suburbios adoptado por el aristócrata George Joestar debido a una antigua deuda de honor. Desde el primer instante, Dio ejecuta un plan maquiavélico para destruir la estabilidad mental de Jonathan, aislarlo de sus amigos, besar a la fuerza a su amada Erina Pendleton e incluso asesinar a su perro Danny. El objetivo final de Dio es heredar de forma exclusiva la inmensa fortuna de la familia Joestar.</p>
+                <p>Siete años más tarde, tras descubrirse que Dio estaba envenenando lentamente a Lord Joestar con arsénico, Jonathan arrincona a su hermano adoptivo. Al verse atrapado, Dio decide rechazar su humanidad utilizando la misteriosa <strong>Máscara de Piedra</strong>, un artefacto arqueológico azteca que reacciona ante la sangre humana activando unas púas que penetran el cerebro y desatan el potencial de un vampiro inmortal. Tras masacrar a la policía y asesinar a George Joestar, Dio incendia la mansión. Jonathan logra sobrevivir milagrosamente cruzando el fuego y empalando al monstruo, pero Dio escapa gracias a su regeneración.</p>
+                <p>Para frenar la plaga de zombis que Dio empieza a alzar en el pueblo de Windknight's Lot, Jonathan se somete a un riguroso entrenamiento bajo la tutela del carismático maestro italiano <strong>Will A. Zeppeli</strong>. Este le enseña el <strong>Hamon</strong> (o Sendero del Sol), una disciplina mística basada en técnicas de respiración controlada que producen una energía idéntica a los rayos solares, la única debilidad biológica de los vampiros. Acompañados por el redimido matón callejero <strong>Robert E.O. Speedwagon</strong>, el grupo se enfrenta a los caballeros no-muertos Tarkus y Bruford. Durante estas batallas, Zeppeli es partido a la mitad por una trampa, pero antes de morir, transfiere su energía vital restante a Jonathan.</p>
+                <p>En el clímax, Jonathan destruye el cuerpo físico de Dio utilizando su técnica definitiva: el <em>Sunlight Yellow Overdrive</em>. No obstante, la cabeza cercenada de Dio sobrevive. Semanas después, durante la luna de miel de Jonathan y Erina a bordo de un barco transatlántico con rumbo a América, Dio reaparece por sorpresa ayudado por su sirviente Wang Chan. Tras herir de muerte a Jonathan en la garganta para impedirle respirar y usar el Hamon, Dio planea decapitarlo y usurpar su cuerpo. En un acto final de amor y sacrificio, Jonathan abraza con fuerza la cabeza de Dio mientras sabotea la caldera del barco, permitiendo que Erina escape en un ataúd reforzado salvando a un bebé huérfano. El barco explota, hundiendo a ambos rivales en el fondo del océano Atlántico y sellando el trágico inicio de una maldición generacional.</p>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/zeppeli.jpg" alt="Will A. Zeppeli">
-            <div class="card-content">
-              <h4>Zeppeli</h4>
-              <span>Hamon</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/speedwagon.jpg" alt="Speedwagon">
-            <div class="card-content">
-              <h4>Speedwagon</h4>
-              <span>Aliado</span>
-            </div>
-          </article>
-        </div>
+        </section>
 
-        <!-- PARTE 2 -->
-        <h3 class="section-subtitle">Parte 2: Battle Tendency</h3>
-        <div class="gallery">
-          <article class="card">
-            <img src="imagenes/joseph.jpg" alt="Joseph Joestar">
-            <div class="card-content">
-              <h4>Joseph</h4>
-              <span>Protagonista</span>
+        <section id="parte2" class="anime-part">
+            <div class="part-header">
+                <span class="part-number">Parte 2</span>
+                <h2>Battle Tendency</h2>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/caesar.jpg" alt="Caesar Zeppeli">
-            <div class="card-content">
-              <h4>Caesar</h4>
-              <span>Hamon</span>
+            <div class="part-story">
+                <h3>El Despertar de los Dioses de la Naturaleza</h3>
+                <p>Nos trasladamos al año 1938, en la antesala de la Segunda Guerra Mundial. <strong>Joseph Joestar</strong>, el engreído, ingenioso e impredecible nieto de Jonathan, vive en Nueva York junto a su abuela Erina. A diferencia de su antepasado, Joseph posee una habilidad natural e indisciplinada para el Hamon y una mente táctica brillante basada en la provocación, el engaño y su icónica frase de predicción: <em>"Tu siguiente línea será..."</em>. La trama estalla cuando Speedwagon, convertido ahora en un magnate petrolero que financia una fundación científica, desaparece en unas excavaciones arqueológicas en México.</p>
+                <p>Joseph viaja a Centroamérica y descubre que el ejército nazi, liderado por el excéntrico comandante Rudolf von Stroheim, ha capturado a un ser fosilizado en una columna de piedra. Este ser es bautizado como "Santviento", y pertenece a una raza ancestral de suprahumanos inmolares conocidos como los <strong>Hombres del Pilar</strong>. Tras una agónica batalla en los laboratorios donde Joseph debe usar su ingenio combinando Hamon con cables de hierro, Santviento es destruido al ser expuesto directamente al sol. Sin embargo, la investigación desvela que en Roma yacen durmiendo los tres líderes absolutos de esta raza divina: <strong>Wamuu, Esidisi y Kars</strong>, los verdaderos creadores de las Máscaras de Piedra.</p>
+                <p>Los tres titanes despiertan masacrando a los científicos. Su objetivo histórico es apoderarse de la <strong>Piedra Roja de Aja</strong>, una gema perfecta que amplifica la luz solar. Si consiguen insertarla en una máscara modificada, anularán su única debilidad al sol y se convertirán en el "Ser Supremo". Joseph intenta enfrentarlos, pero es humillado por la destreza guerrera de Wamuu. No obstante, divirtiendo al enemigo con sus trucos, Joseph logra que le perdonen la vida temporalmente implantándole dos anillos con veneno en el corazón y la garganta; tiene un plazo exacto de 33 días para entrenar y disputar una revancha si quiere obtener los antídotos.</p>
+                <p>Para sobrevivir, Joseph viaja a Venecia junto a su nuevo aliado y rival de sangre, <strong>Caesar Zeppeli</strong> (nieto de Will). Allí entrenan bajo el régimen militar de la enigmática maestra <strong>Lisa Lisa</strong> en la isla de Air Supplena. Tras dominar el control del Hamon, derrotan a Esidisi, quien intentaba enviar la Piedra Roja a sus camaradas. El conflicto se traslada a un hotel suizo, donde Caesar desobedece las órdenes y asalta el refugio de los Hombres del Pilar en solitario. Tras un combate titánico contra Wamuu, Caesar es aplastado por una estructura de piedra, dejando una última burbuja con su sangre y el antídoto para Joseph. La guerra culmina en un coliseo romano con una carrera de cuadrigas vampíricas donde Joseph derrota a Wamuu con honores. Finalmente, Kars traiciona las reglas del combate, activa la máscara con la Piedra Roja de Aja y evoluciona en el Ser Supremo, inmune al sol y capaz de replicar la genética de cualquier criatura. Desesperado, Joseph huye hacia un volcán activo en la isla de Vulcano, donde utiliza la propia energía de la gema contra el volcán para provocar una erupción masiva que lanza a Kars al espacio exterior, donde se congela eternamente, incapaz de morir pero condenado a flotar en la nada por siempre.</p>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/lisalisa.jpg" alt="Lisa Lisa">
-            <div class="card-content">
-              <h4>Lisa Lisa</h4>
-              <span>Maestra</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/kars.jpg" alt="Kars">
-            <div class="card-content">
-              <h4>Kars</h4>
-              <span>Villano</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/wamuu.jpg" alt="Wamuu">
-            <div class="card-content">
-              <h4>Wamuu</h4>
-              <span>Hombre del Pilar</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/stroheim.jpg" alt="Stroheim">
-            <div class="card-content">
-              <h4>Stroheim</h4>
-              <span>Aliado</span>
-            </div>
-          </article>
-        </div>
+        </section>
 
-        <!-- PARTE 3 -->
-        <h3 class="section-subtitle">Parte 3: Stardust Crusaders</h3>
-        <div class="gallery">
-          <article class="card">
-            <img src="imagenes/jotaro.jpg" alt="Jotaro Kujo">
-            <div class="card-content">
-              <h4>Jotaro</h4>
-              <span>Star Platinum</span>
+        <section id="parte3" class="anime-part">
+            <div class="part-header">
+                <span class="part-number">Parte 3</span>
+                <h2>Stardust Crusaders</h2>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/kakyoin.jpg" alt="Kakyoin">
-            <div class="card-content">
-              <h4>Kakyoin</h4>
-              <span>Hierophant Green</span>
+            <div class="part-story">
+                <h3>El Viaje de 50 Días a la Tierra de los Faraones</h3>
+                <p>En 1989, el rescate de un ataúd del fondo del mar despierta el peor fantasma del pasado: Dio Brando ha sobrevivido uniendo su cabeza al cuerpo decapitado de Jonathan Joestar. Esta macabra reconexión biológica envía una señal psíquica a través de los genes de la dinastía Joestar, provocando la manifestación de los <strong>Stands</strong>, proyecciones espirituales de la energía vital con habilidades sobrehumanas. En Japón, el problemático estudiante de secundaria <strong>Jotaro Kujo</strong> se encierra voluntariamente en una celda creyendo estar poseído por un "espíritu maligno". Su abuelo Joseph Joestar viaja desde Estados Unidos junto al adivino egipcio Muhammad Avdol para explicarle que ese espíritu es en realidad su Stand, bautizado como <em>Star Platinum</em>, un ser de velocidad y fuerza milimétricas.</p>
+                <p>La situación se vuelve crítica cuando Holy Joestar, la madre de Jotaro, cae en un coma febril mortal debido a que su naturaleza pacífica no resiste la presión psíquica de su propio Stand. El diagnóstico es implacable: tienen exactamente 50 días para localizar y asesinar a Dio antes de que el cuerpo de Holy colapse por completo. Tras reclutar al lavado de cerebro Noriaki Kakyoin y al hábil espadachín francés Jean Pierre Polnareff (ambos liberados del control mental de los brotes de carne de Dio), el grupo inicia una travesía continental desde Tokio hasta El Cairo, evitando viajar por aire debido a los constantes sabotajes de los esbirros enemigos.</p>
+                <p>El viaje a través de Singapur, la India, el Mar Rojo y el desierto se convierte en una carnicería estratégica. Los protagonistas se enfrentan a los usuarios de Stand vinculados a los Arcanos Mayores del Tarot (como J. Geil, el asesino de la hermana de Polnareff, o las ilusiones de la emperatriz) y, más tarde, a los Dioses Egipcios. En el camino, se les une el malhumorado perro de raza Boston Terrier, Iggy, usuario del Stand de arena <em>The Fool</em>. A lo largo del trayecto, cada miembro demuestra el valor del sacrificio: Avdol e Iggy mueren salvando a Polnareff del devorador vacío dimensional del Stand <em>Cream</em>, controlado por Vanilla Ice, el vasallo más leal del vampiro.</p>
+                <p>El enfrentamiento definitivo se desata en las calles nocturnas de El Cairo. Kakyoin sacrifica su vida en una trampa de hilos para descifrar el terrorífico secreto del Stand de Dio, <em>The World</em>: la capacidad absoluta de detener el transcurso del tiempo. Con sus últimas fuerzas, Kakyoin destruye la torre del reloj de la ciudad, dejando un mensaje que permite a Joseph advertir a Jotaro. Tras presenciar cómo Dio drena la sangre de Joseph para asimilar completamente el cuerpo de Jonathan, un Jotaro enfurecido lleva a <em>Star Platinum</em> al límite absoluto de su evolución, descubriendo que pertenece al mismo tipo de Stand que el de Dio. En una milésima de segundo congelada, Jotaro logra moverse dentro del tiempo detenido de Dio, destrozando la pierna de <em>The World</em> y provocando una sobrecarga que fragmenta y desintegra por completo el cuerpo del vampiro al amanecer, terminando con la pesadilla de un siglo.</p>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/polnareff.jpg" alt="Polnareff">
-            <div class="card-content">
-              <h4>Polnareff</h4>
-              <span>Silver Chariot</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/avdol.jpg" alt="Avdol">
-            <div class="card-content">
-              <h4>Avdol</h4>
-              <span>Magician's Red</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/iggy.jpg" alt="Iggy">
-            <div class="card-content">
-              <h4>Iggy</h4>
-              <span>The Fool</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/dio.jpg" alt="DIO">
-            <div class="card-content">
-              <h4>DIO</h4>
-              <span>The World</span>
-            </div>
-          </article>
-        </div>
+        </section>
 
-        <!-- PARTE 4 -->
-        <h3 class="section-subtitle">Parte 4: Diamond is Unbreakable</h3>
-        <div class="gallery">
-          <article class="card">
-            <img src="imagenes/josuke.jpg" alt="Josuke">
-            <div class="card-content">
-              <h4>Josuke</h4>
-              <span>Crazy Diamond</span>
+        <section id="parte4" class="anime-part">
+            <div class="part-header">
+                <span class="part-number">Parte 4</span>
+                <h2>Diamond is Unbreakable</h2>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/koichi.jpg" alt="Koichi">
-            <div class="card-content">
-              <h4>Koichi</h4>
-              <span>Echoes</span>
+            <div class="part-story">
+                <h3>El Misterio Oculto bajo el Cielo de Morioh</h3>
+                <p>Año 1999. Cambiamos el tono épico global por un thriller de misterio costumbrista de suburbios. Jotaro Kujo llega al colorido y aparentemente pacífico pueblo japonés de Morioh para localizar a <strong>Josuke Higashikata</strong>, un estudiante de secundaria copetudo que resulta ser el hijo ilegítimo y secreto del anciano Joseph Joestar. Josuke posee el Stand <em>Crazy Diamond</em>, una entidad con la increíble capacidad de restaurar cualquier objeto destruido o sanar heridas graves al instante, aunque es incapaz de resucitar a los muertos o curar sus propias lesiones. Jotaro advierte a Josuke de que la tranquilidad del pueblo corre peligro debido a la presencia de un misterioso artefacto ancestral: <strong>El Arco y la Flecha</strong>.</p>
+                <p>Esta Flecha mística tiene la propiedad de otorgar Stands a quienes sobreviven a su picadura, buscando activamente el potencial espiritual oculto de las personas. Tras la muerte del delincuente Keicho Nijimura a manos del Stand eléctrico <em>Red Hot Chili Pepper</em>, el Arco y la Flecha caen en manos equivocadas, multiplicando los incidentes paranormales en la localidad. Josuke, junto a su inseparable y atolondrado amigo Okuyasu Nijimura (usuario de <em>The Hand</em>, capaz de borrar el espacio) y el tímido Koichi Hirose (cuyo Stand <em>Echoes</em> evoluciona por actos), resuelven conflictos diarios con diversos vecinos del pueblo, transformando a antiguos enemigos en aliados de confianza, como el excéntrico y ególatra mangaka Rohan Kishibe.</p>
+                <p>La trama da un giro oscuro cuando descubren la existencia de <strong>Yoshikage Kira</strong>, un empleado de oficina meticuloso, elegante y obsesivo que ha vivido oculto en Morioh durante más de quince años como un asesino en serie despiadado. Kira sufre una severa psicopatía fetichista enfocada en las manos de las mujeres hermosas, a quienes asesina usando su Stand <em>Killer Queen</em>, cuya habilidad primaria es convertir cualquier objeto o ser vivo en una bomba molecular que no deja rastro ni evidencia alguna. Tras verse acorralado en una lavandería por los protagonistas, Kira se ve obligado a mutilar su propia mano y utilizar los servicios del Stand esteticista de Cinderella para usurpar la identidad y el rostro de Kosaku Kawajiri, un pacífico padre de familia, infiltrándose en su hogar.</p>
+                <p>Desesperado por mantener su anonimato cuando el hijo de Kosaku, Hayato, empieza a sospechar del impostor, la Flecha vuelve a atravesar a Kira, otorgándole una nueva y terrorífica habilidad evolutiva: <em>Killer Queen: Bites the Dust</em>. Esta técnica planta una bomba de tiempo en el niño que estalla automáticamente matando a cualquiera que intente interrogarlo sobre la identidad de Kira, provocando inmediatamente después un bucle temporal que reinicia el día entero. Tras varios reinicios donde Jotaro, Rohan y los demás mueren repetidamente sin que Josuke pueda evitarlo, el ingenio de Hayato logra engañar a Kira para que revele su nombre real en voz alta justo cuando Josuke pasaba por el lugar, rompiendo el bucle. El enfrentamiento final es una cruenta batalla de proyectiles y burbujas de aire explosivo que culmina en plena calle, donde un Kira acorralado y malherido es finalmente neutralizado por la precisión temporal de Jotaro y arrollado accidentalmente por una ambulancia, devolviendo la paz definitiva a las almas errantes de Morioh.</p>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/okuyasu.jpg" alt="Okuyasu">
-            <div class="card-content">
-              <h4>Okuyasu</h4>
-              <span>The Hand</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/rohan.jpg" alt="Rohan">
-            <div class="card-content">
-              <h4>Rohan</h4>
-              <span>Heaven's Door</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/kira.jpg" alt="Kira">
-            <div class="card-content">
-              <h4>Kira</h4>
-              <span>Killer Queen</span>
-            </div>
-          </article>
-        </div>
+        </section>
 
-        <!-- PARTE 5 -->
-        <h3 class="section-subtitle">Parte 5: Golden Wind</h3>
-        <div class="gallery">
-          <article class="card">
-            <img src="imagenes/giorno.jpg" alt="Giorno">
-            <div class="card-content">
-              <h4>Giorno</h4>
-              <span>Gold Experience</span>
+        <section id="parte5" class="anime-part">
+            <div class="part-header">
+                <span class="part-number">Parte 5</span>
+                <h2>Golden Wind</h2>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/bucciarati.jpg" alt="Bucciarati">
-            <div class="card-content">
-              <h4>Bucciarati</h4>
-              <span>Sticky Fingers</span>
+            <div class="part-story">
+                <h3>Honor, Mafia y el Destino de las Almas en Nápoles</h3>
+                <p>En el año 2001, la acción se desplaza a las mafias de Italia. <strong>Giorno Giovanna</strong> es un adolescente de quince años que vive en Nápoles y sobrevive cometiendo pequeños hurtos. Sin embargo, su árbol genealógico oculta un secreto genético trascendental: es el hijo biológico de Dio Brando, engendrado utilizando el cuerpo robado de Jonathan Joestar, lo que le otorga una combinación única de ambición implacable y un profundo sentido de la justicia. Su Stand, <em>Gold Experience</em>, posee el don de imbuir fuerza vital, transformando objetos inertes en animales, plantas o partes del cuerpo humano regenerativas. Conmocionado por la degradación moral de su ciudad debido al tráfico de drogas a menores, Giorno decide infiltrarse en la omnipresente organización criminal <strong>Passione</strong> para escalarla desde dentro, derrocar a su misterioso líder y convertirse en un "Gang-Star" reformador.</p>
+                <p>Para cumplir su ambición, Giorno se gana la confianza de <strong>Bruno Bucciarati</strong>, un carismático capo de nivel medio que dirige un escuadrón de marginados sociales con habilidades Stand letales: Guido Mista (el pistolero psíquico), Narancia Ghirga (el radar aéreo), Leone Abbacchio (el detective del pasado) y Pannacotta Fugo. El destino del grupo cambia de forma radical cuando reciben una misión directa del hermético "Jefe": escoltar de forma segura a través de toda Italia a su hija oculta, la joven Trish Una, manteniéndola a salvo de la traicionera "Escuadra de Ejecución", un equipo de asesinos de la misma organización que busca descubrir la identidad del Jefe usando el ADN de la chica.</p>
+                <p>El viaje se convierte en un calvario de batallas extremas en trenes de alta velocidad, góndolas venecianas y monumentos históricos. El punto de inflexión argumental ocurre en la isla de San Giorgio Maggiore, donde Bucciarati descubre con horror el verdadero motivo de la misión: el Jefe no quería proteger a Trish, sino asesinarla personalmente con sus propias manos para borrar cualquier rastro genético que revele su identidad. Indignado por esta atrocidad, Bucciarati se rebela abiertamente contra la organización. Giorno y el resto del equipo (a excepción de Fugo, quien decide retirarse por lógica de supervivencia) deciden unirse a la traición, convirtiéndose instantáneamente en los fugitivos más buscados de toda Italia.</p>
+                <p>El líder supremo de Passione revela su nombre: <strong>Diavolo</strong>, un hombre que sufre un caso severo de trastorno de identidad disociativo (compartiendo cuerpo con el sumiso joven Doppio) y que posee el Stand más devastador de la temporada: <em>King Crimson</em>. Esta entidad tiene el poder absoluto de predecir el futuro inmediato mediante la subhabilidad <em>Epitaph</em> y "borrar" un intervalo de hasta diez segundos del tiempo, permitiéndole reposicionarse y esquivar cualquier ataque mientras el resto del mundo experimenta amnesia de sus acciones. Tras una dramática carrera hacia el Coliseo de Roma guiados por las transmisiones de un lisiado Jean Pierre Polnareff, el grupo entra en contacto con la Flecha de Stand Suprema. En un desenlace trágico donde caen Abbacchio y Narancia, Giorno logra apoderarse de la Flecha e insertarla en su propio Stand, evolucionándolo a <strong>Gold Experience Requiem</strong>. Este ser divino anula por completo la causa y el efecto, reduciendo a cero cualquier acción hostil de Diavolo. Al invalidar el borrado de tiempo de <em>King Crimson</em>, Giorno condena a Diavolo a un bucle de muerte infinita donde experimentará el dolor de morir eternamente en infinitas realidades paralelas sin poder alcanzar jamás la verdad, permitiendo a Giorno asumir el trono absoluto como el nuevo Padrino de Passione.</p>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/mista.jpg" alt="Mista">
-            <div class="card-content">
-              <h4>Mista</h4>
-              <span>Sex Pistols</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/narancia.jpg" alt="Narancia">
-            <div class="card-content">
-              <h4>Narancia</h4>
-              <span>Aerosmith</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/abbacchio.jpg" alt="Abbacchio">
-            <div class="card-content">
-              <h4>Abbacchio</h4>
-              <span>Moody Blues</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/fugo.jpg" alt="Fugo">
-            <div class="card-content">
-              <h4>Fugo</h4>
-              <span>Purple Haze</span>
-            </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/diavolo.jpg" alt="Diavolo">
-            <div class="card-content">
-              <h4>Diavolo</h4>
-              <span>King Crimson</span>
-            </div>
-          </article>
-        </div>
+        </section>
 
-        <!-- PARTE 6 -->
-        <h3 class="section-subtitle">Parte 6: Stone Ocean</h3>
-        <div class="gallery">
-          <article class="card">
-            <img src="imagenes/jolyne.jpg" alt="Jolyne">
-            <div class="card-content">
-              <h4>Jolyne</h4>
-              <span>Stone Free</span>
+        <section id="parte6" class="anime-part">
+            <div class="part-header">
+                <span class="part-number">Parte 6</span>
+                <h2>Stone Ocean</h2>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/ermes.jpg" alt="Ermes">
-            <div class="card-content">
-              <h4>Ermes</h4>
-              <span>Kiss</span>
+            <div class="part-story">
+                <h3>El Océano de Piedra y el Fin del Universo Original</h3>
+                <p>Año 2011, Florida. Cerramos el universo original de la saga con <strong>Jolyne Cujoh</strong>, la rebelde e independiente hija de Jotaro Kujo. Jolyne es víctima de una elaborada conspiración judicial orquestada por su novio adinerado y un abogado corrupto, siendo incriminada falsamente por un accidente de tráfico y condenada a pasar quince años de prisión en la penitenciaría de máxima seguridad de Green Dolphin Street, conocida popularmente como "El Acuario". Antes de ser procesada, Jolyne se pincha el dedo con un fragmento de la Flecha oculto en un amuleto enviado por su distanciado padre, despertando su Stand <em>Stone Free</em>, el cual le otorga el poder de descomponer su propia masa corporal en hilos elásticos de alta resistencia para escuchar conversaciones a distancia o tejer estructuras defensivas.</p>
+                <p>Jotaro ingresa en la prisión para organizar la fuga de su hija, revelándole que su encarcelamiento es una trampa diseñada por los últimos leales a Dio Brando. No obstante, son emboscados por el misterioso Stand de largo alcance <em>Whitesnake</em>. Esta entidad posee la escalofriante habilidad de derretir las mentes humanas y extraer el alma de sus víctimas en forma de dos discos de almacenamiento compactos: uno que contiene la memoria de la persona y otro que guarda sus habilidades Stand. Jotaro es despojado de ambos discos, quedando en un estado vegetal de muerte suspendida. Jolyne comprende que debe abortar su plan de escape y permanecer voluntariamente dentro del infierno carcelario para cazar al usuario detras de <em>Whitesnake</em> y enviar los discos de su padre a la Fundación Speedwagon antes de que sea demasiado tarde.</p>
+                <p>En el interior de la prisión, Jolyne forja un leal escuadrón de convictos marginados: Ermes Costello (que busca vengar el asesinato de su hermana), Gwess, el enigmático niño de los conductos Emperio Alniño, F.F. (una colonia de plancton consciente que habita un cadáver) y el peligroso recluso Weather Report, capaz de manipular la atmósfera terrestre de manera absoluta. El cerebro detrás de toda la conspiración resulta ser el mismísimo capellán de la prisión, el <strong>Padre Enrico Pucci</strong>. Pucci estuvo profundamente obsesionado con las filosofías existenciales de Dio durante su juventud. Su objetivo definitivo no es la venganza ciega, sino ejecutar fielmente las directrices anotadas en un diario destruido por Jotaro para alcanzar el "Paraíso": un estado de conciencia universal donde toda la humanidad conozca de antemano su destino trágico para así eliminar la ansiedad existencial.</p>
+                <p>Tras recolectar el ADN del "Hueso de Dio" y fusionarlo con su propio espíritu en el Cabo Cañaveral, el Stand de Pucci evoluciona primero en <em>C-Moon</em> (invirtiendo la gravedad local) y, finalmente, en la entidad divina definitiva: <strong>Made in Heaven</strong>. Este Stand tiene la aterradora propiedad de manipular las fuerzas gravitatorias para acelerar el flujo del tiempo de forma infinita en todo el cosmos, manteniendo intactos únicamente los cuerpos de los seres vivos. En un clímax devastador en pleno océano, a pesar del regreso de un Jotaro completamente recuperado, la velocidad hiperbólica de Pucci supera la capacidad de detener el tiempo de <em>Star Platinum</em>. Uno a uno, Jotaro, Ermes, Jolyne y Anasui son ejecutados salvajemente. En sus últimos segundos, Jolyne se sacrifica para desenganchar a Emperio y ponerlo a salvo a lomos de un delfín. El tiempo se acelera tanto que el universo llega a su colapso final (Big Crunch) y se genera un reinicio cósmico completo. Sin embargo, en el nuevo universo provisional creado por Pucci, el pequeño Emperio logra introducir el disco de Stand de Weather Report en su propio cuerpo, aplastando la cabeza del sacerdote antes de que complete el ciclo. Esto provoca un colapso temporal definitivo que borra a Pucci de la historia humana, reiniciando el mundo una última vez en una hermosa línea temporal pacífica donde las almas de Jolyne y sus amigos descansan libres bajo los nombres de Irene y Anakiss, libres de la trágica maldición de los Joestar.</p>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/weather.jpg" alt="Weather Report">
-            <div class="card-content">
-              <h4>Weather</h4>
-              <span>Weather Report</span>
+        </section>
+
+        <section id="glosario" class="glossary-section">
+            <h2>Glosario Visual de Personajes y Habilidades</h2>
+            <p class="glossary-intro">Explora las fichas técnicas completas de los personajes esenciales de cada arco. Puedes enlazar tus imágenes en las etiquetas asignadas.</p>
+            
+            <div class="part-block-title">Parte 1: Phantom Blood</div>
+            <div class="glossary-grid">
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="jonathan.jpg" alt="Jonathan Joestar">
+                    </div>
+                    <div class="char-info">
+                        <h4>Jonathan Joestar</h4>
+                        <span class="stand-name">Habilidad: Hamon (Overdrive)</span>
+                        <p>El primer JoJo de la historia. Un caballero virtuoso que utiliza la energía respiratoria solar para derrocar los planes de Dio.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="dio_p1.jpg" alt="Dio Brando">
+                    </div>
+                    <div class="char-info">
+                        <h4>Dio Brando</h4>
+                        <span class="stand-name">Habilidad: Vampirismo</span>
+                        <p>Hermano adoptivo de Jonathan. Abraza la inmortalidad oscura usando la Máscara de Piedra para dominar el mundo.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="zeppeli_p1.jpg" alt="Will A. Zeppeli">
+                    </div>
+                    <div class="char-info">
+                        <h4>Will A. Zeppeli</h4>
+                        <span class="stand-name">Habilidad: Hamon</span>
+                        <p>Mentor italiano de Jonathan. Introduce las artes solares en la dinastía y sacrifica su destino por la causa.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="speedwagon.jpg" alt="Robert E.O. Speedwagon">
+                    </div>
+                    <div class="char-info">
+                        <h4>Robert Speedwagon</h4>
+                        <span class="stand-name">Habilidad: Combate Callejero / Finanzas</span>
+                        <p>Exdelincuente de Ogre Street que se convierte en el aliado más incondicional y protector financiero del linaje.</p>
+                    </div>
+                </div>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/ff.jpg" alt="Foo Fighters">
-            <div class="card-content">
-              <h4>F.F.</h4>
-              <span>Foo Fighters</span>
+
+            <div class="part-block-title">Parte 2: Battle Tendency</div>
+            <div class="glossary-grid">
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="joseph_p2.jpg" alt="Joseph Joestar">
+                    </div>
+                    <div class="char-info">
+                        <h4>Joseph Joestar</h4>
+                        <span class="stand-name">Habilidad: Hamon Táctico</span>
+                        <p>Nieto rebelde de Jonathan. Su fuerte es la psicología y predecir los diálogos y movimientos tácticos del rival.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="caesar.jpg" alt="Caesar Zeppeli">
+                    </div>
+                    <div class="char-info">
+                        <h4>Caesar Zeppeli</h4>
+                        <span class="stand-name">Habilidad: Bubble Launcher</span>
+                        <p>Rival y mejor amigo de Joseph. Combina el Hamon con jabón para generar proyectiles de burbujas cortantes.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="lisa_lisa.jpg" alt="Lisa Lisa">
+                    </div>
+                    <div class="char-info">
+                        <h4>Lisa Lisa</h4>
+                        <span class="stand-name">Habilidad: Hamon Maestro</span>
+                        <p>Enigmática y severa instructora en Venecia. Custodia de la Piedra Roja de Aja y madre biológica de Joseph.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="kars.jpg" alt="Kars">
+                    </div>
+                    <div class="char-info">
+                        <h4>Kars</h4>
+                        <span class="stand-name">Habilidad: Ser Supremo</span>
+                        <p>Líder supremo de los Hombres del Pilar. Logra evolucionar y dominar la luz solar antes de ser expulsado al cosmos.</p>
+                    </div>
+                </div>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/anasui.jpg" alt="Anasui">
-            <div class="card-content">
-              <h4>Anasui</h4>
-              <span>Diver Down</span>
+
+            <div class="part-block-title">Parte 3: Stardust Crusaders</div>
+            <div class="glossary-grid">
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="jotaro_p3.jpg" alt="Jotaro Kujo">
+                    </div>
+                    <div class="char-info">
+                        <h4>Jotaro Kujo</h4>
+                        <span class="stand-name">Stand: Star Platinum</span>
+                        <p>Estudiante formidable con un Stand de fuerza física inigualable que aprende a congelar el flujo temporal.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="dio_p3.jpg" alt="DIO">
+                    </div>
+                    <div class="char-info">
+                        <h4>DIO Brando</h4>
+                        <span class="stand-name">Stand: The World</span>
+                        <p>Regresa usando el cuerpo de Jonathan. Su Stand congela el universo entero durante varios segundos.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="kakyoin.jpg" alt="Noriaki Kakyoin">
+                    </div>
+                    <div class="char-info">
+                        <h4>Noriaki Kakyoin</h4>
+                        <span class="stand-name">Stand: Hierophant Green</span>
+                        <p>Luchador a distancia que emplea tentáculos espirituales y el Emerald Splash. Descifra el misterio de DIO.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="polnareff.jpg" alt="Jean Pierre Polnareff">
+                    </div>
+                    <div class="char-info">
+                        <h4>J.P. Polnareff</h4>
+                        <span class="stand-name">Stand: Silver Chariot</span>
+                        <p>Espadachín francés en busca de venganza. Su Stand destaca por su velocidad y precisión con el florete.</p>
+                    </div>
+                </div>
             </div>
-          </article>
-          <article class="card">
-            <img src="imagenes/pucci.jpg" alt="Pucci">
-            <div class="card-content">
-              <h4>Pucci</h4>
-              <span>Made in Heaven</span>
+
+            <div class="part-block-title">Parte 4: Diamond is Unbreakable</div>
+            <div class="glossary-grid">
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="josuke.jpg" alt="Josuke Higashikata">
+                    </div>
+                    <div class="char-info">
+                        <h4>Josuke Higashikata</h4>
+                        <span class="stand-name">Stand: Crazy Diamond</span>
+                        <p>Hijo ilegítimo de Joseph. Tiene el poder absoluto de reparar estructuras y sanar heridas mediante impactos físicos.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="kira.jpg" alt="Yoshikage Kira">
+                    </div>
+                    <div class="char-info">
+                        <h4>Yoshikage Kira</h4>
+                        <span class="stand-name">Stand: Killer Queen</span>
+                        <p>Asesino serial metódico de Morioh. Convierte todo lo que toca en bombas y rebobina el tiempo con Bites the Dust.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="okuyasu.jpg" alt="Okuyasu Nijimura">
+                    </div>
+                    <div class="char-info">
+                        <h4>Okuyasu Nijimura</h4>
+                        <span class="stand-name">Stand: The Hand</span>
+                        <p>Fiel compañero de Josuke. Puede borrar instantáneamente el espacio físico con la palma de su mano derecha.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="rohan.jpg" alt="Rohan Kishibe">
+                    </div>
+                    <div class="char-info">
+                        <h4>Rohan Kishibe</h4>
+                        <span class="stand-name">Stand: Heaven's Door</span>
+                        <p>Mangaka profesional de Morioh. Convierte a las personas en libros interactivos para leer e imponer comandos.</p>
+                    </div>
+                </div>
             </div>
-          </article>
-        </div>
-      </section>
+
+            <div class="part-block-title">Parte 5: Golden Wind</div>
+            <div class="glossary-grid">
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="giorno.jpg" alt="Giorno Giovanna">
+                    </div>
+                    <div class="char-info">
+                        <h4>Giorno Giovanna</h4>
+                        <span class="stand-name">Stand: Gold Experience / Requiem</span>
+                        <p>Hijo biológico de DIO. Genera vida orgánica y tras evolucionar a Requiem, reduce cualquier ataque a cero.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="bucciarati.jpg" alt="Bruno Bucciarati">
+                    </div>
+                    <div class="char-info">
+                        <h4>Bruno Bucciarati</h4>
+                        <span class="stand-name">Stand: Sticky Fingers</span>
+                        <p>Capo con ideales éticos férreos. Crea cremalleras interdimensionales en objetos y anatomías humanas.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="diavolo.jpg" alt="Diavolo">
+                    </div>
+                    <div class="char-info">
+                        <h4>Diavolo</h4>
+                        <span class="stand-name">Stand: King Crimson</span>
+                        <p>Líder supremo oculto de Passione. Predice el porvenir y borra segmentos enteros de tiempo cósmico.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="mista.jpg" alt="Guido Mista">
+                    </div>
+                    <div class="char-info">
+                        <h4>Guido Mista</h4>
+                        <span class="stand-name">Stand: Sex Pistols</span>
+                        <p>Pistolero táctico del grupo. Cuenta con seis pequeños espíritus que redirigen las trayectorias de sus balas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part-block-title">Parte 6: Stone Ocean</div>
+            <div class="glossary-grid">
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="jolyne.jpg" alt="Jolyne Cujoh">
+                    </div>
+                    <div class="char-info">
+                        <h4>Jolyne Cujoh</h4>
+                        <span class="stand-name">Stand: Stone Free</span>
+                        <p>Hija de Jotaro. Descompone su materia corporal en hilos polivalentes para el combate estratégico en prisión.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="pucci.jpg" alt="Enrico Pucci">
+                    </div>
+                    <div class="char-info">
+                        <h4>Enrico Pucci</h4>
+                        <span class="stand-name">Stand: Made in Heaven (Final)</span>
+                        <p>Capellán leal a DIO. Modifica la gravedad universal y acelera el tiempo cósmico provocando un reinicio del mundo.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="hermes.jpg" alt="Ermes Costello">
+                    </div>
+                    <div class="char-info">
+                        <h4>Ermes Costello</h4>
+                        <span class="stand-name">Stand: Kiss</span>
+                        <p>Reclusa y aliada de Jolyne. Duplica objetos físicos e individuos mediante la aplicación de pegatinas mágicas.</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="char-img-container">
+                        <img src="weather.jpg" alt="Weather Report">
+                    </div>
+                    <div class="char-info">
+                        <h4>Weather Report</h4>
+                        <span class="stand-name">Stand: Weather Report</span>
+                        <p>Misterioso convicto capaz de dominar las condiciones atmosféricas globales y provocar mutaciones subliminales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-      <p>JoJo's Bizarre Adventure Fan Page © 2026</p>
+    <footer class="main-footer">
+        <p>&copy; 2026 - Enciclopedia de JoJo's Bizarre Adventure. Creado con CSS Estructurado Unificado.</p>
     </footer>
-=======
-      <section class="section">
-        <h2 class="section-title">Enrico Pucci</h2>
 
-        <p>
-          Enrico Pucci es uno de los antagonistas más complejos de toda la
-          franquicia. No comienza como un villano clásico, sino como un
-          sacerdote profundamente marcado por la fe y la tragedia.
-        </p>
-
-        <p>
-          Su relación con Dio Brando cambia completamente su visión del mundo.
-          Dio le introduce la idea de un destino inevitable que debe ser
-          comprendido.
-        </p>
-
-        <p>
-          Pucci busca alcanzar el “Cielo”: un estado donde toda la humanidad
-          conozca su destino antes de vivirlo.
-        </p>
-
-        <h3 class="section-subtitle">Evolución de sus Stands</h3>
-
-        <ul class="character-list">
-          <li>
-            <strong>Whitesnake:</strong>
-            Extrae discos de memoria y poderes.
-          </li>
-
-          <li>
-            <strong>C-Moon:</strong>
-            Manipula la gravedad local.
-          </li>
-
-          <li>
-            <strong>Made in Heaven:</strong>
-            Acelera el tiempo hasta reiniciar el universo.
-          </li>
-        </ul>
-      </section>
-
-     <section class="section">
-    <h2 class="section-title">
-        Galería Profesional
-    </h2>
-
-    <!-- PARTE 1 -->
-    <h3 class="section-subtitle">Parte 1: Phantom Blood</h3>
-
-    <div class="gallery">
-
-        <article class="card">
-            <img src="imagenes/jonathan.jpg" alt="Jonathan Joestar">
-            <div class="card-content">
-                <h4>Jonathan</h4>
-                <span>Phantom Blood</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/dio.jpg" alt="Dio Brando">
-            <div class="card-content">
-                <h4>Dio</h4>
-                <span>Villano</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/zeppeli.jpg" alt="Will A. Zeppeli">
-            <div class="card-content">
-                <h4>Zeppeli</h4>
-                <span>Hamon</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/speedwagon.jpg" alt="Speedwagon">
-            <div class="card-content">
-                <h4>Speedwagon</h4>
-                <span>Aliado</span>
-            </div>
-        </article>
-
-    </div>
-
-    <!-- PARTE 2 -->
-    <h3 class="section-subtitle">Parte 2: Battle Tendency</h3>
-
-    <div class="gallery">
-
-        <article class="card">
-            <img src="imagenes/joseph.jpg" alt="Joseph Joestar">
-            <div class="card-content">
-                <h4>Joseph</h4>
-                <span>Protagonista</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/caesar.jpg" alt="Caesar Zeppeli">
-            <div class="card-content">
-                <h4>Caesar</h4>
-                <span>Hamon</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/lisalisa.jpg" alt="Lisa Lisa">
-            <div class="card-content">
-                <h4>Lisa Lisa</h4>
-                <span>Maestra</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/kars.jpg" alt="Kars">
-            <div class="card-content">
-                <h4>Kars</h4>
-                <span>Villano</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/wamuu.jpg" alt="Wamuu">
-            <div class="card-content">
-                <h4>Wamuu</h4>
-                <span>Hombre del Pilar</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/stroheim.jpg" alt="Stroheim">
-            <div class="card-content">
-                <h4>Stroheim</h4>
-                <span>Aliado</span>
-            </div>
-        </article>
-
-    </div>
-
-    <!-- PARTE 3 -->
-    <h3 class="section-subtitle">Parte 3: Stardust Crusaders</h3>
-
-    <div class="gallery">
-
-        <article class="card">
-            <img src="imagenes/jotaro.jpg" alt="Jotaro Kujo">
-            <div class="card-content">
-                <h4>Jotaro</h4>
-                <span>Star Platinum</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/kakyoin.jpg" alt="Kakyoin">
-            <div class="card-content">
-                <h4>Kakyoin</h4>
-                <span>Hierophant Green</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/polnareff.jpg" alt="Polnareff">
-            <div class="card-content">
-                <h4>Polnareff</h4>
-                <span>Silver Chariot</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/avdol.jpg" alt="Avdol">
-            <div class="card-content">
-                <h4>Avdol</h4>
-                <span>Magician's Red</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/iggy.jpg" alt="Iggy">
-            <div class="card-content">
-                <h4>Iggy</h4>
-                <span>The Fool</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/dio.jpg" alt="DIO">
-            <div class="card-content">
-                <h4>DIO</h4>
-                <span>The World</span>
-            </div>
-        </article>
-
-    </div>
-
-    <!-- PARTE 4 -->
-    <h3 class="section-subtitle">Parte 4: Diamond is Unbreakable</h3>
-
-    <div class="gallery">
-
-        <article class="card">
-            <img src="imagenes/josuke.jpg" alt="Josuke">
-            <div class="card-content">
-                <h4>Josuke</h4>
-                <span>Crazy Diamond</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/koichi.jpg" alt="Koichi">
-            <div class="card-content">
-                <h4>Koichi</h4>
-                <span>Echoes</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/okuyasu.jpg" alt="Okuyasu">
-            <div class="card-content">
-                <h4>Okuyasu</h4>
-                <span>The Hand</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/rohan.jpg" alt="Rohan">
-            <div class="card-content">
-                <h4>Rohan</h4>
-                <span>Heaven's Door</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/kira.jpg" alt="Kira">
-            <div class="card-content">
-                <h4>Kira</h4>
-                <span>Killer Queen</span>
-            </div>
-        </article>
-
-    </div>
-
-    <!-- PARTE 5 -->
-    <h3 class="section-subtitle">Parte 5: Golden Wind</h3>
-
-    <div class="gallery">
-
-        <article class="card">
-            <img src="imagenes/giorno.jpg" alt="Giorno">
-            <div class="card-content">
-                <h4>Giorno</h4>
-                <span>Gold Experience</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/bucciarati.jpg" alt="Bucciarati">
-            <div class="card-content">
-                <h4>Bucciarati</h4>
-                <span>Sticky Fingers</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/mista.jpg" alt="Mista">
-            <div class="card-content">
-                <h4>Mista</h4>
-                <span>Sex Pistols</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/narancia.jpg" alt="Narancia">
-            <div class="card-content">
-                <h4>Narancia</h4>
-                <span>Aerosmith</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/abbacchio.jpg" alt="Abbacchio">
-            <div class="card-content">
-                <h4>Abbacchio</h4>
-                <span>Moody Blues</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/fugo.jpg" alt="Fugo">
-            <div class="card-content">
-                <h4>Fugo</h4>
-                <span>Purple Haze</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/diavolo.jpg" alt="Diavolo">
-            <div class="card-content">
-                <h4>Diavolo</h4>
-                <span>King Crimson</span>
-            </div>
-        </article>
-
-    </div>
-
-    <!-- PARTE 6 -->
-    <h3 class="section-subtitle">Parte 6: Stone Ocean</h3>
-
-    <div class="gallery">
-
-        <article class="card">
-            <img src="imagenes/jolyne.jpg" alt="Jolyne">
-            <div class="card-content">
-                <h4>Jolyne</h4>
-                <span>Stone Free</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/ermes.jpg" alt="Ermes">
-            <div class="card-content">
-                <h4>Ermes</h4>
-                <span>Kiss</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/weather.jpg" alt="Weather Report">
-            <div class="card-content">
-                <h4>Weather</h4>
-                <span>Weather Report</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/ff.jpg" alt="Foo Fighters">
-            <div class="card-content">
-                <h4>F.F.</h4>
-                <span>Foo Fighters</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/anasui.jpg" alt="Anasui">
-            <div class="card-content">
-                <h4>Anasui</h4>
-                <span>Diver Down</span>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="imagenes/pucci.jpg" alt="Pucci">
-            <div class="card-content">
-                <h4>Pucci</h4>
-                <span>Made in Heaven</span>
-            </div>
-        </article>
-
-    </div>
-</section>
-        </div>
-      </section>
-      </main>
-
-<footer>
-    <p>
-        JoJo's Bizarre Adventure Fan Page © 2026
-    </p>
-</footer>
-    </main>
->>>>>>> 909fd870e65e7cb85d9f345e014f614ecfa4a0fe
-  </body>
+</body>
 </html>
